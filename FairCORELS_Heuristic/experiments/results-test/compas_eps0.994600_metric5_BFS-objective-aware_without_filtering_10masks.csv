@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5327169274537695,0.004139610389610415,0.4702830725462305,0.547867298578199,0.0076045627376425855,2057123,891048,3,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [charge_degree_Misdemeanor__AND__gender_Female]: [two_year_recid] = False
+else if [not_age_18-20]: [two_year_recid] = False
+else [two_year_recid] = True"
+1,0.5308202939781888,0.0018958962620934453,0.47217970602181125,0.547867298578199,0.007126954164851653,2057812,885461,3,"RULELIST:
+ if [gender_Male__AND__priors_1]: [two_year_recid] = False
+else if [age_21-22__AND__gender_Female]: [two_year_recid] = False
+else if [age_21-22__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5346135609293504,0.0012725178710523144,0.4683864390706496,0.5270142180094787,0.00288685673301059,2077060,893727,3,"RULELIST:
+ if [gender_Male__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5328276842853756,0.0024971420969680524,0.47017231571462437,0.540796963946869,0.005556968712700727,1929279,857890,3,"RULELIST:
+ if [not_priors_2-3]: [two_year_recid] = False
+else if [age_21-22__AND__charge_degree_Misdemeanor]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5418345579521213,0.0011346503567153388,0.4611654420478787,0.4971537001897533,0.006644518272425249,2128259,893829,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [charge_degree_Misdemeanor__AND__gender_Female]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.534562604919761,0.0021879633952879133,0.46843739508023885,0.5321398958604998,0.005963972124126161,,,,

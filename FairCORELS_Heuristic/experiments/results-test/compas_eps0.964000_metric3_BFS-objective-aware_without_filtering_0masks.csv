@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6114272166903746,0.03569477027243556,0.3915727833096254,0.566824644549763,0.02982300562446094,366031,202990,3,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: [two_year_recid] = False
+else if [priors_1__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [charge_degree_Misdemeanor__AND__gender_Female]: [two_year_recid] = False
+else [two_year_recid] = True"
+1,0.6228070175438597,0.035436204450288944,0.3801929824561403,0.623696682464455,0.10594840520787963,181830,109869,3,"RULELIST:
+ if [priors_>3__AND__charge_degree_Felony]: [two_year_recid] = True
+else if [juvenile-crimes_=0__AND__priors_0]: [two_year_recid] = False
+else if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.6073968705547653,0.02507899612844161,0.3956031294452347,0.6151658767772512,0.009460492723196379,244780,142457,3,"RULELIST:
+ if [priors_>3__AND__juvenile-crimes_=0]: [two_year_recid] = True
+else if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+3,0.606304811566722,0.025723394535540345,0.396695188433278,0.6081593927893738,0.05928446231570267,362112,200862,3,"RULELIST:
+ if [age_26-45__AND__priors_0]: [two_year_recid] = False
+else if [priors_1__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [charge_degree_Felony__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+4,0.6044086276368807,0.03192303069375087,0.39859137236311926,0.5768500948766604,0.04408033826638477,361479,199672,3,"RULELIST:
+ if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [age_>45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-crimes_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.6104689087985206,0.030771279216091463,0.3925310912014795,0.5981393382915007,0.049719340827524876,,,,

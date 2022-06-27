@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9037644201578627,0.00017018379850242127,0.10023557984213727,0.9061323618700667,0.04583703177702825,1637092,376521,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [month_aug]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.9022465088038859,2.4082632328337183e-06,0.1017534911961141,0.9033394049787492,0.028341311450497675,6977353,1328035,4,"RULELIST:
+ if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [previous_no__AND__loan_no]: [subscribed] = False
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else [subscribed] = True"
+2,0.9036733454766241,0.0001343659992006918,0.10032665452337586,0.9090467516697025,0.009064002959674355,2400851,560497,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [job_entrepreneur]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+3,0.905525197328476,0.00010531066646612963,0.09847480267152398,0.8996964177292046,0.03587161736941469,6121390,1110071,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [euribor3m_low]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+4,0.9033090467516697,6.780317706311934e-05,0.10069095324833033,0.9052823315118397,0.02713178294573637,8112165,1567385,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [job_services]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9037037037037037,9.601438089303915e-05,0.1002962962962963,0.9046994535519126,0.02924914930047027,,,,

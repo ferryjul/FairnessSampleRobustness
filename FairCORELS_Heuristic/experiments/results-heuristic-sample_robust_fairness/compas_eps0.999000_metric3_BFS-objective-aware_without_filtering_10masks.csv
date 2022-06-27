@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5296348980559507,0.0008340283569641367,0.47336510194404935,0.5450236966824644,0.0076045627376425855,2104989,899467,3,"RULELIST:
+ if [age_26-45__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [gender_Male__AND__juvenile-misdemeanors_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5289236605026079,0.0,0.47307633949739214,0.5497630331753555,0.0,17338,12429,2,"RULELIST:
+ if [not_priors_2-3]: [two_year_recid] = False
+else if [age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5339023233760076,0.0,0.4680976766239924,0.5298578199052133,0.0,21712,14231,2,"RULELIST:
+ if [not_priors_2-3]: [two_year_recid] = False
+else if [age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5335387532590661,0.00012959705037113355,0.4684612467409339,0.5351043643263758,0.006289308176100629,23019,14593,2,"RULELIST:
+ if [not_priors_1]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5494192936714861,0.00011941575257680469,0.4535807063285139,0.5056925996204934,0.0008758683177287827,2051895,883593,3,"RULELIST:
+ if [priors_1__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [gender_Male__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5350837857730236,0.000216608231982415,0.46731621422697633,0.5330883027419805,0.0029539478462943997,,,,

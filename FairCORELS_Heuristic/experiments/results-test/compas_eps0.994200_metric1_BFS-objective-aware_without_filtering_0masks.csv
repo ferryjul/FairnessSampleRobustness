@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5668563300142248,0.002416466624799718,0.43614366998577525,0.5507109004739337,0.019701213818860863,656342,362722,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.570886676149834,0.004991071472737085,0.432113323850166,0.581042654028436,0.050303943510085936,1818055,767289,3,"RULELIST:
+ if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [age_23-25__AND__priors_1]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.5659080132764344,0.005784666586350212,0.43709198672356564,0.5488151658767773,0.008792666478931677,677439,376944,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_26-45__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5648257881014458,0.005026371367057331,0.4381742118985542,0.5910815939278937,0.03306348234805001,620011,350011,3,"RULELIST:
+ if [not_juvenile-crimes_=0]: [two_year_recid] = True
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.572884569803271,0.005792182657111206,0.43011543019672904,0.5483870967741935,0.044493903250965416,1741227,770410,3,"RULELIST:
+ if [priors_2-3__AND__age_26-45]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else if [juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.5682722754690419,0.00480215174161111,0.4347277245309581,0.5640074822162469,0.03127104188137878,,,,

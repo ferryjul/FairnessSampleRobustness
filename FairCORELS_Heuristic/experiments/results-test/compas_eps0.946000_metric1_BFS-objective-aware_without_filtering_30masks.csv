@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5794215267899478,0.03149834782047295,0.42357847321005215,0.5620853080568721,0.008646125116713366,1224798,598698,3,"RULELIST:
+ if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_2-3]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5851114272166904,0.028535248073141145,0.4178885727833096,0.5981042654028436,0.07866708029574482,1672347,686886,3,"RULELIST:
+ if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_1__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-crimes_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.5848743480322428,0.041705413077525455,0.4181256519677572,0.5639810426540285,0.046093877369536546,399428,221669,3,"RULELIST:
+ if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_18-20__AND__priors_0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5807063285138658,0.032883518222082936,0.42229367148613417,0.5920303605313093,0.056718750601486706,1644196,688124,3,"RULELIST:
+ if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_1]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+4,0.5863948803033894,0.031465249241499876,0.4166051196966106,0.5759013282732448,0.06842055203637123,1621146,690740,3,"RULELIST:
+ if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_1]: [two_year_recid] = False
+else if [juvenile-crimes_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.5833017021712272,0.03321755528694447,0.41969829782877277,0.5784204609836596,0.05170927708397053,,,,

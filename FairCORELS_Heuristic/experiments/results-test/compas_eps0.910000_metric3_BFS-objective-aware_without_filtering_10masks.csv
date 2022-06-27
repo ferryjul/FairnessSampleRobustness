@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6410621147463252,0.0732737050990768,0.36293788525367476,0.6189573459715639,0.02275294889393703,5451912,2453709,4,"RULELIST:
+ if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_26-45__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.6503082029397819,0.06939754827078767,0.35369179706021814,0.6530805687203791,0.18116257683558393,2821609,1182298,4,"RULELIST:
+ if [priors_>3]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_26-45]: [two_year_recid] = False
+else if [priors_2-3__AND__gender_Male]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.6431958274063537,0.08363601366165963,0.3608041725936463,0.6436018957345971,0.021849850316861708,3412516,1545017,4,"RULELIST:
+ if [priors_2-3__AND__age_26-45]: [two_year_recid] = False
+else if [priors_>3__AND__gender_Male]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [not_priors_2-3]: [two_year_recid] = False
+else [two_year_recid] = True"
+3,0.6390139843564826,0.06695793603737576,0.3649860156435174,0.6385199240986718,0.10467573976698624,5098732,2289155,4,"RULELIST:
+ if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.6480208580232283,0.07612559102992575,0.3549791419767717,0.6195445920303605,0.15966475385080037,390420,209498,3,"RULELIST:
+ if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_>45__AND__gender_Male]: [two_year_recid] = False
+else if [priors_>3]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.6443201974944344,0.07387815881976512,0.3594798025055656,0.6347408653111145,0.09802117393283385,,,,

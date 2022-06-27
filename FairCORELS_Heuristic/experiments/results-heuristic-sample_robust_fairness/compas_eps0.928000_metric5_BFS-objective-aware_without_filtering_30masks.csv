@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5782361308677099,0.025284090909090895,0.42476386913229014,0.5308056872037915,0.025947837072850755,556816,310289,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_2-3]: [two_year_recid] = True
+else if [priors_>3__AND__charge_degree_Misdemeanor]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.6052631578947368,0.046397383593512975,0.39773684210526317,0.6085308056872037,0.13263394529786438,259489,149307,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__priors_0]: [two_year_recid] = False
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [age_23-25__AND__priors_1]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.5851114272166904,0.03570298558465057,0.4178885727833096,0.5829383886255924,0.0614488076026537,399524,222659,3,"RULELIST:
+ if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5823654894524769,0.03704563851303355,0.4206345105475231,0.5958254269449715,0.07304283170602854,406965,229885,3,"RULELIST:
+ if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [gender_Male__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5899502251718417,0.03347995710089069,0.4130497748281583,0.5531309297912713,0.06519105312208762,437197,243002,3,"RULELIST:
+ if [not_juvenile-crimes_=0]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5881852861206911,0.035582011140235736,0.4148147138793089,0.5742462476505661,0.071652894960297,,,,

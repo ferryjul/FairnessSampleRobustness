@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5761024182076814,0.015638528138528063,0.4268975817923186,0.5308056872037915,0.0265552302627583,672553,378220,3,"RULELIST:
+ if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [priors_>3__AND__charge_degree_Misdemeanor]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5820293978188715,0.03275228429818944,0.4209706021811285,0.5933649289099526,0.09542308374908803,1659626,686570,3,"RULELIST:
+ if [priors_1__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.5829777145566619,0.026600916074800085,0.4200222854433381,0.5753554502369668,0.08526089295320072,459962,259107,3,"RULELIST:
+ if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.576202891680493,0.026204523585043216,0.426797108319507,0.5768500948766604,0.06952080928248583,862793,461303,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [gender_Male__AND__age_26-45]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-crimes_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5847357193647784,0.03526741999160676,0.4182642806352216,0.5351043643263758,0.061432121776949344,482121,270971,3,"RULELIST:
+ if [priors_>3__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5804096283256973,0.027292734417633514,0.42259037167430274,0.5622961051107493,0.06763842760489644,,,,

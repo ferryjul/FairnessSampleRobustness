@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8112389528097382,0.0025932208623291597,0.19276104719026177,0.8096032010670223,0.05550642338484457,1991999,427695,4,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [BILL_AMT1_very_low]: [default_payment_next_month] = False
+else if [PAY_4_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = True
+else if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+1,0.8102880486889824,0.0021059956781305234,0.1937119513110176,0.8149074537268635,0.0016300834715157198,2440061,572494,4,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [BILL_AMT1_very_low]: [default_payment_next_month] = False
+else if [not_PAY_AMT1_very_low]: [default_payment_next_month] = True
+else if [PAY_6_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+2,0.8113718787777732,0.0017294725569717562,0.19262812122222683,0.8084042021010506,0.008866155157715272,2061125,469344,4,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [BILL_AMT1_very_low]: [default_payment_next_month] = False
+else if [not_PAY_AMT1_very_low]: [default_payment_next_month] = True
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+3,0.8084121889199216,0.0025983015325425907,0.1955878110800784,0.8120727030181758,0.01681209740052081,2117212,459635,4,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_4_Pay_delay>=1]: [default_payment_next_month] = True
+else if [BILL_AMT1_very_low]: [default_payment_next_month] = False
+else if [BILL_AMT4_low]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+4,0.8121222226853975,0.0010373096871340026,0.19187777731460254,0.807570451892613,0.002540650406504086,2043077,458103,4,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [BILL_AMT1_very_low]: [default_payment_next_month] = False
+else if [not_PAY_AMT1_very_low]: [default_payment_next_month] = True
+else if [PAY_6_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+Average,0.8106866583763626,0.0020128600634216065,0.19331334162363742,0.810511602361145,0.01707108196422009,,,,

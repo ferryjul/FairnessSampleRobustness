@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7735967272325213,0.003883495145631022,0.22940327276747874,0.7732900943396226,0.007194244604316502,802972,415422,3,"RULELIST:
+ if [workclass_otherGov]: [income:>50K] = False
+else if [not_hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.7743706925146501,0.0037523452157598447,0.22862930748534993,0.7701945754716981,0.008264462809917328,1013143,502291,3,"RULELIST:
+ if [workclass_otherGov]: [income:>50K] = False
+else if [not_hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7962703619075698,0.006095121453357777,0.20772963809243017,0.7965501990269792,0.05203515263644776,6761646,2410334,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else if [occupation_other]: [income:>50K] = False
+else if [not_workclass_selfEmployed]: [income:>50K] = False
+else if [capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else [income:>50K] = True"
+3,0.7818235424191052,0.0012527249233075244,0.22117645758089477,0.7896211116025358,0.10211773151471637,747029,385194,3,"RULELIST:
+ if [workclass_private__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [age_-inf_to_21.5]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.7784698164664259,0.008887902987281926,0.22453018353357412,0.7738463806575262,0.047251332965618675,754878,379463,3,"RULELIST:
+ if [not_workclass_private]: [income:>50K] = False
+else if [occupation_other__AND__hoursPerWeek_-inf_to_34.5]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.7809062281080544,0.004774317945067619,0.22229377189194555,0.7807004722196724,0.043372584906203326,,,,

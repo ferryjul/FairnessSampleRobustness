@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6458036984352774,0.09899711171460618,0.3581963015647226,0.633175355450237,0.08770494995521283,4430405,1894449,4,"RULELIST:
+ if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else if [not_priors_2-3]: [two_year_recid] = False
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else [two_year_recid] = True"
+1,0.6477003319108582,0.09825460512267215,0.3562996680891418,0.6464454976303318,0.23127132180394788,3664596,1600296,4,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__priors_0]: [two_year_recid] = False
+else if [priors_1__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.6351351351351351,0.09875820204500296,0.3688648648648649,0.6549763033175355,0.0922718307333692,4962881,2286243,4,"RULELIST:
+ if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_2-3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.646124674093387,0.09984960778522095,0.357875325906613,0.6394686907020873,0.17451621108654392,4436823,1864338,4,"RULELIST:
+ if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [priors_2-3__AND__charge_degree_Felony]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.6231334439440626,0.08755459533394472,0.37986655605593744,0.6252371916508539,0.0960434913923286,201500,119109,3,"RULELIST:
+ if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else if [not_priors_2-3]: [two_year_recid] = False
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.639579456703744,0.09668282440028939,0.36422054329625597,0.6398606077502091,0.13636156099428048,,,,

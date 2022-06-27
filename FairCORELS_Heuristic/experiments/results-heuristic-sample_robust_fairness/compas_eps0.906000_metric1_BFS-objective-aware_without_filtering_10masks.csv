@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6031294452347084,0.0759150374748358,0.39987055476529165,0.5876777251184834,0.0036414565826330403,367980,204024,3,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: [two_year_recid] = False
+else if [priors_1__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else [two_year_recid] = True"
+1,0.622569938359412,0.0829543920792975,0.380430061640588,0.6208530805687204,0.1802721088435374,208432,122260,3,"RULELIST:
+ if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.6002844950213371,0.08107851183663634,0.40271550497866293,0.5800947867298578,0.055049576855241505,542145,294932,3,"RULELIST:
+ if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+3,0.6183929841194595,0.08493175347669207,0.38460701588054047,0.618595825426945,0.1344866479580249,1205504,523045,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.6034605356719602,0.07122000476838282,0.3995394643280398,0.5645161290322581,0.10336129658163556,615241,329780,3,"RULELIST:
+ if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.6095674796813755,0.0792199399271689,0.3934325203186246,0.5943475093752528,0.09536221736421448,,,,

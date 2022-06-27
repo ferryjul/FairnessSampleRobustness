@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7822577672944385,0.0005924672027084465,0.22074223270556148,0.7783018867924528,0.039982521302163065,596750,312047,3,"RULELIST:
+ if [education_hs_grad__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else if [education_hs_grad__AND__hoursPerWeek_40.5_to_inf]: [income:>50K] = True
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.7644197103158515,0.0,0.23858028968414846,0.7629716981132075,0.0,577627,295658,3,"RULELIST:
+ if [not_education_bachelors]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__workclass_otherGov]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7872410997272794,0.00011957074103974286,0.2157589002727206,0.787704555506413,0.07820512820512826,902657,425659,3,"RULELIST:
+ if [workclass_private__AND__occupation_other]: [income:>50K] = False
+else if [occupation_blueCollar__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7786172329918184,0.0005993329164061256,0.2243827670081816,0.7868199911543565,0.08547430830039526,1182077,561440,3,"RULELIST:
+ if [capitalLoss_-inf_to_1534.0__AND__occupation_other]: [income:>50K] = False
+else if [workclass_private__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.7652023291811012,0.0,0.2377976708188988,0.7598407784166298,0.0,796014,404778,3,"RULELIST:
+ if [not_education_bachelors]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__workclass_otherGov]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.7755476279020979,0.00026227417203086303,0.22745237209790217,0.7751277819966119,0.040732391561537316,,,,

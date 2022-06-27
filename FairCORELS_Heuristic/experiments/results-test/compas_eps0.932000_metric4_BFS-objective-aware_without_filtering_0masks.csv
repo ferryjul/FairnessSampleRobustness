@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6311047889995258,0.06324404761904762,0.3718952110004742,0.5962085308056873,0.07810491879892512,134910,79928,3,"RULELIST:
+ if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else if [priors_2-3]: [two_year_recid] = True
+else if [not_age_18-20]: [two_year_recid] = False
+else [two_year_recid] = True"
+1,0.6346609767662399,0.06780965867583755,0.3683390232337601,0.6265402843601896,0.18536412218256393,138305,81717,3,"RULELIST:
+ if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [not_priors_2-3]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.6088193456614509,0.0675907186734519,0.3941806543385491,0.6322274881516587,0.07681549220010764,300868,171816,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__priors_0]: [two_year_recid] = False
+else if [age_26-45__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [priors_1__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+3,0.6319032946195781,0.06646456538453732,0.37109670538042194,0.6242884250474383,0.15377541237012543,130210,77339,3,"RULELIST:
+ if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [priors_2-3]: [two_year_recid] = True
+else if [age_18-20__AND__juvenile-crimes_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.6112822943825551,0.06448855246592161,0.3917177056174449,0.6043643263757116,0.005234544889717252,1293864,569102,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.6235541400858698,0.0659195085637592,0.37944585991413005,0.616725810948137,0.09985889808828788,,,,

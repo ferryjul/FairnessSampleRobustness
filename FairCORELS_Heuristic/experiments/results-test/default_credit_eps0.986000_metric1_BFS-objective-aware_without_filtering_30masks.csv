@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7978155744538936,0.0075979830858205685,0.20518442554610639,0.8011003667889296,0.016469241096106764,651642,289394,3,"RULELIST:
+ if [AGE_middle]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_5_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+1,0.7977823168952437,0.010705092748896763,0.2052176831047563,0.7973986993496749,0.009376525290929173,662194,296439,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [BILL_AMT5_low]: [default_payment_next_month] = False
+else if [PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+2,0.7998249197548877,0.009521660112083302,0.20317508024511233,0.8029014507253627,0.01614287068090782,811856,341859,3,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_5_Pay_duly]: [default_payment_next_month] = False
+else if [AGE_middle]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+3,0.8034515819750719,0.010678754561892045,0.20054841802492807,0.7978989494747374,0.012277054356771386,5183884,2041132,4,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_5_Pay_delay>=1]: [default_payment_next_month] = True
+else if [not_AGE_very_low]: [default_payment_next_month] = False
+else if [PAY_AMT4_very_low]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+4,0.7989912043019718,0.009283024627427042,0.2040087956980282,0.7942304485576122,0.011036255620250922,1002511,393493,3,"RULELIST:
+ if [BILL_AMT6_middle]: [default_payment_next_month] = False
+else if [PAY_6_Pay_duly__AND__PAY_5_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+Average,0.7995731194762137,0.009557303027223945,0.20362688052378627,0.7987059829792634,0.013060389408993211,,,,

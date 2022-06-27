@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5844001896633476,0.04153303478674264,0.4185998103366524,0.5696682464454976,0.004052287581699343,1280760,605290,3,"RULELIST:
+ if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [priors_>3]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5917496443812233,0.03431564799484432,0.41125035561877665,0.590521327014218,0.10808644847732801,728143,385239,3,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: [two_year_recid] = False
+else if [priors_1__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.5905642484589853,0.051457743509427126,0.41243575154101475,0.5658767772511848,0.04780942923626445,399914,221879,3,"RULELIST:
+ if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.584261673382318,0.03555936775883495,0.41873832661768196,0.6015180265654649,0.05045943958763999,1588680,664355,3,"RULELIST:
+ if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_1__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-crimes_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+4,0.5923204550841432,0.03389969566497904,0.4106795449158568,0.5540796963946869,0.07349198196655825,407894,229457,3,"RULELIST:
+ if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5886592421940035,0.03935309794296561,0.4143407578059965,0.5763328147342105,0.056779917369898014,,,,

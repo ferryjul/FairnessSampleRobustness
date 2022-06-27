@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7850175087543771,0.0017690594695025132,0.21798249124562286,0.7915971990663555,0.018497085048010953,545370,310699,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [not_PAY_AMT1_high]: [default_payment_next_month] = False
+else if [PAY_3_Pay_duly__AND__PAY_5_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+1,0.7846096127391721,0.0023438151477247387,0.21839038726082793,0.7910621977655494,0.001194115655944252,675693,369600,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else if [not_BILL_AMT3_high]: [default_payment_next_month] = False
+else if [PAY_5_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+2,0.7863187294176498,0.0008112179525008312,0.2166812705823502,0.7903951975987994,0.00336201619295003,1917783,810866,3,"RULELIST:
+ if [LIMIT_BAL_very_high]: [default_payment_next_month] = False
+else if [not_MARRIAGE_Married]: [default_payment_next_month] = False
+else if [PAY_5_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+3,0.7877360456876068,0.00313559575439859,0.2142639543123932,0.7777221944305486,0.004943699069686799,15619,12107,2,"RULELIST:
+ if [not_PAY_AMT1_middle]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+4,0.7860269290091292,0.005923824021121377,0.21697307099087082,0.7827246956811739,0.0014552538211868825,1116554,553667,3,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else if [not_BILL_AMT3_middle]: [default_payment_next_month] = False
+else if [PAY_2_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+Average,0.785941765121587,0.00279670246904961,0.21685823487841302,0.7867002969084854,0.005890433957555783,,,,

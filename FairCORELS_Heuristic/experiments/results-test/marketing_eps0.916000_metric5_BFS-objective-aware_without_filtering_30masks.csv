@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.900728597449909,0.05094093255744914,0.10327140255009104,0.9005464480874317,0.09960093538711812,8772985,1753693,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [marital_single]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.901578627808136,0.05224682118975843,0.10242137219186398,0.8971463266545234,0.09046257967014915,8162551,1595843,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [marital_single]: [subscribed] = False
+else if [not_duration_very_high]: [subscribed] = False
+else [subscribed] = True"
+2,0.8993321190042501,0.06175686047535767,0.10466788099574986,0.904675166970249,0.05829027937236897,1932333,453155,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else if [default_yes]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+3,0.9015482695810565,0.058648000935235034,0.10245173041894351,0.8918032786885246,0.05347001248640593,2061177,467809,4,"RULELIST:
+ if [contact_cellular__AND__poutcome_failure]: [subscribed] = False
+else if [contact_telephone]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [duration_very_low]: [subscribed] = False
+else [subscribed] = True"
+4,0.9004857316332726,0.05289890191177038,0.10351426836672739,0.9000607164541591,0.09405246494798736,1627638,369790,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [default_yes]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else if [duration_very_low]: [subscribed] = False
+else [subscribed] = True"
+Average,0.9007346690953248,0.05529830341391413,0.10326533090467516,0.8988463873709776,0.0791752543728059,,,,

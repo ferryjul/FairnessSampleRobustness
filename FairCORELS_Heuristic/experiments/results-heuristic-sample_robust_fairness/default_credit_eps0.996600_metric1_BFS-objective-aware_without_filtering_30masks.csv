@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7851008837752209,0.001163794356127755,0.2168991162247791,0.7882627542514171,0.007864041138843599,17342,12621,2,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT1_middle]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+1,0.786485472508233,0.0016413424894076573,0.21651452749176703,0.7942304485576122,0.006743157938986034,667888,364064,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT1_middle]: [default_payment_next_month] = True
+else if [BILL_AMT6_high]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+2,0.7868189586893993,0.0012422128175638147,0.21618104131060067,0.7878939469734867,0.0025103838499640554,707061,392667,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [not_LIMIT_BAL_low]: [default_payment_next_month] = False
+else if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+3,0.7888198757763976,0.002020106836526439,0.21418012422360244,0.7793896948474237,0.0017903356660499276,400727,236613,3,"RULELIST:
+ if [not_PAY_AMT1_middle]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [BILL_AMT1_very_low]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+4,0.7877777314602527,0.0004464261704114729,0.21522226853974735,0.7842254460563615,0.0006871998502426258,520407,296041,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [not_BILL_AMT5_high]: [default_payment_next_month] = False
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+Average,0.7870005844419007,0.0013027765340074278,0.21579941555809928,0.7868004581372603,0.003919023688817249,,,,

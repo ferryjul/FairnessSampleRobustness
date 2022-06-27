@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5533428165007113,0.0024350649350649567,0.44965718349928874,0.5687203791469194,0.025528683257389884,1030501,553236,3,"RULELIST:
+ if [age_18-20]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else if [priors_2-3__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5597439544807966,0.0024332130775368555,0.4432560455192034,0.5829383886255924,0.06570566543747913,1645668,772880,3,"RULELIST:
+ if [age_26-45]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Male]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5547652916073968,0.0034183097603041057,0.44823470839260315,0.5440758293838862,0.017303209610901926,1844319,833935,3,"RULELIST:
+ if [age_26-45]: [two_year_recid] = False
+else if [priors_2-3__AND__charge_degree_Misdemeanor]: [two_year_recid] = True
+else if [gender_Male__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5532116615311685,0.0034103182136921983,0.4497883384688315,0.547438330170778,0.043947013129316925,1946637,842025,3,"RULELIST:
+ if [age_26-45]: [two_year_recid] = False
+else if [age_21-22__AND__gender_Female]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5634036501540649,0.0051603276497194095,0.4395963498459351,0.5246679316888045,0.01766076421248841,1019235,546633,3,"RULELIST:
+ if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else if [age_23-25__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5568934748548277,0.0033714467272635052,0.4461065251451724,0.5535681718031962,0.034029067129515256,,,,

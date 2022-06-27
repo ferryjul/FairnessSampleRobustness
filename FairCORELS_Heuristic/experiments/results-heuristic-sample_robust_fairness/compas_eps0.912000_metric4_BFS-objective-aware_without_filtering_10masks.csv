@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6109530583214794,0.04638798701298702,0.3920469416785206,0.5734597156398105,0.07345094831950777,1296444,549302,3,"RULELIST:
+ if [priors_2-3]: [two_year_recid] = True
+else if [age_23-25__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.6339497392128971,0.06744102408487584,0.3690502607871029,0.633175355450237,0.15793417601703774,129257,75924,3,"RULELIST:
+ if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [priors_2-3]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.6052631578947368,0.0599130407769492,0.39773684210526317,0.628436018957346,0.00584543661466741,1317212,575726,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.6259777198388243,0.0563801698733053,0.37702228016117567,0.6091081593927894,0.09750132075840878,185096,109492,3,"RULELIST:
+ if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else if [priors_2-3]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5977719838824366,0.061006885617918116,0.4052280161175634,0.5607210626185958,0.10863622242932591,1118046,531039,3,"RULELIST:
+ if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else if [age_18-20__AND__priors_0]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.6147831318300748,0.058225821473207096,0.3882168681699252,0.6009800624117558,0.08867362082778953,,,,

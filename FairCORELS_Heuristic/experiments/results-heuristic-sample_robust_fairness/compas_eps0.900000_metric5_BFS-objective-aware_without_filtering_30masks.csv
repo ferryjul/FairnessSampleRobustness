@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6130867709815079,0.06675760177816487,0.3899132290184921,0.5971563981042654,0.04192227796741943,1067502,508818,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.6332385016595543,0.06121330769218092,0.3697614983404457,0.6255924170616114,0.1762862397754223,140317,82883,3,"RULELIST:
+ if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5934091986723565,0.0669418035927345,0.4095908013276435,0.5838862559241706,0.11296395911780521,815043,421305,3,"RULELIST:
+ if [age_18-20]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+3,0.6183929841194595,0.05990785649718611,0.38460701588054047,0.618595825426945,0.146300898115718,1208068,521261,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5958757999525954,0.035376222080606756,0.40712420004740457,0.5702087286527514,0.09700217458838145,478817,274033,3,"RULELIST:
+ if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [gender_Male__AND__age_26-45]: [two_year_recid] = False
+else if [priors_>3]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.6108006510770947,0.058039358328174626,0.39219934892290526,0.5990879250339487,0.1148951099129493,,,,

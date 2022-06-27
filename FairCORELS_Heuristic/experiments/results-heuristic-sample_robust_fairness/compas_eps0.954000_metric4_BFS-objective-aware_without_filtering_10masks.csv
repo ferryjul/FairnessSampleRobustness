@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5765765765765766,0.04092261904761907,0.42642342342342343,0.5696682464454976,0.000856797912528684,445270,250223,3,"RULELIST:
+ if [gender_Male__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else if [priors_2-3__AND__charge_degree_Felony]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.622569938359412,0.044739651820133286,0.380430061640588,0.6208530805687204,0.13582851846739363,209889,123603,3,"RULELIST:
+ if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.577524893314367,0.017006407461142792,0.42547510668563304,0.5706161137440758,0.06707907477138253,475357,270661,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.6086750414790235,0.0236952291621102,0.3943249585209765,0.6081593927893738,0.10840002348014949,1438478,649490,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5799952595401754,0.0062638916952919566,0.4230047404598246,0.5398481973434535,0.05116495806150978,1721296,742218,3,"RULELIST:
+ if [priors_1__AND__gender_Female]: [two_year_recid] = False
+else if [gender_Male__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-crimes_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.5930683418539109,0.02652555983725946,0.4099316581460891,0.5818290061782243,0.07266587453859283,,,,

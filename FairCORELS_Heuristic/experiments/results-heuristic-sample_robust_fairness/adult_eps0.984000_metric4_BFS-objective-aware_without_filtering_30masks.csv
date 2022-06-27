@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7877123797589651,0.00035429206209069974,0.21528762024103487,0.7871462264150944,0.032817738976402944,576415,287035,3,"RULELIST:
+ if [age_29.5_to_35.5]: [income:>50K] = False
+else if [education_hs_grad__AND__occupation_sales]: [income:>50K] = False
+else if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.8075774886669369,0.0022190328595816933,0.1964225113330631,0.808372641509434,0.0005573947706236648,5865187,2204795,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else if [hoursPerWeek_40.5_to_inf__AND__workclass_selfEmployed]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__workclass_selfEmployed]: [income:>50K] = False
+else if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7705830323579274,0.00016125036967507,0.23241696764207265,0.7782692024178093,0.044662536323263335,304661,155999,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [workclass_private__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = True
+else if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7770693594751972,0.0016899361637741084,0.22593064052480283,0.7829868789621112,0.0100068281886464,1480528,562409,3,"RULELIST:
+ if [capitalLoss_-inf_to_1534.0__AND__hoursPerWeek_-inf_to_34.5]: [income:>50K] = False
+else if [workclass_private__AND__hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else [income:>50K] = True"
+4,0.7753003611704872,0.0032409955359872233,0.22769963882951283,0.7713401149933657,0.01268206178039144,174087,97222,3,"RULELIST:
+ if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else if [workclass_private__AND__capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else if [workclass_private__AND__occupation_professional]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.7836485242859027,0.001533101398221759,0.21955147571409722,0.7856230128595629,0.020145312007865557,,,,

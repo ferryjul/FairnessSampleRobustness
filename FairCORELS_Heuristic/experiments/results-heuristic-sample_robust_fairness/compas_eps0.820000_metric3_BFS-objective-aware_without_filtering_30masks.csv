@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6685633001422475,0.14322444401533296,0.3354366998577525,0.6635071090047393,0.10503043039881438,1105129,320669,4,"RULELIST:
+ if [priors_>3]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else if [priors_2-3__AND__age_21-22]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.6688003793266951,0.14034164034164034,0.3351996206733049,0.6796208530805687,0.22282319345627027,1146409,342135,4,"RULELIST:
+ if [priors_>3]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else if [gender_Male__AND__age_21-22]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.6614509246088194,0.14006840534981918,0.3425490753911806,0.6654028436018957,0.044036649689618096,1245851,390658,4,"RULELIST:
+ if [priors_>3]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.6679307892865608,0.13728701534753068,0.3360692107134392,0.6660341555977229,0.12851840395917105,1133838,336384,4,"RULELIST:
+ if [age_18-20]: [two_year_recid] = True
+else if [priors_2-3__AND__age_21-22]: [two_year_recid] = True
+else if [priors_>3]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.6776487319269969,0.14396544592027397,0.3263512680730031,0.6451612903225806,0.20741467834491087,1136305,335456,4,"RULELIST:
+ if [priors_>3]: [two_year_recid] = True
+else if [gender_Male__AND__age_21-22]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else if [gender_Male__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.668878825058264,0.14097739019491942,0.3351211749417361,0.6639452503215014,0.14156467116975693,,,,

@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6467520151730678,0.11218885281385282,0.3572479848269322,0.614218009478673,0.08523191961677767,2990551,1316023,4,"RULELIST:
+ if [gender_Male__AND__age_18-20]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.6495969653864391,0.11028468031064209,0.35440303461356093,0.6388625592417062,0.21579144564295716,3503511,1445732,4,"RULELIST:
+ if [priors_1__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__priors_0]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: [two_year_recid] = True
+else if [priors_2-3__AND__age_26-45]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.6398767188240873,0.11285369611214724,0.36412328117591275,0.6540284360189573,0.10584543661466744,5442481,2442829,4,"RULELIST:
+ if [age_18-20]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.6465987200758474,0.11003208517565677,0.3574012799241526,0.6375711574952562,0.18332126714540087,3973387,1666736,4,"RULELIST:
+ if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else if [age_26-45]: [two_year_recid] = False
+else if [priors_2-3__AND__gender_Male]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.6250296278739038,0.10684365139810686,0.3779703721260962,0.6328273244781784,0.08178005591798698,1071319,465385,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else if [priors_1__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [juvenile-crimes_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.6415708094666691,0.11044059316208114,0.3622291905333309,0.6355014973425542,0.13439402498755804,,,,

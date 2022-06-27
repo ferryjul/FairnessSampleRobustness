@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6474632527264106,0.14250203954666307,0.3565367472735894,0.6274881516587678,0.1290569561157796,3237864,1371312,4,"RULELIST:
+ if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_2-3__AND__charge_degree_Felony]: [two_year_recid] = True
+else if [not_age_18-20]: [two_year_recid] = False
+else [two_year_recid] = True"
+1,0.6564722617354196,0.1339314421956475,0.3475277382645804,0.6454976303317536,0.23973128882389005,1519626,547434,4,"RULELIST:
+ if [priors_>3]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.6401137980085349,0.13457726567676648,0.36388620199146515,0.6398104265402843,0.13552859747150625,5337737,2332787,4,"RULELIST:
+ if [priors_>3__AND__charge_degree_Felony]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_26-45__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__gender_Male]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.6496800189618392,0.14539606491068996,0.35431998103816076,0.6480075901328273,0.2189334534381941,3714690,1534021,4,"RULELIST:
+ if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [age_>45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__charge_degree_Felony]: [two_year_recid] = True
+else if [gender_Male__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.6368807774354113,0.12624246759135893,0.36611922256458873,0.6242884250474383,0.08595560120983853,238071,131032,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [juvenile-crimes_=0__AND__priors_0]: [two_year_recid] = False
+else if [priors_1__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.6461220217735231,0.13652985598422518,0.35767797822647684,0.6370184447422143,0.16184117941184173,,,,

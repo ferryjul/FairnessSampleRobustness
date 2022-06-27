@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.903885853066181,0.06690120504263183,0.10011414693381904,0.9050394656952034,0.06234069098057729,1267887,260761,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.9040680024286581,0.06643508906460757,0.09993199757134186,0.9043108682452945,0.06421967734623896,1399323,297778,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+2,0.9031876138433516,0.07044083492245005,0.10081238615664845,0.907832422586521,0.08204445418257703,1229897,265019,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [education_basic.4y]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9054948391013965,0.06864203340663647,0.0985051608986035,0.8966605950212507,0.06382798599830855,1210817,254991,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+4,0.904280510018215,0.06368823963435684,0.09971948998178504,0.900789313904068,0.06814392992647142,1244044,271043,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [cons_price_idx_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9041833636915604,0.06722148041413654,0.09981663630843958,0.9029265330904674,0.06811534768683465,,,,

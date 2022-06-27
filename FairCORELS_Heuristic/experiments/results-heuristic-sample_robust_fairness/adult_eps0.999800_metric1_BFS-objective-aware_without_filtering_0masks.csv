@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7721225076475141,0.0001444263152553249,0.2308774923524859,0.7753537735849056,0.014100328931195602,335031,171568,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else if [age_35.5_to_61.5__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.7723436405852652,6.344613656039666e-05,0.23065635941473484,0.7744693396226415,0.013110306567328242,333641,169652,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else if [age_35.5_to_61.5]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7646863713422275,3.419174107968659e-05,0.2373136286577725,0.767359575409111,0.013544382580026576,24145,12944,2,"RULELIST:
+ if [education_hs_grad__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7703987617011867,0.00010862827428667621,0.2326012382988133,0.7692761315052337,0.008162471513102482,156009,84002,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else if [not_education_masters_doctorate]: [income:>50K] = False
+else if [capitalLoss_-inf_to_1534.0__AND__occupation_whiteCollar]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.766897619223115,0.00012086593684965119,0.23510238077688506,0.7585139318885449,0.013210944979751713,8991,7234,2,"RULELIST:
+ if [education_hs_grad__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.7692897800998617,9.431168080634711e-05,0.2333102199001383,0.7689945504020873,0.012425686914280924,,,,

@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9037340619307832,0.06381896948229865,0.1002659380692168,0.903096539162113,0.06836746018045187,1267198,264903,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [loan_no__AND__poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.9040680024286581,0.06643508906460757,0.09993199757134186,0.9043108682452945,0.06421967734623896,1298064,272607,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+2,0.9031268973891925,0.06360841890423029,0.10087310261080751,0.9080752884031572,0.07559148111695596,1232702,265960,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9054948391013965,0.06864203340663647,0.0985051608986035,0.8966605950212507,0.06382798599830855,1210817,254991,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+4,0.9044930176077717,0.06593510554734425,0.09950698239222833,0.9026108075288403,0.06623032485511465,1247509,271832,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9041833636915605,0.06568792328102344,0.0998166363084396,0.9029508196721311,0.067647385899414,,,,

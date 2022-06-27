@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5395922238027501,0.0029356060606060552,0.46340777619724993,0.5526066350710901,0.015816518665192725,1831215,838674,3,"RULELIST:
+ if [age_21-22__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [gender_Male__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5410146989094358,0.008589621265677604,0.46198530109056424,0.5601895734597157,0.0014198102975685467,1767432,816723,3,"RULELIST:
+ if [priors_2-3__AND__age_21-22]: [two_year_recid] = True
+else if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5459933617828354,0.00034171592016496444,0.4570066382171646,0.5383886255924171,0.02251078884957817,1793379,826974,3,"RULELIST:
+ if [age_21-22__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_2-3__AND__gender_Male]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5394643280398198,0.004586115620008489,0.4635356719601802,0.538899430740038,0.025358561449507877,1703204,798095,3,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [age_23-25__AND__charge_degree_Felony]: [two_year_recid] = True
+else if [age_18-20__AND__priors_0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.550841431618867,0.0023003870245736913,0.452158568381133,0.5094876660341556,0.02216526871699287,1492717,728803,3,"RULELIST:
+ if [age_>45__AND__gender_Male]: [two_year_recid] = False
+else if [age_26-45]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-crimes_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5433812088307416,0.003750689178206161,0.4596187911692584,0.5399143861794833,0.017454189595768037,,,,

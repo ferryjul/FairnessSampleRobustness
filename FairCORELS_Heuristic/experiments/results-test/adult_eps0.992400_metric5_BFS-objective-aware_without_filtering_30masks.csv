@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7572697453285667,0.00037334933682409144,0.24573025467143328,0.7535377358490566,0.014297463149237633,929699,476716,3,"RULELIST:
+ if [education_hs_grad__AND__age_29.5_to_35.5]: [income:>50K] = False
+else if [not_occupation_professional]: [income:>50K] = False
+else if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.7557586702539343,0.000758766074566597,0.24624132974606572,0.7551591981132075,0.01056797964101519,21601,13020,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [hoursPerWeek_40.5_to_inf__AND__age_29.5_to_35.5]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7572418368099064,0.0006510054818263944,0.24575816319009358,0.7598407784166298,0.006965842425571633,965789,486435,3,"RULELIST:
+ if [not_occupation_professional]: [income:>50K] = False
+else if [workclass_private__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7576472322547357,0.0013886676158226807,0.24535276774526427,0.7661801562730355,0.03304607850062402,472751,247781,3,"RULELIST:
+ if [not_hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [not_education_bachelors]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.7596742094788825,0.0013390648365882996,0.24332579052111747,0.7545333923042902,0.006318864012726411,933075,465533,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else if [workclass_private__AND__age_29.5_to_35.5]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.7575183388252051,0.0009021706691256127,0.24528166117479486,0.757850252191244,0.014239245545834977,,,,

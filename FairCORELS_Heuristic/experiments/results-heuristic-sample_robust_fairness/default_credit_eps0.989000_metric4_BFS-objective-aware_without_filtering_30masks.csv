@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7873103218275804,0.00428262021857051,0.21568967817241957,0.7922640880293431,0.023683984910836675,558331,318815,3,"RULELIST:
+ if [PAY_AMT4_very_low]: [default_payment_next_month] = False
+else if [PAY_5_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_4_Pay_duly__AND__PAY_0_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+1,0.7846096127391721,0.0009923748717527436,0.21839038726082793,0.7910621977655494,4.840458488220012e-05,675693,369600,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else if [not_BILL_AMT3_high]: [default_payment_next_month] = False
+else if [PAY_5_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+2,0.7863187294176498,0.0008112179525008312,0.2166812705823502,0.7903951975987994,0.0012484306450930571,1917783,810866,3,"RULELIST:
+ if [LIMIT_BAL_very_high]: [default_payment_next_month] = False
+else if [not_MARRIAGE_Married]: [default_payment_next_month] = False
+else if [PAY_5_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+3,0.7877360456876068,0.00313559575439859,0.2142639543123932,0.7777221944305486,0.0007963873768225271,15619,12107,2,"RULELIST:
+ if [not_PAY_AMT1_middle]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+4,0.7860269290091292,0.0017262437129146324,0.21697307099087082,0.7827246956811739,0.00021953208304581473,1116554,553667,3,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else if [not_BILL_AMT3_middle]: [default_payment_next_month] = False
+else if [PAY_2_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+Average,0.7864003277362277,0.0021896105020274615,0.21639967226377235,0.7868336747010829,0.005199347920136055,,,,

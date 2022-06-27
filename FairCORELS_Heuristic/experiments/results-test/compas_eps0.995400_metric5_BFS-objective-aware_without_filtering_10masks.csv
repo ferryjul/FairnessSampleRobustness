@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5308202939781888,0.004247835497835584,0.47117970602181125,0.5516587677725119,0.0038022813688212928,23327,14740,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [gender_Male__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5286865813181603,0.0006844465423648805,0.47431341868183974,0.5469194312796208,0.0003549525743921089,1963052,867440,3,"RULELIST:
+ if [not_priors_2-3]: [two_year_recid] = False
+else if [age_21-22__AND__charge_degree_Misdemeanor]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__juvenile-felonies_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5346135609293504,0.0012725178710523144,0.4683864390706496,0.5270142180094787,0.00288685673301059,2077221,893817,3,"RULELIST:
+ if [gender_Male__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5316425693292249,0.003951459616195474,0.47135743067077507,0.5351043643263758,0.01050736689690257,2034721,878095,3,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [age_18-20__AND__charge_degree_Felony]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5399383740222802,0.0021449554688592887,0.4620616259777198,0.49335863377609107,0.006644518272425249,23267,14503,2,"RULELIST:
+ if [not_gender_Female]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5331402759154409,0.0024602429992615082,0.46945972408455916,0.5308110830328157,0.004839195169110362,,,,

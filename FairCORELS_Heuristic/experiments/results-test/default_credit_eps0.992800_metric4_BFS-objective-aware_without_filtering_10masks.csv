@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7935217608804402,0.002502332439578314,0.20947823911955976,0.8021007002334112,0.041988168724279906,984836,410584,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT3_middle]: [default_payment_next_month] = True
+else if [PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+1,0.7936554254033098,0.00011367983040966312,0.2093445745966902,0.7942304485576122,0.0013940520446096283,887339,450410,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT3_very_low]: [default_payment_next_month] = False
+else if [PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+2,0.7936137396306641,0.0022931732468494115,0.20938626036933594,0.7902284475571119,0.04104068802399996,248883,160840,3,"RULELIST:
+ if [BILL_AMT1_very_low]: [default_payment_next_month] = False
+else if [PAY_4_Pay_duly__AND__PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT4_high]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+3,0.7878611030055442,0.0009954109371784758,0.21513889699445576,0.7847256961814241,0.018332224808779496,1722789,764619,3,"RULELIST:
+ if [BILL_AMT6_low]: [default_payment_next_month] = False
+else if [PAY_AMT1_very_high]: [default_payment_next_month] = False
+else if [PAY_4_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+4,0.8009921213889699,0.006507473978118239,0.2020078786110301,0.7997331999332999,0.03183439216494477,847009,428354,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT3_middle]: [default_payment_next_month] = True
+else if [PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+Average,0.7939288300617857,0.0024824140864268206,0.20907116993821434,0.7942036984925718,0.026917905153322753,,,,

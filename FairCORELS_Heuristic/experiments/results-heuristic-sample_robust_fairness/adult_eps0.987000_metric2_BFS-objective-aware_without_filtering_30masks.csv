@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7735967272325213,0.003883495145631022,0.22940327276747874,0.7732900943396226,0.007194244604316502,802972,415422,3,"RULELIST:
+ if [workclass_otherGov]: [income:>50K] = False
+else if [not_hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.7743706925146501,0.0037523452157598447,0.22862930748534993,0.7701945754716981,0.008264462809917328,1013301,502505,3,"RULELIST:
+ if [workclass_otherGov]: [income:>50K] = False
+else if [not_hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7872410997272794,0.00011957074103974286,0.2157589002727206,0.787704555506413,0.07820512820512826,841280,395275,3,"RULELIST:
+ if [workclass_private__AND__occupation_other]: [income:>50K] = False
+else if [occupation_blueCollar__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7718729269551117,0.0039447731755424265,0.23112707304488833,0.7801857585139319,0.006802721088435382,804177,413758,3,"RULELIST:
+ if [not_hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [workclass_otherGov]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.7742315913613916,0.005769230769230749,0.22876840863860837,0.770750405425328,0.0,1224023,558594,3,"RULELIST:
+ if [workclass_otherGov]: [income:>50K] = False
+else if [not_hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [not_capitalGain_7073.5_to_inf]: [income:>50K] = False
+else [income:>50K] = True"
+Average,0.7762626075581909,0.003493883009440757,0.22673739244180918,0.7764250778513987,0.020093311341559495,,,,

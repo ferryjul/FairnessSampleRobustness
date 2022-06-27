@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.665244191559981,0.05702191651118105,0.33875580844001896,0.656872037914692,0.08516624040920717,1169739,360614,4,"RULELIST:
+ if [priors_>3]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else if [juvenile-misdemeanors_>0__AND__age_21-22]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.6607396870554765,0.05675954592363264,0.3432603129445235,0.6672985781990521,0.036571056062581486,1384577,478716,4,"RULELIST:
+ if [age_18-20]: [two_year_recid] = True
+else if [age_>45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_>3]: [two_year_recid] = True
+else if [gender_Male__AND__age_21-22]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.6716453295400664,0.05552720003402656,0.3323546704599336,0.6767772511848341,0.13369218500797453,1168562,346631,4,"RULELIST:
+ if [priors_>3]: [two_year_recid] = True
+else if [age_18-20]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else if [gender_Male__AND__age_21-22]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.6679307892865608,0.05449714167306596,0.3360692107134392,0.6660341555977229,0.12201726180402772,1125199,331383,4,"RULELIST:
+ if [age_18-20]: [two_year_recid] = True
+else if [priors_2-3__AND__age_21-22]: [two_year_recid] = True
+else if [priors_>3]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.6522872718653709,0.05425180161085208,0.35171272813462906,0.635673624288425,0.04950980392156856,1908586,797346,4,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else if [age_18-20__AND__juvenile-crimes_=0]: [two_year_recid] = True
+else if [not_priors_>3]: [two_year_recid] = False
+else if [age_>45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.6635694538614911,0.05561152115055166,0.3404305461385089,0.6605311294369453,0.0853913094410719,,,,

@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.900728597449909,0.05094093255744914,0.10327140255009104,0.9005464480874317,0.09960093538711812,7807736,1497115,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [marital_single]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.901578627808136,0.05224682118975843,0.10242137219186398,0.8971463266545234,0.09046257967014915,7995901,1543183,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [marital_single]: [subscribed] = False
+else if [not_duration_very_high]: [subscribed] = False
+else [subscribed] = True"
+2,0.8993017607771706,0.0595350436814005,0.10469823922282939,0.904675166970249,0.07522483735170304,3107781,742888,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [not_education_university.degree]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9015482695810565,0.058648000935235034,0.10245173041894351,0.8918032786885246,0.05347001248640593,2060680,466866,4,"RULELIST:
+ if [contact_cellular__AND__poutcome_failure]: [subscribed] = False
+else if [contact_telephone]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [duration_very_low]: [subscribed] = False
+else [subscribed] = True"
+4,0.9006678809957499,0.05901745973038808,0.1033321190042501,0.9003035822707954,0.09323835368611488,1698255,386401,4,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_very_low]: [subscribed] = False
+else if [marital_divorced]: [subscribed] = True
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+Average,0.9007650273224044,0.05607765161884624,0.1032349726775956,0.8988949605343048,0.08239934371629823,,,,

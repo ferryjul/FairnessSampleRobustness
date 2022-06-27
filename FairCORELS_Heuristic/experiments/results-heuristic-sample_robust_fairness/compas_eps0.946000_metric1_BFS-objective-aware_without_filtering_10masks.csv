@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5858226647700332,0.045436756445847826,0.4171773352299668,0.571563981042654,0.0072268907563025064,1639981,675341,3,"RULELIST:
+ if [priors_1]: [two_year_recid] = False
+else if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+1,0.5917496443812233,0.03431564799484432,0.41125035561877665,0.590521327014218,0.10808644847732801,725567,382655,3,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: [two_year_recid] = False
+else if [priors_1__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.586533902323376,0.04548436464670802,0.416466097676624,0.566824644549763,0.022220657764076404,425796,239896,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [priors_2-3__AND__age_23-25]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5906612941455321,0.03918578054395727,0.41233870585446786,0.594876660341556,0.0943862526128581,447652,253199,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [charge_degree_Felony__AND__priors_0]: [two_year_recid] = False
+else if [priors_1__AND__charge_degree_Felony]: [two_year_recid] = False
+else [two_year_recid] = True"
+4,0.5892391561981513,0.030776638664104794,0.41376084380184874,0.5815939278937381,0.06994236146778518,1698427,697657,3,"RULELIST:
+ if [priors_1__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-crimes_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.5888013323636632,0.03903983765909245,0.41419866763633684,0.5810761081683858,0.06037252221567004,,,,

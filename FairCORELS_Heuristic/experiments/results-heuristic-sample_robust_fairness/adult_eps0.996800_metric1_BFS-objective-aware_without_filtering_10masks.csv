@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7726016290126414,0.0008509442358286545,0.2303983709873586,0.777564858490566,0.017107163512981596,273094,145837,3,"RULELIST:
+ if [education_hs_grad__AND__capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else if [education_hs_grad__AND__workclass_private]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.7714591088342608,6.449355251025857e-05,0.23154089116573917,0.7718160377358491,0.004299779914282403,235445,125217,3,"RULELIST:
+ if [education_hs_grad__AND__capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else if [education_hs_grad__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7652023291811012,0.0004244927565118378,0.2377976708188988,0.7701606958572903,0.007781459738599464,327043,172704,3,"RULELIST:
+ if [education_masters_doctorate]: [income:>50K] = True
+else if [capitalLoss_-inf_to_1534.0__AND__workclass_selfEmployed]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7700302203877054,0.001241460688854834,0.2329697796122946,0.7701606958572903,0.007517681830690445,303601,154998,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else if [workclass_private__AND__capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else if [workclass_private__AND__education_bachelors]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.768703471659173,0.0020162602068832663,0.23429652834082704,0.7630841810408374,0.001895489873871871,746118,376485,3,"RULELIST:
+ if [hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [workclass_private__AND__occupation_blueCollar]: [income:>50K] = False
+else if [capitalGain_-inf_to_5095.5__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else [income:>50K] = True"
+Average,0.7695993518149764,0.0009195302881177703,0.23340064818502365,0.7705572937963666,0.007720314974085156,,,,

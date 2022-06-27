@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5308202939781888,0.0016478363197774404,0.47217970602181125,0.5469194312796208,0.0024649859943977597,1934365,866386,3,"RULELIST:
+ if [juvenile-crimes_=0__AND__gender_Female]: [two_year_recid] = False
+else if [priors_2-3__AND__gender_Female]: [two_year_recid] = True
+else if [juvenile-misdemeanors_>0__AND__age_21-22]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5317686107159791,0.00030385965358586085,0.47023138928402086,0.5507109004739337,0.0033201119753004348,22676,14454,2,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5388809862494073,0.003141753508824771,0.4641190137505927,0.5345971563981042,0.0017155518667279282,1791286,826869,3,"RULELIST:
+ if [age_21-22__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [not_priors_2-3]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5325906612941456,0.0009092851092727958,0.46940933870585444,0.5370018975332068,6.92912658359409e-05,20552,13834,2,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5449158568381133,0.00026646845153780255,0.4580841431618867,0.5066413662239089,0.005216001826171317,1740326,809510,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__gender_Female]: [two_year_recid] = False
+else if [priors_1]: [two_year_recid] = False
+else if [juvenile-crimes_>0__AND__charge_degree_Misdemeanor]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5357952818151668,0.0012538406085997342,0.46680471818483316,0.5351741503817549,0.002557188585686676,,,,

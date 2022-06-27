@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5884305357989569,0.05984848484848482,0.4145694642010431,0.5867298578199052,0.041729952876114806,457955,260979,3,"RULELIST:
+ if [not_juvenile-crimes_=0]: [two_year_recid] = True
+else if [gender_Male__AND__age_26-45]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.6190137505926979,0.04946671611764836,0.3839862494073021,0.6161137440758294,0.15219577606436474,1042867,460317,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5893788525367473,0.051947723217008024,0.41362114746325274,0.5962085308056873,0.03647122108660572,481412,274454,3,"RULELIST:
+ if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [gender_Male__AND__age_26-45]: [two_year_recid] = False
+else if [not_priors_>3]: [two_year_recid] = False
+else [two_year_recid] = True"
+3,0.6183929841194595,0.05990785649718611,0.38460701588054047,0.618595825426945,0.146300898115718,1183591,507007,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.601564351742119,0.059670174238773965,0.40143564825788103,0.562618595825427,0.1363466915191054,647281,346312,3,"RULELIST:
+ if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.6033560949579961,0.056168190983820254,0.39964390504200387,0.5960533107907587,0.10260890793238173,,,,

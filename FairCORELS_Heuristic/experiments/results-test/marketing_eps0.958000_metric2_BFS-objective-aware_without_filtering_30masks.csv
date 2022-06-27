@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9004553734061931,0.003360898736152307,0.10354462659380692,0.9013964784456587,0.11275406504065044,8833354,1981649,4,"RULELIST:
+ if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [cons_price_idx_very_low]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.9038554948391014,0.0032051651582406526,0.10014450516089857,0.9060109289617486,0.05059276822762293,1438488,316678,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [contact_telephone]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+2,0.8972981177899211,0.007401826914022025,0.10670188221007892,0.900789313904068,0.014801178203240006,2541243,807216,4,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [euribor3m_very_low]: [subscribed] = True
+else if [marital_single]: [subscribed] = True
+else if [not_day_of_week_mon]: [subscribed] = False
+else [subscribed] = True"
+3,0.8917425622343655,0.00817257279166772,0.11125743776563446,0.8829386763812993,0.030422374429223797,187951,99959,3,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [month_oct]: [subscribed] = False
+else [subscribed] = True"
+4,0.9014571948998179,0.007141710122634648,0.1025428051001821,0.9029751062537947,0.028545920703232253,9317284,2315422,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [day_of_week_thu]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+Average,0.8989617486338798,0.005856434744543471,0.1048382513661202,0.8988221007893138,0.047423261320793886,,,,

@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8912568306010928,0.007079018060788367,0.11174316939890716,0.8948391013964785,0.007568247674241246,432965,211278,3,"RULELIST:
+ if [loan_no__AND__poutcome_failure]: [subscribed] = False
+else if [not_duration_very_high]: [subscribed] = False
+else if [loan_yes]: [subscribed] = False
+else [subscribed] = True"
+1,0.892835458409229,0.010074871370242494,0.11016454159077105,0.8904675166970248,0.0045410164176992954,1500523,452046,3,"RULELIST:
+ if [job_retired]: [subscribed] = False
+else if [not_campaign_very_low]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+2,0.8910746812386157,0.004194477200568977,0.11192531876138434,0.89605343047966,0.003384654563398035,1715327,499383,3,"RULELIST:
+ if [job_retired]: [subscribed] = False
+else if [not_duration_very_high]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+3,0.8962962962962963,0.005319727033992845,0.10670370370370375,0.8914389799635701,0.002015347148830584,560464,229426,3,"RULELIST:
+ if [marital_single]: [subscribed] = False
+else if [not_nr_employed_very_low]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+4,0.894869459623558,0.004344793392487244,0.10813054037644199,0.8943533697632058,0.006693803708729074,1442109,428074,3,"RULELIST:
+ if [cons_price_idx_low]: [subscribed] = False
+else if [marital_single]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else [subscribed] = False"
+Average,0.8932665452337583,0.006202577411615985,0.10973345476624166,0.8934304796599879,0.004840613902579647,,,,

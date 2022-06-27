@@ -1,0 +1,29 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6296823138928402,0.06020780864184849,0.37331768610715976,0.6161137440758294,0.03236190915827453,183251,111333,3,"RULELIST:
+ if [priors_>3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-crimes_=0__AND__priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+1,0.647226173541963,0.06149097698393474,0.356773826458037,0.6502369668246446,0.15642998886791543,2209741,932033,4,"RULELIST:
+ if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_>3__AND__juvenile-crimes_=0]: [two_year_recid] = True
+else if [age_26-45__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.6401137980085349,0.07705509226796328,0.36388620199146515,0.6407582938388625,0.011184116739888339,3902079,1790487,4,"RULELIST:
+ if [priors_>3__AND__gender_Male]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.6319032946195781,0.06144358154408408,0.37109670538042194,0.6299810246679317,0.09181358902979686,155515,92083,3,"RULELIST:
+ if [priors_>3__AND__charge_degree_Felony]: [two_year_recid] = True
+else if [priors_2-3__AND__gender_Male]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.6404361223038635,0.06492314464603768,0.3625638776961365,0.611954459203036,0.14217758985200846,400471,220014,3,"RULELIST:
+ if [juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_>45__AND__gender_Male]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.637872340473356,0.06502412081677364,0.3655276595266441,0.6298088977220608,0.08679343872957672,,,,

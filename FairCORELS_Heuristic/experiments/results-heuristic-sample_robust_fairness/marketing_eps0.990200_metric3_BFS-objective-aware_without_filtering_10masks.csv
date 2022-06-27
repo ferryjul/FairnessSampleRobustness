@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8977838494231937,0.0069296049290027955,0.10521615057680633,0.9005464480874317,0.009959240089619785,74036,40443,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.8986642380085003,0.008222724393479142,0.10533576199149974,0.8979963570127505,0.0022705082088496477,2277324,681346,4,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [not_duration_high]: [subscribed] = False
+else if [not_nr_employed_low]: [subscribed] = True
+else [subscribed] = False"
+2,0.8997571341833637,0.008534737781169716,0.10424286581663633,0.9044323011536126,0.01479696652872979,1372137,311118,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [pdays_very_low__AND__poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [nr_employed_low]: [subscribed] = False
+else [subscribed] = True"
+3,0.9010625379477839,0.00882405843648485,0.1029374620522161,0.8926533090467517,0.007568809447226945,1981639,448806,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_low]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+4,0.9000303582270796,0.009106271807006157,0.10396964177292045,0.898360655737705,0.013942712036629073,2143598,504707,4,"RULELIST:
+ if [contact_telephone]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [contact_cellular__AND__poutcome_failure]: [subscribed] = False
+else if [nr_employed_very_low]: [subscribed] = True
+else [subscribed] = False"
+Average,0.8994596235579841,0.008323479469428532,0.1043403764420158,0.8987978142076504,0.009707647262211048,,,,

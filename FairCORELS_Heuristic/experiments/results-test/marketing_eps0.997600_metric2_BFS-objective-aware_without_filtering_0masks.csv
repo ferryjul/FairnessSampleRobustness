@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9054037644201579,0.0014129158002706976,0.0985962355798421,0.9061323618700667,0.06669972725018602,1196853,250101,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+1,0.9036429872495446,0.001762306443309214,0.10035701275045539,0.9050394656952034,0.04365476587698802,1781271,393572,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [job_technician]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+2,0.9050394656952034,0.0011924550119245536,0.09896053430479657,0.910261080752884,0.0016969023818338425,1096412,222809,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9057073466909532,0.0014478017919371533,0.0982926533090468,0.899939283545841,0.018985455412493968,1419107,315170,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [job_management]: [subscribed] = False
+else if [not_duration_very_high]: [subscribed] = False
+else [subscribed] = True"
+4,0.9048876745598057,0.0020478674531448915,0.09911232544019433,0.9034608378870674,0.04092873708623235,2194270,482494,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [housing_yes__AND__poutcome_failure]: [subscribed] = False
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else [subscribed] = True"
+Average,0.9049362477231329,0.001572669300117302,0.09906375227686703,0.9049666059502124,0.03439311760154684,,,,

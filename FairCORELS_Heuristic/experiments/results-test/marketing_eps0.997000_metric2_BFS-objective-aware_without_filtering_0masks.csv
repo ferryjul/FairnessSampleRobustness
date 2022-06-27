@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9054037644201579,0.0014129158002706976,0.0985962355798421,0.9061323618700667,0.06669972725018602,1196853,250101,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+1,0.904280510018215,0.0027622158810195474,0.09971948998178504,0.9044323011536126,0.05392167439853279,1452064,314901,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [not_duration_very_high]: [subscribed] = False
+else if [nr_employed_very_low]: [subscribed] = True
+else [subscribed] = False"
+2,0.9050394656952034,0.0011924550119245536,0.09896053430479657,0.910261080752884,0.0016969023818338425,1094408,223107,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9057984213721919,0.002869270232783494,0.0982015786278081,0.9003035822707954,0.02779350164157146,1294433,278785,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else if [loan_no__AND__poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+4,0.9057680631451124,0.002744518446456623,0.09823193685488762,0.904675166970249,0.05206817079087822,2089164,441511,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else [subscribed] = True"
+Average,0.9052580449301761,0.002196275074490983,0.09874195506982389,0.9051608986035216,0.04043599529260047,,,,

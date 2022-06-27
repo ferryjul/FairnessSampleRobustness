@@ -1,0 +1,29 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8977838494231937,0.0069296049290027955,0.10521615057680633,0.9005464480874317,0.009959240089619785,73538,39862,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.8985731633272617,0.009633959499778941,0.10442683667273833,0.8988463873709776,0.003402747338124825,1008510,274295,3,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [cons_conf_idx_very_high]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else [subscribed] = False"
+2,0.9001821493624772,0.009214955450824007,0.1038178506375228,0.9045537340619307,0.014955595970354157,1302917,288327,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [pdays_very_low__AND__poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [nr_employed_very_low]: [subscribed] = True
+else [subscribed] = False"
+3,0.9006375227686703,0.010135232489905955,0.10236247723132974,0.8927747419550698,0.008360366983718545,38346,19591,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+4,0.9004857316332726,0.009740823514759188,0.10351426836672739,0.898360655737705,0.013304346253035074,1643515,379825,4,"RULELIST:
+ if [education_basic.9y]: [subscribed] = False
+else if [pdays_very_low__AND__poutcome_failure]: [subscribed] = False
+else if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+Average,0.899532483302975,0.009130915176854177,0.10386751669702492,0.899016393442623,0.009996459326970478,,,,

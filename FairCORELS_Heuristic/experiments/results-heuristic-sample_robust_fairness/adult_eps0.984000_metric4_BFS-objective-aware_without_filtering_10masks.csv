@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8129583901522132,0.008958131860402285,0.19104160984778684,0.8133844339622641,0.047692478016068796,1672435,485615,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else if [hoursPerWeek_-inf_to_34.5]: [income:>50K] = False
+else if [education_masters_doctorate]: [income:>50K] = True
+else if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.8106364943058268,0.0023200994099451533,0.19336350569417315,0.8116155660377359,0.03356192149179105,1215296,344432,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [education_masters_doctorate__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.8081005380703177,0.0008482798702587058,0.19589946192968233,0.8108506560518944,0.04946543121881686,4066686,1316729,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else if [hoursPerWeek_34.5_to_40.5__AND__workclass_otherGov]: [income:>50K] = False
+else if [education_hs_grad__AND__occupation_whiteCollar]: [income:>50K] = False
+else if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.787683349303457,0.0014432904527205137,0.21531665069654304,0.7947810703228659,0.02389277389277389,1077348,439399,3,"RULELIST:
+ if [workclass_private__AND__occupation_other]: [income:>50K] = False
+else if [workclass_private__AND__education_associates]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.8137023660352326,0.0071803616795361735,0.1902976339647674,0.8058381247235736,0.017621363654144573,1171286,333302,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else if [occupation_blueCollar__AND__age_35.5_to_61.5]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__education_bachelors]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.8066162275734093,0.004150032654572566,0.19718377242659055,0.8072939702196666,0.03444679365471903,,,,

@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5310573731626363,0.00145837857507586,0.47194262683736365,0.547867298578199,0.0062371615312791775,2058545,891404,3,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [charge_degree_Misdemeanor__AND__gender_Female]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.531294452347084,0.0010854149486229855,0.47070554765291606,0.5507109004739337,0.0005761262159586951,18861,13045,2,"RULELIST:
+ if [priors_1__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [age_21-22__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5327169274537695,0.0004917813685922541,0.4702830725462305,0.5279620853080569,0.006880733944954129,2041555,888398,3,"RULELIST:
+ if [gender_Male__AND__juvenile-misdemeanors_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5373311211187485,0.0006627823238146424,0.4656688788812515,0.5464895635673624,0.00020787379750782445,1822474,832711,3,"RULELIST:
+ if [age_21-22__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_26-45]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.542782649917042,0.00027161082516397213,0.45921735008295805,0.5066413662239089,0.008000913085658848,19763,13319,2,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [gender_Male__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.535036504799856,0.0007939936082539429,0.467563495200144,0.5359342428302922,0.004380561715071734,,,,

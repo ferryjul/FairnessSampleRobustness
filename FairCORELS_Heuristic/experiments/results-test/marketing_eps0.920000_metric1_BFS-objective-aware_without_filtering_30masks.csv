@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.903885853066181,0.06690120504263183,0.10011414693381904,0.9050394656952034,0.06234069098057729,1267887,260761,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.904280510018215,0.07180965831077635,0.09971948998178504,0.9010321797207043,0.07721502916991534,1652976,352275,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else [subscribed] = False"
+2,0.9050394656952034,0.07115427848128944,0.09896053430479657,0.910261080752884,0.08162556477733152,1182376,251840,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9054948391013965,0.06864203340663647,0.0985051608986035,0.8966605950212507,0.06382798599830855,1210817,254991,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+4,0.9044930176077717,0.06593510554734425,0.09950698239222833,0.9026108075288403,0.06623032485511465,1245034,271125,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9046387370977534,0.06888845615773567,0.09936126290224649,0.9031208257437765,0.07024791915624948,,,,

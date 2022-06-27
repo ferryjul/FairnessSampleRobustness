@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8977838494231937,0.0270337812578113,0.10521615057680633,0.9005464480874317,0.03009156910686541,74199,38593,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.8985731633272617,0.02867321034998417,0.10442683667273833,0.8973891924711597,0.02349545784171208,69550,35303,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+2,0.8976624165148755,0.034989701780126004,0.10533758348512445,0.9024893746205221,0.034764065760666936,213012,81653,3,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [cons_conf_idx_very_high]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+3,0.9015482695810565,0.03548187213512251,0.10245173041894351,0.8918032786885246,0.03429655175240068,2210612,490661,4,"RULELIST:
+ if [contact_cellular__AND__poutcome_failure]: [subscribed] = False
+else if [contact_telephone]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [duration_very_low]: [subscribed] = False
+else [subscribed] = True"
+4,0.8994231936854887,0.03468344414001838,0.10357680631451127,0.897632058287796,0.0404210879742126,37013,17704,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+Average,0.8989981785063753,0.03217240193261247,0.10420182149362478,0.8979720704310867,0.03261374648717154,,,,

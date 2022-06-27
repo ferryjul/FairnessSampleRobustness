@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.758780820403199,0.0014520699804048617,0.24421917959680095,0.7554540094339622,0.0014982027824021367,1804472,704252,3,"RULELIST:
+ if [occupation_professional__AND__capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else if [age_61.5_to_inf]: [income:>50K] = False
+else if [workclass_private__AND__occupation_professional]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.7592967972579515,0.0012666171765729223,0.24370320274204849,0.7606132075471698,0.001957062336260416,528722,271033,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [occupation_professional__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = True
+else if [hoursPerWeek_34.5_to_40.5__AND__occupation_other]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7590845433773126,0.0008712020952391809,0.24391545662268743,0.7614624797287336,0.0035055257447560093,508267,263985,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [occupation_professional__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = True
+else if [hoursPerWeek_34.5_to_40.5__AND__occupation_other]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7567627331023807,0.00032250681638090403,0.24623726689761927,0.762641898864809,0.0025437176339405372,893227,462865,3,"RULELIST:
+ if [not_hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [not_occupation_professional]: [income:>50K] = False
+else if [capitalGain_-inf_to_5095.5__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else [income:>50K] = True"
+4,0.7579052111741726,0.000479193084943352,0.24409478882582736,0.7523219814241486,0.002717711259160296,6660,5625,2,"RULELIST:
+ if [not_occupation_other]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.7583660210630032,0.0008783178307082441,0.2444339789369967,0.7584987153997647,0.002444443951303879,,,,

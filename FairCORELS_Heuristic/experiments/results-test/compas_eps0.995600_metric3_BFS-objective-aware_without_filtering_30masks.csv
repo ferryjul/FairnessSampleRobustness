@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5384068278805121,0.0003804484032260049,0.4645931721194879,0.5554502369668246,0.0012147863798151097,1866584,848296,3,"RULELIST:
+ if [priors_1__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.541488857278331,0.0008898600447896218,0.46151114272166904,0.5582938388625592,0.006872852233676976,2032541,878843,3,"RULELIST:
+ if [age_23-25__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__age_26-45]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5422000948316738,0.00021108768388284922,0.46079990516832625,0.5374407582938389,0.009810401358163887,2132225,898191,3,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5425456269258118,0.002123771662956951,0.45945437307418824,0.5398481973434535,0.001907413135374781,24798,15114,2,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: [two_year_recid] = False
+else if [age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5532116615311685,0.000586932326390569,0.4497883384688315,0.5028462998102466,0.0036695862277257626,2053658,877279,3,"RULELIST:
+ if [age_23-25__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [age_26-45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5435706136894994,0.0008384200242491991,0.4592293863105006,0.5387758662553847,0.0046950078669513035,,,,

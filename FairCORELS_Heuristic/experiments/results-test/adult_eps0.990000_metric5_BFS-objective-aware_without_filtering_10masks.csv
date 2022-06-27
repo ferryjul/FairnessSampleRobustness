@@ -1,0 +1,29 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.812516124276711,0.0052061009612835996,0.19148387572328895,0.8123525943396226,0.05635952426140323,1258259,371544,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else if [capitalLoss_-inf_to_1534.0__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else if [not_education_masters_doctorate]: [income:>50K] = False
+else [income:>50K] = True"
+1,0.7979950613643902,0.005008503736138925,0.20500493863560976,0.7987912735849056,0.026214444969934414,174940,95429,3,"RULELIST:
+ if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else if [occupation_whiteCollar]: [income:>50K] = False
+else if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7918110120144468,0.003978026343938144,0.2111889879855532,0.795813062066932,0.017002028619990117,437898,218527,3,"RULELIST:
+ if [occupation_professional__AND__hoursPerWeek_40.5_to_inf]: [income:>50K] = True
+else if [workclass_private__AND__occupation_professional]: [income:>50K] = False
+else if [capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else [income:>50K] = True"
+3,0.7703250534384904,0.007151545497535605,0.23267494656150955,0.7754680819696299,0.024440206258388164,206316,109847,3,"RULELIST:
+ if [education_hs_grad__AND__capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else if [occupation_whiteCollar]: [income:>50K] = True
+else if [capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else [income:>50K] = True"
+4,0.8034937716518021,0.007195649394328596,0.20050622834819787,0.7964027716349698,0.028754351879620832,5101922,1758183,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else if [not_age_35.5_to_61.5]: [income:>50K] = False
+else if [capitalLoss_-inf_to_1534.0__AND__workclass_otherGov]: [income:>50K] = False
+else if [education_masters_doctorate]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.7952282045491681,0.005707965186644974,0.2081717954508319,0.795765556719212,0.03055411119786735,,,,

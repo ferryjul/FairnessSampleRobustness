@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.790144842074227,0.012042031961153221,0.21285515792577303,0.7928950471698113,0.023372718267654857,276510,140931,3,"RULELIST:
+ if [education_hs_grad__AND__hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else if [capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else [income:>50K] = True"
+1,0.7892234548335975,0.010066974998652306,0.21377654516640254,0.7908313679245284,0.022327289396698966,251367,129634,3,"RULELIST:
+ if [education_hs_grad__AND__hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7814181469742758,0.0101053251135199,0.2215818530257242,0.7865251363703376,0.0016770677387340366,292250,148612,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else if [age_35.5_to_61.5__AND__hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7890838062946857,0.011343785021489902,0.21391619370531434,0.791390240306649,0.01728006566430909,246343,126621,3,"RULELIST:
+ if [education_hs_grad__AND__hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.7826343333087639,0.013250355393388667,0.22036566669123614,0.7766475011057055,0.008485451557721,415588,205792,3,"RULELIST:
+ if [not_age_35.5_to_61.5]: [income:>50K] = False
+else if [occupation_professional__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = True
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.78650091669711,0.011361694497640799,0.21649908330289006,0.7876578585754064,0.01462851852502359,,,,

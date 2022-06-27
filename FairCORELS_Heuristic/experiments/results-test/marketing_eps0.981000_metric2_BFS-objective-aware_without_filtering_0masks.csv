@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9059502125075896,0.013557820115197239,0.09804978749241045,0.9066180935033394,0.056437918289881095,1068356,204225,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+1,0.9057984213721919,0.014048195306745281,0.0982015786278081,0.9072252580449301,0.05561206174464528,1465363,286291,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+2,0.9050394656952034,0.0011924550119245536,0.09896053430479657,0.910261080752884,0.0016969023818338425,1092736,223317,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9072252580449301,0.009474590869939736,0.09677474195506985,0.901517911353977,0.03751937984496123,1083958,219255,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+4,0.9064055859137826,0.008179100298967068,0.09759441408621738,0.9047965998785671,0.03549223607335894,1078131,220890,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9060837887067394,0.009290432320554775,0.09791621129326047,0.9060837887067394,0.03735169966693608,,,,

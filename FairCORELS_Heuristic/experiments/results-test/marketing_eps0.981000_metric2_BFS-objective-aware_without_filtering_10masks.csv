@@ -1,0 +1,19 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9020643594414086,0.007340445993188949,0.10193564055859139,0.9038251366120219,0.06595502881727411,2900597,916722,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [cons_price_idx_very_low]: [subscribed] = False
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else [subscribed] = True"
+1,0.892896174863388,0.001800535227595046,0.11010382513661199,0.8933819064966606,0.025544630807788682,210985,108707,3,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_nr_employed_very_low]: [subscribed] = False
+else if [loan_no__AND__contact_cellular]: [subscribed] = True
+else [subscribed] = False"
+2,0.8862477231329691,0.0,0.11375227686703093,0.8916818457802065,0.0,0,0,0,"RULELIST:
+[subscribed] = False"
+3,0.8885245901639345,0.0,0.11147540983606552,0.8825743776563448,0.0,0,0,0,"RULELIST:
+[subscribed] = False"
+4,0.8873406193078324,0.0,0.11265938069216763,0.8873102610807528,0.0,0,0,0,"RULELIST:
+[subscribed] = False"
+Average,0.8914146933819065,0.001828196244156799,0.1099853066180935,0.8917547055251973,0.018299931925012558,,,,

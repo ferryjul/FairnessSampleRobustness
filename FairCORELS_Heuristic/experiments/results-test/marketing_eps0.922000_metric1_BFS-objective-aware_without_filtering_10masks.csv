@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.903885853066181,0.06690120504263183,0.10011414693381904,0.9050394656952034,0.06234069098057729,1267887,260761,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.9044930176077717,0.07346136964359601,0.09950698239222833,0.9047965998785671,0.07607940651170086,1654172,352471,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [day_of_week_mon]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+2,0.9050394656952034,0.07115427848128944,0.09896053430479657,0.910261080752884,0.08162556477733152,1182376,251840,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9072252580449301,0.07582548837902532,0.09677474195506985,0.901517911353977,0.06317876098101567,1161316,241982,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+4,0.9044930176077717,0.06593510554734425,0.09950698239222833,0.9026108075288403,0.06623032485511465,1245034,271125,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9050273224043718,0.07065548941877738,0.09897267759562842,0.9048451730418943,0.069890949621148,,,,

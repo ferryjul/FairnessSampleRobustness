@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7851842587960647,0.0028053833863967564,0.21781574120393532,0.7872624208069356,0.04284550754458161,534670,304479,3,"RULELIST:
+ if [not_PAY_0_Pay_delay>=1]: [default_payment_next_month] = False
+else if [PAY_AMT1_middle]: [default_payment_next_month] = True
+else if [BILL_AMT2_low]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+1,0.785860185918546,0.004007839543881082,0.217139814081454,0.7862264465566117,0.02536400247831483,701914,387498,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [AGE_middle]: [default_payment_next_month] = False
+else if [BILL_AMT3_middle]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+2,0.7895702196840219,0.0025579916271203026,0.21342978031597815,0.7922294480573621,0.0027507793874931297,873650,469439,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT6_very_low]: [default_payment_next_month] = False
+else if [PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+3,0.7874025595064404,0.005131913108035586,0.21559744049355956,0.7795564448891112,0.010147375422260407,1008142,493871,3,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else if [not_BILL_AMT4_middle]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+4,0.7941973404477052,0.004182646234838546,0.20880265955229482,0.7922294480573621,0.005064918773129312,1069751,539678,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT3_very_low]: [default_payment_next_month] = False
+else if [PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+Average,0.7884429128705557,0.0037371547800544545,0.21455708712944438,0.7875008416734766,0.017234516721155856,,,,

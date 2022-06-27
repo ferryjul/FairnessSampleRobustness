@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7814323828580957,0.0006153945954216877,0.22156761714190432,0.786428809603201,0.0105667009602195,1514777,761202,3,"RULELIST:
+ if [PAY_AMT3_middle]: [default_payment_next_month] = False
+else if [not_PAY_AMT1_middle]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+1,0.7812330651548627,0.003387330191697937,0.22176693484513732,0.7818909454727364,0.009879375774473287,1099272,558850,3,"RULELIST:
+ if [not_PAY_AMT3_high]: [default_payment_next_month] = False
+else if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_4_Pay_duly__AND__PAY_5_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+2,0.7781900037517195,0.0,0.22180999624828046,0.7807236951809238,0.0,0,0,0,"RULELIST:
+[default_payment_next_month] = False"
+3,0.784026011922131,0.003144390432094246,0.21897398807786905,0.7743871935967984,0.003701888575779355,2495183,977801,3,"RULELIST:
+ if [not_PAY_AMT1_middle]: [default_payment_next_month] = False
+else if [PAY_AMT6_low]: [default_payment_next_month] = False
+else if [PAY_2_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+4,0.7833173537871524,0.0017711228437981008,0.2196826462128476,0.7798899449724862,0.014972984113045595,2012693,883839,3,"RULELIST:
+ if [MARRIAGE_Single]: [default_payment_next_month] = False
+else if [not_BILL_AMT3_very_high]: [default_payment_next_month] = False
+else if [PAY_2_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+Average,0.7816397634947921,0.0017836476126023946,0.22076023650520776,0.7806641177652291,0.007824189884703547,,,,

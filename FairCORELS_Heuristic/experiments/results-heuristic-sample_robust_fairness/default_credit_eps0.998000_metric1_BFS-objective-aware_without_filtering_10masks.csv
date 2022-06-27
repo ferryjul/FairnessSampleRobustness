@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.786768384192096,0.001238309744543576,0.21623161580790395,0.7880960320106702,0.006216815084242652,399959,237127,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [not_BILL_AMT4_high]: [default_payment_next_month] = False
+else if [PAY_3_Pay_duly__AND__PAY_5_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+1,0.7856934428279628,0.0013241000562404757,0.21730655717203717,0.7902284475571119,0.0006736385355338784,889482,464558,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [not_PAY_AMT4_low]: [default_payment_next_month] = False
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+2,0.7871524448705657,0.0017745658362390282,0.21584755512943432,0.7863931965982992,0.009216605838994273,561533,319065,3,"RULELIST:
+ if [not_BILL_AMT5_high]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT4_high]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+3,0.7882779607320022,0.00040120007214620654,0.21472203926799782,0.7793896948474237,0.0003391096765909263,414103,248395,3,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [not_BILL_AMT4_high]: [default_payment_next_month] = False
+else if [PAY_5_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+4,0.7873608737337947,0.0015344373339729114,0.2146391262662053,0.7802234450558613,0.0030609099152325986,28915,16899,2,"RULELIST:
+ if [not_BILL_AMT5_high]: [default_payment_next_month] = False
+else if [PAY_0_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+Average,0.7870506212712842,0.0012545226086284396,0.2157493787287157,0.7848661632138734,0.0039014158101188653,,,,

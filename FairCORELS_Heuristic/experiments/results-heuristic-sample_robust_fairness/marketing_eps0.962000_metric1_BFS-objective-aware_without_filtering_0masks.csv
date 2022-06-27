@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8996660595021251,0.037774463384601054,0.10433394049787492,0.9035822707953856,0.04106660636337693,1392549,306841,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [euribor3m_very_low]: [subscribed] = True
+else [subscribed] = False"
+1,0.8989374620522161,0.03776557961386791,0.10406253794778386,0.8995749848208865,0.031082228120237084,39005,18898,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [cons_price_idx_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+2,0.8997571341833637,0.03755652518754669,0.10424286581663633,0.9044323011536126,0.04212649156876015,1350221,305564,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [pdays_very_low__AND__poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [nr_employed_low]: [subscribed] = False
+else [subscribed] = True"
+3,0.9024893746205221,0.03785547251546163,0.10151062537947786,0.8921675774134791,0.04277637951149376,1449699,330836,4,"RULELIST:
+ if [education_basic.6y]: [subscribed] = False
+else if [pdays_very_low__AND__poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [duration_very_low]: [subscribed] = False
+else [subscribed] = True"
+4,0.9012750455373406,0.03776770908669476,0.10272495446265939,0.9001821493624772,0.04432484673180432,1324061,295365,4,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [not_duration_very_low]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9004250151791137,0.0377439499576344,0.10337498482088647,0.8999878567091683,0.04027531045913445,,,,

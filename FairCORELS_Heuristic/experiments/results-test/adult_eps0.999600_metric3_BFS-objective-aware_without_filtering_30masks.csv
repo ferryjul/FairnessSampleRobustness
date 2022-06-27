@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.784395385692699,1.7645431561747247e-05,0.21860461430730105,0.7813974056603774,0.0002013456132790144,618365,308278,3,"RULELIST:
+ if [occupation_blueCollar__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [education_hs_grad__AND__workclass_private]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.7784985073526702,0.00012868356710848025,0.22450149264732977,0.7760908018867925,0.00032102728731942215,1080334,459755,3,"RULELIST:
+ if [not_age_35.5_to_61.5]: [income:>50K] = False
+else if [education_hs_grad__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7875359327780644,1.2682986461293969e-05,0.21546406722193556,0.787704555506413,0.0005128205128205128,855430,397137,3,"RULELIST:
+ if [education_hs_grad__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [age_-inf_to_21.5]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.780865335004054,0.00018989644787124164,0.22213466499594603,0.7890314020344981,0.0007093724304945252,1116596,469571,3,"RULELIST:
+ if [workclass_private__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [workclass_private__AND__hoursPerWeek_-inf_to_34.5]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.7873516621213238,1.8336144199332388e-05,0.2156483378786762,0.7840188707061773,0.0005159958720330237,1065442,463728,3,"RULELIST:
+ if [education_hs_grad__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [workclass_private__AND__hoursPerWeek_-inf_to_34.5]: [income:>50K] = False
+else if [not_capitalGain_7073.5_to_inf]: [income:>50K] = False
+else [income:>50K] = True"
+Average,0.7837293645897623,7.344891544041909e-05,0.2192706354102377,0.7836486071588518,0.00045211234318929974,,,,

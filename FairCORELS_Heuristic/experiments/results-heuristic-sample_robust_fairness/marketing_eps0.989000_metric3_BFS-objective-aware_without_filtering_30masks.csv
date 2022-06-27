@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8977838494231937,0.0069296049290027955,0.10521615057680633,0.9005464480874317,0.009959240089619785,74036,40443,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.8985428051001821,0.007623850276818464,0.10545719489981786,0.896782027929569,0.0021165125550522868,3868371,1180105,4,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [education_basic.9y]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+2,0.9001821493624772,0.009214955450824007,0.1038178506375228,0.9045537340619307,0.014955595970354157,1302917,288327,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [pdays_very_low__AND__poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [nr_employed_very_low]: [subscribed] = True
+else [subscribed] = False"
+3,0.9010625379477839,0.00882405843648485,0.1029374620522161,0.8926533090467517,0.007568809447226945,1981973,448086,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_low]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+4,0.8998785670916818,0.008901830306608969,0.10412143290831821,0.8981177899210686,0.012825571915339574,2130531,499614,4,"RULELIST:
+ if [education_basic.9y]: [subscribed] = False
+else if [pdays_very_low__AND__poutcome_failure]: [subscribed] = False
+else if [nr_employed_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+Average,0.8994899817850637,0.008298859879947816,0.10431001821493627,0.8985306618093503,0.00948514599551855,,,,

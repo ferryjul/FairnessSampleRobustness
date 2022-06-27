@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5424371740161213,2.705627705623659e-05,0.46056282598387865,0.5535545023696683,0.020037387545273955,1948718,869255,3,"RULELIST:
+ if [priors_2-3__AND__gender_Female]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__gender_Female]: [two_year_recid] = False
+else if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5488383119962067,0.0001461051732469798,0.4541616880037933,0.5592417061611374,0.11285519906923547,1944983,863085,3,"RULELIST:
+ if [priors_2-3__AND__gender_Male]: [two_year_recid] = True
+else if [age_23-25__AND__priors_1]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5500237079184448,0.00016107821152566704,0.4529762920815552,0.5393364928909953,0.06424601039985656,1478260,725143,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else if [age_>45__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [priors_2-3__AND__gender_Male]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5321166153116852,0.0001567055311415544,0.4708833846883148,0.5426944971537002,0.025417261823233672,1878464,846526,3,"RULELIST:
+ if [age_23-25__AND__gender_Female]: [two_year_recid] = False
+else if [priors_1__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [age_21-22__AND__charge_degree_Misdemeanor]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.547760132732875,0.00016000149855062082,0.45523986726712495,0.4981024667931689,0.05849642746194472,1510885,735892,3,"RULELIST:
+ if [age_23-25__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_0__AND__age_21-22]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5442351883950667,0.00013018933830421172,0.4587648116049333,0.5385859330737339,0.05621045725990888,,,,

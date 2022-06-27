@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9044019429265331,0.0006381075178275575,0.09959805707346692,0.906253794778385,0.06695035460992904,1345668,290855,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else if [not_duration_very_low]: [subscribed] = True
+else [subscribed] = False"
+1,0.9031876138433516,0.0007600869211432659,0.10081238615664845,0.9032179720704311,0.058255566848378515,1846848,416449,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [previous_no__AND__default_no]: [subscribed] = False
+else if [contact_cellular__AND__poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+2,0.9036733454766241,0.0001343659992006918,0.10032665452337586,0.9090467516697025,0.009064002959674355,2246613,492869,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [job_entrepreneur]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+3,0.905525197328476,0.00010531066646612963,0.09847480267152398,0.8996964177292046,0.03587161736941469,5910850,1052339,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [euribor3m_low]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+4,0.904675166970249,0.0002947803976460772,0.09932483302975104,0.9034608378870674,0.025092519905797972,1384018,311049,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [education_basic.9y]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9042926533090467,0.0003865303004567444,0.09970734669095324,0.904335154826958,0.039046812338638916,,,,

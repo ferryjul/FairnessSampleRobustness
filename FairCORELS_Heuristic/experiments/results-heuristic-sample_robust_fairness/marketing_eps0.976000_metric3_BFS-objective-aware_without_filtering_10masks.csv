@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9025500910746812,0.021148733487883306,0.1014499089253188,0.902367941712204,0.03115587971925079,1690298,374837,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [marital_single]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+1,0.9020643594414086,0.019044007017105104,0.10193564055859139,0.9024893746205221,0.010842314480461801,1314053,276991,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [month_mar]: [subscribed] = True
+else [subscribed] = False"
+2,0.9025500910746812,0.022026234303094104,0.1014499089253188,0.9075895567698846,0.024147095752944797,6293983,1083313,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+3,0.9050394656952034,0.023011259762143542,0.09896053430479657,0.897632058287796,0.020196051402227022,1217911,260299,4,"RULELIST:
+ if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+4,0.9025500910746812,0.01729364629080017,0.1014499089253188,0.9005464480874317,0.017963159364859774,1248537,274548,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [not_month_mar]: [subscribed] = False
+else [subscribed] = True"
+Average,0.9029508196721311,0.020504776172205245,0.10104918032786887,0.9021250758955677,0.020860900143948837,,,,

@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7928964482241121,0.00300842375871313,0.2101035517758879,0.7970990330110037,0.003965192043895782,1080108,481867,3,"RULELIST:
+ if [PAY_AMT3_very_low]: [default_payment_next_month] = False
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_2_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+1,0.7898620200925424,0.0030000035748374287,0.21313797990745764,0.7923961980990495,0.005484239467162366,2224711,863272,3,"RULELIST:
+ if [PAY_AMT1_very_low]: [default_payment_next_month] = False
+else if [BILL_AMT1_very_high]: [default_payment_next_month] = False
+else if [PAY_2_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+2,0.7931135103589145,0.0010317264520096625,0.20988648964108547,0.7873936968484242,0.0014929443684258414,1038033,470818,3,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT2_very_low]: [default_payment_next_month] = False
+else if [PAY_6_Pay_duly__AND__PAY_0_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+3,0.792404852223936,0.003921839940383753,0.21059514777606403,0.7848924462231116,0.0015730838569653072,606502,331142,3,"RULELIST:
+ if [PAY_AMT4_very_low]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_5_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+4,0.7864021009629414,0.00024523239375673356,0.21559789903705862,0.7832249458062365,0.010972123905699793,4508,4248,2,"RULELIST:
+ if [PAY_0_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT1_middle]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+Average,0.7909357863724893,0.0022414452239401415,0.2118642136275107,0.7890012639975651,0.004697516728429818,,,,

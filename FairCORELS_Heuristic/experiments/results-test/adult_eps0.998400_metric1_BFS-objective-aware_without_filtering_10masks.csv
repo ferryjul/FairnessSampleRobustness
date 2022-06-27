@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7679209818302436,0.0006050291585020309,0.2350790181697564,0.7638561320754716,0.005610711812192672,1400052,630846,3,"RULELIST:
+ if [occupation_blueCollar]: [income:>50K] = False
+else if [hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [capitalGain_-inf_to_5095.5__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else [income:>50K] = True"
+1,0.7636826005233479,0.000404860352121901,0.2393173994766521,0.7670990566037735,0.005533640089611609,312389,166455,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [workclass_private__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = True
+else if [age_35.5_to_61.5__AND__workclass_otherGov]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7590845433773126,0.0008712020952391809,0.24391545662268743,0.7614624797287336,0.0035055257447560093,508267,263999,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [occupation_professional__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = True
+else if [hoursPerWeek_34.5_to_40.5__AND__occupation_other]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7625119775926882,0.0003318736695116717,0.24048802240731182,0.7670647206250921,0.007215390132007657,1266345,585555,3,"RULELIST:
+ if [education_hs_grad__AND__age_35.5_to_61.5]: [income:>50K] = False
+else if [capitalLoss_-inf_to_1534.0__AND__education_bachelors]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.7579052111741726,0.000479193084943352,0.24409478882582736,0.7523219814241486,0.002717711259160296,6660,5632,2,"RULELIST:
+ if [not_occupation_other]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.762221062899553,0.0005384316720636273,0.24057893710044703,0.7623608740914438,0.004916595807545649,,,,

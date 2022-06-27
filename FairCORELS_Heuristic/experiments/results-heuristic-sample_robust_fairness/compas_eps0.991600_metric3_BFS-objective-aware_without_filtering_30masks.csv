@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5561877667140825,0.002887463691006873,0.44681223328591746,0.5706161137440758,0.005624460938543957,1315180,669614,3,"RULELIST:
+ if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__gender_Female]: [two_year_recid] = False
+else if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5566619250829777,0.001547367744550842,0.44633807491702226,0.5744075829383887,0.01022457770679057,1208089,621262,3,"RULELIST:
+ if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [priors_2-3__AND__age_26-45]: [two_year_recid] = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5635372214319583,0.0022944665102515027,0.4394627785680417,0.5526066350710901,0.03289141168694841,1252711,637089,3,"RULELIST:
+ if [age_18-20]: [two_year_recid] = True
+else if [juvenile-felonies_=0__AND__gender_Female]: [two_year_recid] = False
+else if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5600853282768429,0.0015357250468979317,0.4429146717231571,0.5493358633776091,0.000567068769976288,1081591,569437,3,"RULELIST:
+ if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [charge_degree_Felony__AND__priors_0]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5681441099786679,0.0008054709585572709,0.43485589002133207,0.5265654648956357,0.0062971911809121105,1032759,550904,3,"RULELIST:
+ if [juvenile-crimes_=0__AND__gender_Female]: [two_year_recid] = False
+else if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5609232702969059,0.001814098790252884,0.4420767297030941,0.5547063320053599,0.011120942056634268,,,,

@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9059502125075896,0.11963371572420545,0.09804978749241045,0.9066180935033394,0.16077601545422193,1143720,227464,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+1,0.9057984213721919,0.12393350599401154,0.0982015786278081,0.9072252580449301,0.14197713384585053,1551402,314404,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+2,0.9050394656952034,0.12328724033368144,0.09896053430479657,0.910261080752884,0.14339360887868347,1173080,248273,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9061323618700667,0.12234919335983174,0.09786763812993327,0.8990892531876138,0.08299432069923873,1254325,271468,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [not_duration_very_high]: [subscribed] = False
+else if [nr_employed_very_low]: [subscribed] = True
+else [subscribed] = False"
+4,0.9048573163327261,0.11790950868735317,0.09914268366727386,0.9041894353369763,0.09527363184079596,1276242,279063,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [not_duration_very_high]: [subscribed] = False
+else if [nr_employed_very_low]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9055555555555556,0.12142263281981666,0.09844444444444445,0.9054766241651487,0.12488294214375813,,,,

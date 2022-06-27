@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8043342055799211,0.0033620497588908727,0.19966579442007892,0.8018867924528302,0.05390017081040044,1986407,778224,4,"RULELIST:
+ if [occupation_other__AND__hoursPerWeek_-inf_to_34.5]: [income:>50K] = False
+else if [capitalGain_-inf_to_5095.5__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else if [workclass_private__AND__education_dropout]: [income:>50K] = False
+else if [occupation_blueCollar__AND__capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else [income:>50K] = True"
+1,0.7793093281244241,0.0008620482491370485,0.2236906718755759,0.7790389150943396,0.019880413485575343,605284,305995,3,"RULELIST:
+ if [education_hs_grad__AND__age_35.5_to_61.5]: [income:>50K] = False
+else if [age_29.5_to_35.5]: [income:>50K] = False
+else if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.763949288715265,0.0004629944125031926,0.23905071128473498,0.7686864219371959,0.023290750589396336,312303,166372,3,"RULELIST:
+ if [not_education_masters_doctorate]: [income:>50K] = False
+else if [age_35.5_to_61.5__AND__workclass_selfEmployed]: [income:>50K] = True
+else if [hoursPerWeek_40.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7703250534384904,0.007151545497535605,0.23267494656150955,0.7754680819696299,0.024440206258388164,206948,110440,3,"RULELIST:
+ if [education_hs_grad__AND__capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else if [occupation_whiteCollar]: [income:>50K] = True
+else if [capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else [income:>50K] = True"
+4,0.765128620918405,0.0033931777877843627,0.23787137908159506,0.7579242223205072,0.010191547900014308,570402,294629,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else if [education_hs_grad__AND__age_35.5_to_61.5]: [income:>50K] = True
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.7766092993553012,0.0030463631411702164,0.2265907006446989,0.7766008867549006,0.026340617808754917,,,,

@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5379326695116169,0.0012144767601901417,0.4650673304883831,0.5563981042654028,0.006389776357827476,2108049,899752,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__age_26-45]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5412517780938834,0.0008898600447896218,0.46174822190611664,0.557345971563981,0.010309278350515464,2085670,886723,3,"RULELIST:
+ if [age_26-45__AND__gender_Female]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5400663821716454,0.00030328690213052983,0.4629336178283546,0.5317535545023697,0.006920415224913495,2102569,895498,3,"RULELIST:
+ if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [charge_degree_Felony__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5335387532590661,0.00012959705037113355,0.4684612467409339,0.5351043643263758,0.006289308176100629,23019,14593,2,"RULELIST:
+ if [not_priors_1]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5506044086276369,0.0003582472577304142,0.45239559137236307,0.5056925996204934,0.004198127453941408,1958998,864500,3,"RULELIST:
+ if [age_23-25__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5406787983327697,0.0005790936030423681,0.46212120166723025,0.5372589188557246,0.006821381112659694,,,,

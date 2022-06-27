@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5308202939781888,0.004247835497835584,0.47117970602181125,0.5516587677725119,0.003427191650114847,23327,14740,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [gender_Male__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5293978188715031,0.0015846791867560883,0.47360218112849695,0.5459715639810426,0.009287925696594423,2050825,884160,3,"RULELIST:
+ if [priors_1__AND__gender_Female]: [two_year_recid] = False
+else if [gender_Male__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5346135609293504,0.0012725178710523144,0.4683864390706496,0.5270142180094787,0.00288685673301059,2077221,893791,3,"RULELIST:
+ if [gender_Male__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5323536383029154,0.0010428245777406309,0.4706463616970846,0.5341555977229602,0.004676463106815132,2040869,879044,3,"RULELIST:
+ if [charge_degree_Misdemeanor__AND__gender_Female]: [two_year_recid] = False
+else if [gender_Male__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5423086039345817,0.002751138536145614,0.4606913960654183,0.4981024667931689,0.003557005281143222,1950972,864175,3,"RULELIST:
+ if [age_23-25__AND__gender_Female]: [two_year_recid] = False
+else if [juvenile-felonies_=0__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [priors_>3__AND__age_23-25]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5338987832033079,0.0021797991339060465,0.4689012167966921,0.5313805228558325,0.004767088493535643,,,,

@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8977838494231937,0.0376759195120715,0.10521615057680633,0.9005464480874317,0.06818412892074621,73203,34276,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.8976017000607165,0.04251260219358355,0.10539829993928351,0.8988463873709776,0.010463893816939351,737758,238248,3,"RULELIST:
+ if [education_basic.4y]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else [subscribed] = False"
+2,0.8969641772920461,0.03478679366357562,0.10603582270795386,0.9013964784456587,0.018848067355530018,1159378,324867,3,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [education_basic.4y]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+3,0.8997571341833637,0.042129413140051364,0.10324286581663633,0.8926533090467517,0.04850062432029645,61084,28976,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+4,0.8985428051001821,0.045305173300684065,0.10445719489981786,0.8975106253794778,0.08600180913613742,699677,220583,3,"RULELIST:
+ if [poutcome_failure__AND__default_no]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [contact_cellular__AND__default_no]: [subscribed] = True
+else [subscribed] = False"
+Average,0.8981299332119004,0.04048198036199322,0.10487006678809958,0.8981906496660594,0.04639970470992989,,,,

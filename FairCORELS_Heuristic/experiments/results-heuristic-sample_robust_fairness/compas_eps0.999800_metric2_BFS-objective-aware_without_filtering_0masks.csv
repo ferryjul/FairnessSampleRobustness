@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.6104788999525842,0.0001724828629929842,0.3925211000474158,0.623696682464455,0.11553030303030298,220175,131889,3,"RULELIST:
+ if [priors_>3__AND__age_26-45]: [two_year_recid] = True
+else if [juvenile-misdemeanors_>0__AND__age_21-22]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5737316263632053,2.0100502512554463e-05,0.4282683736367947,0.5838862559241706,0.0527797325826882,12352,9703,2,"RULELIST:
+ if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.6277856804172594,0.0001883939416473801,0.37521431958274065,0.6350710900473934,0.15177255177255178,147096,91005,3,"RULELIST:
+ if [age_>45__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_>3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [charge_degree_Felony__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5752547997155724,0.0001814882032667997,0.42774520028442764,0.5768500948766604,0.10227272727272729,498494,287378,3,"RULELIST:
+ if [gender_Male__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__age_18-20]: [two_year_recid] = True
+else if [priors_>3__AND__gender_Female]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5844986963735482,7.110858280601207e-05,0.41850130362645177,0.5417457305502846,0.1466666666666666,408579,230833,3,"RULELIST:
+ if [age_18-20__AND__juvenile-crimes_=0]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__gender_Female]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.5943499405644339,0.0001267148186451461,0.40845005943556617,0.5922499707725928,0.11380439626498737,,,,

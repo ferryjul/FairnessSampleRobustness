@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5310573731626363,0.005535811862923536,0.47094262683736365,0.5459715639810426,0.009584664536741214,25702,15452,2,"RULELIST:
+ if [gender_Male__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5324798482693219,0.0007481415932120159,0.47052015173067807,0.5507109004739337,0.0025635463706099593,2139858,896774,3,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-misdemeanors_=0]: [two_year_recid] = False
+else if [age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5350877192982456,0.002688855573823923,0.4669122807017544,0.5298578199052133,0.015294961448807598,25503,15341,2,"RULELIST:
+ if [gender_Male__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [age_21-22__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.533301730267836,0.0011375243231785959,0.469698269732164,0.538899430740038,0.002641516817657008,1929018,857638,3,"RULELIST:
+ if [not_priors_2-3]: [two_year_recid] = False
+else if [age_21-22__AND__charge_degree_Misdemeanor]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__age_21-22]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5432566958995022,0.0035520332678237766,0.4597433041004978,0.5009487666034156,0.00725380552966759,2054921,884841,3,"RULELIST:
+ if [priors_1__AND__juvenile-felonies_=0]: [two_year_recid] = False
+else if [juvenile-misdemeanors_=0__AND__age_26-45]: [two_year_recid] = False
+else if [juvenile-crimes_>0__AND__charge_degree_Misdemeanor]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5350366733795084,0.002732473324192369,0.46756332662049155,0.5332776963407286,0.007467698940696673,,,,

@@ -1,0 +1,29 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8977838494231937,0.0376759195120715,0.10521615057680633,0.9005464480874317,0.06818412892074621,73865,34632,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+1,0.9004857316332726,0.045947599591529276,0.10351426836672739,0.899939283545841,0.12965700768775867,2191327,505028,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [not_education_university.degree]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else [subscribed] = False"
+2,0.8974499089253187,0.04816173232507526,0.10555009107468127,0.9018822100789314,0.023177382319173434,76023,34893,3,"RULELIST:
+ if [poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9000303582270796,0.04738134206219313,0.10296964177292045,0.8909532483302975,0.05426551738027152,629673,201173,3,"RULELIST:
+ if [education_unknown]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+4,0.8997267759562841,0.04996769078379604,0.10427322404371586,0.8990892531876138,0.08448665762098595,2208201,501907,4,"RULELIST:
+ if [not_contact_cellular]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [contact_cellular__AND__poutcome_failure]: [subscribed] = False
+else if [duration_very_low]: [subscribed] = False
+else [subscribed] = True"
+Average,0.8990953248330298,0.04582685685493304,0.10430467516697026,0.8984820886460231,0.07195413878578716,,,,

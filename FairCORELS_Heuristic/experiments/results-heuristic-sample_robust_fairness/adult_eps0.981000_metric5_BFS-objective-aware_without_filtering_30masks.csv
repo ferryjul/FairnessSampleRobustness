@@ -1,0 +1,30 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8062506910404305,0.0029225197043558637,0.19774930895956955,0.8030660377358491,0.06774688429176945,5280248,1749589,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else if [age_35.5_to_61.5__AND__occupation_sales]: [income:>50K] = False
+else if [workclass_private__AND__occupation_blueCollar]: [income:>50K] = False
+else if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.809014852762319,0.0014318045355873332,0.194985147237681,0.8091096698113207,0.0018523523185369761,6023656,1730976,4,"RULELIST:
+ if [capitalLoss_1881.5_to_1978.5]: [income:>50K] = True
+else if [capitalGain_-inf_to_5095.5__AND__occupation_other]: [income:>50K] = False
+else if [hoursPerWeek_34.5_to_40.5__AND__occupation_other]: [income:>50K] = True
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7811601680548389,0.0014570153723908192,0.2218398319451611,0.7807754680819696,0.010461099841000077,571328,274861,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__occupation_sales]: [income:>50K] = False
+else if [workclass_private__AND__hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else [income:>50K] = False"
+3,0.7869462666764945,0.0009058287118873798,0.21605373332350553,0.7933067964027717,0.040992677356313734,860216,406377,3,"RULELIST:
+ if [education_associates]: [income:>50K] = False
+else if [workclass_private__AND__occupation_other]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.7969337362718361,0.002799223358819762,0.20706626372816395,0.7918325224826773,0.0295106335815154,6553446,2197896,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else if [not_occupation_whiteCollar]: [income:>50K] = False
+else if [not_hoursPerWeek_34.5_to_40.5]: [income:>50K] = False
+else if [education_masters_doctorate]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.7960611429611838,0.0019032783366082315,0.20753885703881622,0.7956180989029178,0.030112729477827126,,,,

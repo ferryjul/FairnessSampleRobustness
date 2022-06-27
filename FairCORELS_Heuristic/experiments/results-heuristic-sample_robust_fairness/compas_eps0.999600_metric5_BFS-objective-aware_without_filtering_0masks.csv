@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5512091038406828,0.00037878787878786735,0.4517908961593172,0.5298578199052133,0.022886575395716674,1178039,621444,3,"RULELIST:
+ if [juvenile-crimes_=0__AND__juvenile-felonies_>0]: [two_year_recid] = True
+else if [priors_2-3]: [two_year_recid] = True
+else if [gender_Male__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.5528686581318161,0.0002809714870134483,0.45013134186818393,0.5630331753554503,0.06278716649247706,987095,527420,3,"RULELIST:
+ if [age_26-45__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_2-3__AND__charge_degree_Felony]: [two_year_recid] = True
+else if [age_18-20__AND__priors_0]: [two_year_recid] = True
+else [two_year_recid] = False"
+2,0.5500237079184448,0.00016107821152566704,0.4529762920815552,0.5393364928909953,0.06424601039985656,1478260,724875,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__age_18-20]: [two_year_recid] = True
+else if [age_>45__AND__charge_degree_Felony]: [two_year_recid] = False
+else if [priors_2-3__AND__gender_Male]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.542782649917042,0.00023003476440876247,0.46021735008295805,0.5550284629981025,0.014872667285287144,1920741,855519,3,"RULELIST:
+ if [age_26-45]: [two_year_recid] = False
+else if [priors_2-3__AND__charge_degree_Misdemeanor]: [two_year_recid] = True
+else if [gender_Male__AND__juvenile-misdemeanors_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5525005925574781,0.0002331473335716039,0.4504994074425219,0.5123339658444023,0.043687707641196005,1596909,761642,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+Average,0.5498769424730927,0.0002568039350614698,0.45312305752690724,0.5399179833988328,0.04169602544290669,,,,

@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9033394049787492,0.06021446165376078,0.1006605950212508,0.9044323011536126,0.06785419228235327,1264889,264087,4,"RULELIST:
+ if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+1,0.9039769277474196,0.06500370460014374,0.10002307225258045,0.9021250758955677,0.06365003811996456,1317975,277422,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [loan_no__AND__poutcome_failure]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else [subscribed] = False"
+2,0.9031268973891925,0.06360841890423029,0.10087310261080751,0.9080752884031572,0.07559148111695596,1319361,290512,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [job_retired]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9054948391013965,0.06864203340663647,0.0985051608986035,0.8966605950212507,0.06382798599830855,1210817,254991,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+4,0.9036126290224651,0.061580821304895804,0.10038737097753492,0.9033394049787492,0.06238149579523091,1243974,272569,4,"RULELIST:
+ if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+Average,0.9039101396478445,0.06380988797393342,0.10008986035215543,0.9029265330904674,0.06666103866256265,,,,

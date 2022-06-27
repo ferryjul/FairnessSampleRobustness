@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7651568201083552,0.0026962578788837233,0.23784317989164483,0.7665094339622641,0.004894983235275485,439077,225191,3,"RULELIST:
+ if [workclass_private__AND__capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else if [occupation_professional__AND__hoursPerWeek_40.5_to_inf]: [income:>50K] = True
+else if [workclass_private__AND__occupation_blueCollar]: [income:>50K] = True
+else [income:>50K] = False"
+1,0.7827000331699406,0.001288981990554272,0.22029996683005937,0.7841981132075472,0.021417471792446463,565092,283743,3,"RULELIST:
+ if [education_hs_grad__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else if [education_hs_grad__AND__occupation_whiteCollar]: [income:>50K] = True
+else if [not_capitalGain_-inf_to_5095.5]: [income:>50K] = True
+else [income:>50K] = False"
+2,0.7671924522738999,0.00095377878233327,0.23580754772610013,0.7716349697773847,0.023131750644223903,395804,210910,3,"RULELIST:
+ if [education_hs_grad__AND__workclass_private]: [income:>50K] = False
+else if [not_occupation_whiteCollar]: [income:>50K] = False
+else if [capitalGain_-inf_to_5095.5__AND__capitalLoss_-inf_to_1534.0]: [income:>50K] = False
+else [income:>50K] = True"
+3,0.7735313628657773,0.002300228353804279,0.22946863713422272,0.7804806132979507,0.043771043771043794,1406739,590227,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__workclass_otherGov]: [income:>50K] = False
+else if [workclass_private__AND__hoursPerWeek_40.5_to_inf]: [income:>50K] = False
+else if [capitalGain_7073.5_to_inf]: [income:>50K] = True
+else [income:>50K] = False"
+4,0.7665659320409818,0.002302190868508913,0.23543406795901822,0.7592510688485921,0.0020160566452461677,8541,6746,2,"RULELIST:
+ if [education_hs_grad__AND__capitalGain_-inf_to_5095.5]: [income:>50K] = False
+else if [education_hs_grad]: [income:>50K] = True
+else [income:>50K] = False"
+Average,0.7710293200917909,0.0019082875748168914,0.23177067990820904,0.7724148398187478,0.019046261217647163,,,,

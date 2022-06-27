@@ -1,0 +1,20 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8865209471766848,0.11342322097954138,0.11347905282331516,0.8905889496053431,0.08472806710047454,0,0,0,"RULELIST:
+[subscribed] = False"
+1,0.9012446873102611,0.03924037048440221,0.10275531268973892,0.903096539162113,0.05474965651659902,1962851,525925,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [nr_employed_very_low]: [subscribed] = True
+else if [not_month_mar]: [subscribed] = False
+else [subscribed] = True"
+2,0.8862477231329691,0.10587884721639007,0.11375227686703093,0.8916818457802065,0.11498044814650554,0,0,0,"RULELIST:
+[subscribed] = False"
+3,0.9052823315118397,0.046895068306242016,0.09871766848816033,0.9016393442622951,0.0687169375943617,1343917,326917,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [duration_high]: [subscribed] = True
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else [subscribed] = True"
+4,0.8873406193078324,0.10726371931123169,0.11265938069216763,0.8873102610807528,0.10944334156102264,0,0,0,"RULELIST:
+[subscribed] = False"
+Average,0.8933272616879174,0.08254024525956147,0.10827273831208259,0.8948633879781422,0.08652369018379269,,,,

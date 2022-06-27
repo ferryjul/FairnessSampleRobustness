@@ -1,0 +1,30 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9037947783849423,0.00501217532467535,0.09920522161505774,0.9051608986035216,0.051427054294437835,33185,15860,3,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else [subscribed] = True"
+1,0.9037644201578627,0.004775814902397202,0.10023557984213727,0.9049180327868852,0.04079861111111116,1861753,434107,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [job_student]: [subscribed] = False
+else if [poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+2,0.8940497874924105,0.0016901448543095166,0.10895021250758952,0.900789313904068,0.018698341136350494,183599,96883,3,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [housing_yes__AND__poutcome_failure]: [subscribed] = False
+else [subscribed] = True"
+3,0.9052216150576806,0.009631833113825872,0.09877838494231939,0.8990892531876138,0.03208556149732611,1476482,366860,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [education_professional.course]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+4,0.9054341226472374,0.0030817143197047203,0.09856587735276257,0.904675166970249,0.008921664046317779,1127310,241424,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else if [duration_high]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9024529447480267,0.004838336502982532,0.10114705525197329,0.9029265330904677,0.030386246417108676,,,,

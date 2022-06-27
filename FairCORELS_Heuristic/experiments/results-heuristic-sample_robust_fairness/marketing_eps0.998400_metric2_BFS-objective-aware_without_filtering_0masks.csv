@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9054037644201579,0.0014129158002706976,0.0985962355798421,0.9061323618700667,0.06669972725018602,1198186,251331,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [poutcome_failure__AND__default_no]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else [subscribed] = True"
+1,0.9034608378870674,0.0015503875968992942,0.10053916211293257,0.9040680024286581,0.014705882352941124,1377747,299673,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [cons_price_idx_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+2,0.9050394656952034,0.0011924550119245536,0.09896053430479657,0.910261080752884,0.0016969023818338425,1096412,222809,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9057073466909532,0.0014478017919371533,0.0982926533090468,0.899939283545841,0.018985455412493968,1420268,315933,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [job_management]: [subscribed] = False
+else if [not_duration_very_high]: [subscribed] = False
+else [subscribed] = True"
+4,0.904675166970249,0.0002947803976460772,0.09932483302975104,0.9034608378870674,0.025092519905797972,1383028,309152,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [education_basic.9y]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9048573163327263,0.0011796681197355553,0.09914268366727381,0.9047723132969034,0.025436097460650585,,,,

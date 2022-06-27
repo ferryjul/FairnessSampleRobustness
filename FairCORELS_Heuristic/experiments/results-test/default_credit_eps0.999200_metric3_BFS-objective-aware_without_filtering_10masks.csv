@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.7827663831915957,0.00012024993660243039,0.22023361680840425,0.7892630876958986,4.988721651589222e-06,785777,437255,3,"RULELIST:
+ if [not_PAY_AMT3_middle]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+1,0.7809829505189879,0.0002052971463478489,0.22201704948101209,0.7852259463064866,0.0010471298625241493,2141819,943461,3,"RULELIST:
+ if [not_PAY_AMT1_very_low]: [default_payment_next_month] = False
+else if [not_BILL_AMT1_low]: [default_payment_next_month] = False
+else if [PAY_5_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+2,0.782608695652174,0.0005991167396245641,0.22039130434782606,0.7825579456394864,0.00454008837834847,1089917,562808,3,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else if [not_BILL_AMT1_high]: [default_payment_next_month] = False
+else if [PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+3,0.7841927550127141,0.0007012491559143744,0.21880724498728588,0.775554443888611,0.001585356295467663,1212013,622922,3,"RULELIST:
+ if [BILL_AMT4_middle]: [default_payment_next_month] = False
+else if [not_PAY_AMT1_middle]: [default_payment_next_month] = False
+else if [PAY_2_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+4,0.785651757055317,0.00016412949222999879,0.21734824294468302,0.7808904452226113,0.0019807675620549837,732665,402444,3,"RULELIST:
+ if [AGE_low]: [default_payment_next_month] = False
+else if [PAY_6_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_AMT5_very_low]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+Average,0.7832405082861577,0.0003580084941438433,0.21975949171384226,0.7826983737506188,0.0018316661640093712,,,,

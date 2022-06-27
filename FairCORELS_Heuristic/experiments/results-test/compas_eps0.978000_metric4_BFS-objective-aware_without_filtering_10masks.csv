@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.5711237553342816,0.016693722943722955,0.4318762446657184,0.5450236966824644,0.04983058768547721,593919,327891,3,"RULELIST:
+ if [gender_Male__AND__juvenile-crimes_>0]: [two_year_recid] = True
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [juvenile-misdemeanors_=0__AND__age_18-20]: [two_year_recid] = True
+else [two_year_recid] = False"
+1,0.570886676149834,0.010871348775526202,0.432113323850166,0.5725118483412323,0.09780915383250177,1190925,586703,3,"RULELIST:
+ if [priors_>3__AND__age_>45]: [two_year_recid] = True
+else if [priors_2-3__AND__charge_degree_Felony]: [two_year_recid] = True
+else if [juvenile-crimes_=0]: [two_year_recid] = False
+else [two_year_recid] = True"
+2,0.5701754385964912,0.002626725406521202,0.4328245614035088,0.5838862559241706,0.06440738748431052,1581839,744896,3,"RULELIST:
+ if [gender_Male__AND__age_26-45]: [two_year_recid] = False
+else if [priors_2-3]: [two_year_recid] = True
+else if [priors_>3]: [two_year_recid] = True
+else [two_year_recid] = False"
+3,0.5598483052856127,0.0031217094656905697,0.4431516947143873,0.5853889943074004,0.003561156006026578,1578889,743375,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: [two_year_recid] = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: [two_year_recid] = True
+else if [juvenile-crimes_>0]: [two_year_recid] = True
+else [two_year_recid] = False"
+4,0.5750177767243423,0.003201890047717426,0.4279822232756577,0.5313092979127134,0.029683131407269303,1954231,824623,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__priors_1]: [two_year_recid] = False
+else if [gender_Male__AND__juvenile-crimes_=0]: [two_year_recid] = False
+else if [priors_0]: [two_year_recid] = False
+else [two_year_recid] = True"
+Average,0.5694103904181123,0.007303079327835671,0.43358960958188764,0.5636240186335962,0.04905828328311708,,,,

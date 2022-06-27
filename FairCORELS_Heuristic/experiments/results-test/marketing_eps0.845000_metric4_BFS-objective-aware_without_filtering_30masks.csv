@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9045840922890103,0.10395029964544567,0.09941590771098974,0.9052823315118397,0.1538559300493112,1207600,244311,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [not_duration_very_high]: [subscribed] = False
+else if [nr_employed_very_low]: [subscribed] = True
+else [subscribed] = False"
+1,0.904675166970249,0.10419253987286548,0.09932483302975104,0.9010321797207043,0.1483671726131809,1598387,335928,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else if [job_student]: [subscribed] = False
+else if [duration_high]: [subscribed] = True
+else [subscribed] = False"
+2,0.9050394656952034,0.12328724033368144,0.09896053430479657,0.910261080752884,0.14339360887868347,1173080,248273,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9054948391013965,0.11343815758709386,0.0985051608986035,0.8966605950212507,0.07792423571112095,1265102,271874,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [not_euribor3m_very_low]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+4,0.9048573163327261,0.11790950868735317,0.09914268366727386,0.9041894353369763,0.09527363184079596,1304798,288210,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [not_duration_very_high]: [subscribed] = False
+else if [nr_employed_very_low]: [subscribed] = True
+else [subscribed] = False"
+Average,0.9049301760777171,0.11255554922528792,0.09906982392228295,0.903485124468731,0.1237629158186185,,,,

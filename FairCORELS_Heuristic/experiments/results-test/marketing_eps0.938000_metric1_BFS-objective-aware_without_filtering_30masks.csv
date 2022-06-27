@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.9013964784456587,0.050434033459690525,0.10260352155434127,0.9051608986035216,0.05442357218603242,7595667,1398623,4,"RULELIST:
+ if [duration_low]: [subscribed] = False
+else if [duration_very_low]: [subscribed] = False
+else if [month_mar]: [subscribed] = True
+else if [poutcome_success]: [subscribed] = True
+else [subscribed] = False"
+1,0.9020643594414086,0.053639106563446115,0.10193564055859139,0.9024893746205221,0.04152450611880268,1314053,276991,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [month_mar]: [subscribed] = True
+else [subscribed] = False"
+2,0.9020340012143291,0.057588288340334706,0.10196599878567092,0.9066180935033394,0.0659478584845149,1321670,292166,4,"RULELIST:
+ if [not_nr_employed_very_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [marital_single]: [subscribed] = False
+else if [duration_very_high]: [subscribed] = True
+else [subscribed] = False"
+3,0.9040376442015786,0.051010638040949935,0.09996235579842139,0.8945962355798421,0.05213632776329903,1220588,261510,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [not_poutcome_failure]: [subscribed] = True
+else if [month_mar]: [subscribed] = True
+else [subscribed] = False"
+4,0.9025500910746812,0.051155637629787365,0.1014499089253188,0.9005464480874317,0.05154192514692591,1248537,274548,4,"RULELIST:
+ if [duration_very_low]: [subscribed] = False
+else if [duration_low]: [subscribed] = False
+else if [poutcome_success]: [subscribed] = True
+else if [not_month_mar]: [subscribed] = False
+else [subscribed] = True"
+Average,0.9024165148755312,0.052765540806841725,0.10158348512446876,0.9018822100789314,0.053114837939914984,,,,

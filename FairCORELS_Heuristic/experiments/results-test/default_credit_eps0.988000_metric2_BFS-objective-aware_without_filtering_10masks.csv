@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness,Training objective function,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,RL length,RL
+0,0.8099049524762382,0.005988515342594591,0.19409504752376183,0.8096032010670223,0.0637385412514947,2087783,483362,4,"RULELIST:
+ if [not_PAY_0_Pay_delay>=1]: [default_payment_next_month] = False
+else if [BILL_AMT1_very_low]: [default_payment_next_month] = False
+else if [PAY_5_Pay_delay>=1]: [default_payment_next_month] = True
+else if [not_PAY_AMT1_very_low]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+1,0.8054524990620702,0.005561434808023735,0.19854750093792983,0.8064032016008004,0.006274509803921635,3010262,932303,4,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_3_Pay_duly]: [default_payment_next_month] = False
+else if [PAY_0_Pay_duly__AND__PAY_5_Pay_duly]: [default_payment_next_month] = False
+else if [not_BILL_AMT1_very_low]: [default_payment_next_month] = True
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+2,0.7841510692400684,0.0014259552469430004,0.21884893075993161,0.7807236951809238,0.013187730028326683,2220178,925905,3,"RULELIST:
+ if [BILL_AMT5_very_low]: [default_payment_next_month] = False
+else if [BILL_AMT6_very_high]: [default_payment_next_month] = False
+else if [PAY_5_Pay_duly__AND__PAY_2_Pay_duly]: [default_payment_next_month] = False
+else [default_payment_next_month] = True"
+3,0.7957397140355996,0.001697287839020123,0.20726028596440038,0.7947306986826747,0.030890861017304205,2381397,710663,3,"RULELIST:
+ if [BILL_AMT6_low]: [default_payment_next_month] = False
+else if [BILL_AMT2_very_low]: [default_payment_next_month] = False
+else if [PAY_2_Pay_delay>=1]: [default_payment_next_month] = True
+else [default_payment_next_month] = False"
+4,0.7794405769310934,0.0,0.22055942306890663,0.7757211939302985,0.0,0,0,0,"RULELIST:
+[default_payment_next_month] = False"
+Average,0.7949377623490139,0.00293463864731629,0.20786223765098608,0.793436398092344,0.022818328420209442,,,,
