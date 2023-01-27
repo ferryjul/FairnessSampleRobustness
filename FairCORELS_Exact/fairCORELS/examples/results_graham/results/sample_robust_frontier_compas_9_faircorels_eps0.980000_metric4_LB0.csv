@@ -1,0 +1,23 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5289236605026079,0.002813852813852824,0.47307633949739214,0.18812375249500998,0.5526066350710901,0.002745647856057909,23328,14740,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20__AND__juvenile-crimes_=0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5301090564248458,0.0029265990087326,0.47189094357515415,0.16674987518721918,0.5488151658767773,0.002918498945002068,18788,13000,2,"RULELIST:
+ if [not_priors_1]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5694642010431484,0.00018869161921575284,0.43353579895685157,0.012600806451612902,0.581042654028436,0.0953200645508338,587564,322255,3,"RULELIST:
+ if [juvenile-felonies_=0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [priors_>3__AND__gender_Female]: (recidivism:yes) = True
+else if [age_26-45__AND__charge_degree_Felony]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5340127992415264,0.005532043462673664,0.46798720075847355,0.13862380713209443,0.538899430740038,0.002641516817657008,19963,13634,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5439677648731926,0.0010569345788582485,0.45803223512680735,0.08205128205128205,0.4990512333965844,0.014367816091954033,19439,13159,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.5412954964170642,0.002503624296666618,0.4609045035829357,0.11762990466344372,0.5440830238225851,0.023598708852300965,75357.6,2.2,

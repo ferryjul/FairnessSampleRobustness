@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7583385545276969,0.006007354031836244,0.24366144547230306,0.293959385250433,0.7542747641509434,0.004036724839723391,17624,11391,2,"RULELIST:
+ if [not_occupation_sales]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7583016990380718,0.006474195742902446,0.24469830096192824,0.29071610216341726,0.7569280660377359,0.005419185658199241,707906,370546,3,"RULELIST:
+ if [occupation_blueCollar__AND__age_35.5_to_61.5]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7587897103265276,0.005298704393692598,0.24321028967347236,0.23807768850888184,0.7641161727849034,0.00837692812326532,21403,12570,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [workclass_private__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7568732954964251,0.008495432635179203,0.24512670450357488,0.25713127441586203,0.7644110275689223,0.008206847338820447,11527,8702,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7576840863860839,0.006314849080978197,0.24531591361391614,0.316798113068475,0.7529116909921864,0.006515727858200509,1034780,509518,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [not_hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.757997469154961,0.006518107176917737,0.24440253084503896,0.2793365126814138,0.7585283443069383,0.006511082763641781,182545.4,2.4,

@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.761029005270335,0.008595317464654587,0.241970994729665,0.289020749640659,0.7588443396226415,0.009877073673456353,925081,465434,3,"RULELIST:
+ if [workclass_private__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [not_hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7606973058637084,0.009170275386477583,0.24230269413629157,0.2784432241182324,0.7594339622641509,0.008479289022084974,953795,479897,3,"RULELIST:
+ if [not_workclass_selfEmployed]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf__AND__age_29.5_to_35.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7596373553475344,0.007503613491803447,0.2423626446524656,0.2717623645610673,0.7616099071207431,0.006235596898181635,21407,12501,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [occupation_whiteCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7595636470848383,0.009965750169582422,0.24243635291516175,0.2552517137171077,0.7672121480171016,0.009418098903887322,10321,7924,2,"RULELIST:
+ if [not_workclass_selfEmployed]: (income > 50K) = False
+else if [not_capitalGain_7073.5_to_inf]: (income > 50K) = False
+else (income > 50K) = True"
+4,0.7593056681654013,0.008432540615856758,0.24269433183459865,0.3151765312891575,0.7546808196962995,0.008463548119178493,17531,11494,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7600465963463636,0.00873349942567496,0.2423534036536365,0.2819309166652447,0.7603562353441873,0.008494721323357756,195450.0,2.4,

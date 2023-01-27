@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8919247115968427,0.0016765317549192128,0.11107528840315728,0.0035688793718772305,0.8939890710382513,0.012086319963397929,1037733,376724,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [not_duration_high]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8903460837887067,0.019888440888294667
+1,0.8917628010524186,0.005435940229395823,0.11123719894758144,0.003923357664233577,0.8915604128718883,0.005420855509560396,1186118,421166,3,"RULELIST:
+ if [job_technician]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.896782027929569,0.011036848642574038
+2,0.8933819064966606,0.0018516937544199438,0.1096180935033394,0.003935599284436494,0.8971463266545234,0.004999043245311863,1297835,435753,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8924104432301153,0.005324255913415454
+3,0.8956891317547055,0.006891701285893781,0.10731086824529446,0.002531645569620253,0.8905889496053431,0.0010824908365891783,1346971,403991,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8964177292046145,0.0345829665625641
+4,0.8946367132159482,0.006563608382589132,0.10836328678405183,0.0029651931937411617,0.8945962355798421,0.04052464947987333,753838,317304,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8931390406800243,0.013095375389228447
+Average,0.8934790528233151,0.004483895081443578,0.10952094717668488,0.0033849350167817426,0.8935761991499696,0.01282267180694654,1124499.0,390987.6,3.0,,0.8938190649666058,0.01678557747921534

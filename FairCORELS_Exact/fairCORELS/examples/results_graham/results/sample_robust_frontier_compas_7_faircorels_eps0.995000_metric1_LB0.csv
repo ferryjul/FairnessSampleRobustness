@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5282124229492651,0.002330776318955752,0.47378757705073493,0.03508771929824561,0.5497630331753555,0.006349206349206349,23326,14740,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20__AND__charge_degree_Felony]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5282124229492651,0.003093008613361204,0.47378757705073493,0.0858226647700332,0.5488151658767773,0.006514657980456026,17492,12474,2,"RULELIST:
+ if [not_priors_2-3]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5448079658605974,9.270902355279498e-05,0.45819203413940257,0.0035561877667140826,0.5450236966824644,0.05509774569815179,1926013,863957,3,"RULELIST:
+ if [age_26-45__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [priors_0__AND__gender_Female]: (recidivism:yes) = False
+else if [age_23-25__AND__priors_0]: (recidivism:yes) = False
+else (recidivism:yes) = True"
+3,0.5309315003555345,0.0037931578102903367,0.4710684996444655,0.07442521924626688,0.5332068311195446,0.0,17063,12234,2,"RULELIST:
+ if [not_priors_2-3]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.550841431618867,0.0013241612087382948,0.452158568381133,0.00355534486845224,0.5464895635673624,0.04355799045064579,1913567,854787,3,"RULELIST:
+ if [priors_2-3__AND__age_>45]: (recidivism:yes) = False
+else if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [age_26-45__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else (recidivism:yes) = True"
+Average,0.5366011487467058,0.0021267625949796766,0.4657988512532942,0.040489427189942404,0.5446596580843008,0.022303920095691994,351638.4,2.4,

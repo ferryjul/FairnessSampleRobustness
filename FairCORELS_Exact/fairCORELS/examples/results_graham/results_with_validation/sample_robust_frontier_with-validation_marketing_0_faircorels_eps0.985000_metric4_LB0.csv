@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8970653713823112,0.013532667703389012,0.10593462861768876,0.0014275517487508922,0.900789313904068,0.025106756138477904,619559,247426,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [job_retired]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8949605343047966,0.030010236697516013
+1,0.8963367739324023,0.013047458316695182,0.1066632260675977,0.0017953321364452424,0.8978749241044323,0.018775872264932048,775938,273140,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9000607164541591,0.010575501271662624
+2,0.8963772515685084,0.00014097744360896947,0.10662274843149155,0.005008944543828265,0.9016393442622951,0.0003587830080367116,1108750,327176,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8961748633879781,0.02998167059439638
+3,0.8986035215543412,0.002406309506819082,0.1043964784456588,0.005786618444846293,0.8898603521554341,0.01601079469931932,990556,304139,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.9012750455373406,0.008929109741833585
+4,0.898360655737705,0.012391269491321633,0.10463934426229504,0.002514367816091954,0.896782027929569,0.011148801447308898,332539,156269,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8950819672131147,0.018959750893783878
+Average,0.8973487148350536,0.008303736492366775,0.10565128516494637,0.003306562937992529,0.8973891924711598,0.014280201511614975,765468.4,261630.0,3.0,,0.8975106253794778,0.019691253839838496

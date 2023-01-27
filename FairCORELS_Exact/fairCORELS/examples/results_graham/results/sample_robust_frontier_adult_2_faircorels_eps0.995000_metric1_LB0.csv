@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7756237791619062,0.0007338418180540679,0.22737622083809383,0.0015479305642575462,0.7783018867924528,0.01330434662556243,317694,162119,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else if [hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7723436405852652,6.344613656039666e-05,0.23065635941473484,0.001769063502008624,0.7744693396226415,0.013110306567328242,318882,163986,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else if [age_35.5_to_61.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7708410112773642,0.0027485714034853337,0.23215898872263585,0.0008107908896587307,0.7742886628335545,0.006886575047519716,235416,124308,3,"RULELIST:
+ if [education_hs_grad__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else if [education_hs_grad__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7747475492002653,0.00350962499531271,0.22825245079973466,0.000589666101569986,0.7720772519534129,0.009641467154145544,191358,103889,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7724257389253335,0.0031163085829669646,0.2305742610746665,0.0006633743642662343,0.7664750110570544,0.00791348439107449,167179,93466,3,"RULELIST:
+ if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [workclass_selfEmployed]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7731963438300269,0.0020343585872758946,0.22980365616997314,0.001076165084352224,0.7731224304518232,0.010171235957126084,129553.6,3.0,

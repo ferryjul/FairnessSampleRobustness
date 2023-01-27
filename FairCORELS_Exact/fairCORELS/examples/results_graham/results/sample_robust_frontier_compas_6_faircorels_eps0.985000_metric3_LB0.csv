@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5514461830251304,0.008267152019129241,0.4505538169748696,0.032520325203252036,0.5687203791469194,0.005174989978012366,24212,14489,2,"RULELIST:
+ if [charge_degree_Misdemeanor__AND__gender_Female]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5507349454717876,0.006248794981189347,0.4522650545282124,0.10293453724604966,0.5677725118483412,0.013745704467353952,1314317,663461,3,"RULELIST:
+ if [age_>45__AND__gender_Male]: (recidivism:yes) = False
+else if [age_26-45__AND__gender_Female]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5509720246562352,0.0038772197568366935,0.4520279753437648,0.19247985675917637,0.547867298578199,0.00431553983126628,1357466,686210,3,"RULELIST:
+ if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [age_26-45]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5565299834083907,0.004825870163195086,0.44647001659160934,0.09111310592459605,0.571157495256167,0.0220125786163522,908958,489691,3,"RULELIST:
+ if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [not_priors_2-3]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5766769376629534,0.0014064521970157395,0.42632306233704664,0.013221683561040106,0.5616698292220114,0.02402597402597406,625380,344972,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [age_21-22__AND__gender_Female]: (recidivism:yes) = False
+else (recidivism:yes) = True"
+Average,0.5572720148448994,0.004925097823473222,0.44552798515510056,0.08645390173882284,0.5634375028103277,0.013854957383791772,439764.6,2.8,

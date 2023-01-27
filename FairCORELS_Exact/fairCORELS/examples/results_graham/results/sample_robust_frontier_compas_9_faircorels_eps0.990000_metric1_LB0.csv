@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5452821242294926,0.0019302621771206674,0.4577178757705074,0.007823613086770981,0.543127962085308,0.005042016806722671,1235308,645801,3,"RULELIST:
+ if [age_23-25__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [age_26-45__AND__priors_0]: (recidivism:yes) = False
+else if [age_26-45__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else (recidivism:yes) = True"
+1,0.531294452347084,0.000727849867891716,0.47070554765291606,0.017780938833570414,0.5526066350710901,0.006577440965528449,22679,14450,2,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5459933617828354,0.0007412015842419573,0.4570066382171646,0.006164058795637743,0.5383886255924171,0.032502853077618576,2118975,896736,3,"RULELIST:
+ if [gender_Male__AND__age_26-45]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_=0__AND__gender_Female]: (recidivism:yes) = False
+else if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else (recidivism:yes) = True"
+3,0.5340127992415264,0.0034855540505748153,0.46798720075847355,0.07632140317610808,0.538899430740038,0.002132631181839529,19963,13634,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5565299834083907,0.001901977008914979,0.44647001659160934,0.00711068973690448,0.5521821631878557,0.03464779622971709,1941391,860049,3,"RULELIST:
+ if [age_23-25__AND__gender_Female]: (recidivism:yes) = False
+else if [age_26-45__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [gender_Male__AND__priors_0]: (recidivism:yes) = False
+else (recidivism:yes) = True"
+Average,0.5426225442018657,0.001757368937748827,0.4599774557981342,0.023040140725798342,0.5450409633353418,0.016180547652285264,486134.0,2.6,

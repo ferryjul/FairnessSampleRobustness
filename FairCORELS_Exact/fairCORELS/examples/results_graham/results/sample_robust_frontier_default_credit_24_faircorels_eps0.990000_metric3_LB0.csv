@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7858095714523928,0.0003649314677175632,0.21719042854760717,0.07514605777992174,0.7899299766588863,0.003265693942694171,538238,306830,3,"RULELIST:
+ if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+1,0.7855683855100254,0.0011773860429938618,0.2174316144899746,0.06876038372903157,0.7923961980990495,0.003446682534480258,835276,439160,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_AGE_very_high]: (default_payment:yes) = False
+else if [PAY_4_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+2,0.7844845554212347,0.0005208296932040831,0.21851544457876526,0.20955646025283908,0.7838919459729865,0.0016472751729314028,832951,446022,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT2_high]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.787277502188503,0.001434324614405881,0.215722497811497,0.16561598461374077,0.7780556945139236,0.004484123873922016,712516,381332,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_AGE_very_high]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+4,0.7872358164158573,0.0019896656847869683,0.21576418358414273,0.13718044710664243,0.7812239453059864,0.0001136825643510593,730639,401144,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_AGE_very_high]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+Average,0.7860751661976026,0.0010974275006216715,0.21692483380239738,0.13125186669643513,0.7850995521101665,0.0025914916176757816,394897.6,3.0,

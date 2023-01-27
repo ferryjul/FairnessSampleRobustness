@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8997874924104432,0.011336173243911138,0.1032125075895568,0.022977878227518664,0.9040680024286581,0.013012703567328164,24056,8514,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.900333940497875,0.013484091050323607,0.10266605950212504,0.019314918638041842,0.9016393442622951,0.004849007725294018,161393,57337,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8996660595021251,0.010677084841393472,0.10333394049787492,0.04124276367622375,0.9043108682452945,0.016246006019063626,25407,9091,3,"RULELIST:
+ if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.9021857923497267,0.012241558128614854,0.10081420765027327,0.03044280442804428,0.8942319368548877,0.00994348205670174,28718,12429,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.900333940497875,0.010329181547991423,0.10266605950212504,0.03992610079031099,0.8986035215543412,0.013147820925213397,680493,202258,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.9004614450516091,0.011613617762446899,0.10253855494839101,0.03078089315202791,0.9005707346690954,0.01143980405872019,57925.8,3.0,

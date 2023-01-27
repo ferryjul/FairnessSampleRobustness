@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8067367016841754,0.0055904163266999735,0.19726329831582456,0.005978222190591417,0.806268756252084,0.002886742971083066,5802260,1927565,4,"RULELIST:
+ if [BILL_AMT2_very_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [AGE_very_low]: (default_payment:yes) = True
+else if [PAY_4_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7968984492246123,0.006683971900451988
+1,0.8032349508087377,0.0031448298502013902,0.19976504919126226,0.0073445521962350255,0.8015674503918626,0.0054116325898388995,832488,376329,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [AGE_very_low]: (default_payment:yes) = True
+else if [PAY_6_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7972657552517506,0.013680892527826116
+2,0.802345617253071,0.004131766323723272,0.20165438274692904,0.006945438923098955,0.8015674503918626,0.008116351638110898,7227929,2486406,4,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [BILL_AMT2_very_low]: (default_payment:yes) = False
+else if [AGE_very_low]: (default_payment:yes) = True
+else if [PAY_6_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.8119373124374791,0.006540338058131201
+3,0.7815018620421321,0.0,0.21849813795786788,1.0,0.7723861930965483,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False",0.7765921973991331,0.0
+4,0.7925073647935079,0.0024757322244728028,0.21049263520649208,0.007774607703281027,0.7868934467233617,0.03970618542844595,560446,311209,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [not_EDUCATION_University]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.790430143381127,0.012575167353730987
+Average,0.797265299316325,0.003068548945019488,0.2055347006836752,0.2056085642026413,0.7937366593711438,0.011224182525495762,2884624.6,1020301.8,2.8,,0.7946247715388204,0.007896073968028059

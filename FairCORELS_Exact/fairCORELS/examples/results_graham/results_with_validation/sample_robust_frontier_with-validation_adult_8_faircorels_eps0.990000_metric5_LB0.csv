@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.810703228659885,0.005187146364032676,0.19329677134011503,0.002577319587628866,0.8102889150943396,0.05441418358954886,1929786,623330,4,"RULELIST:
+ if [hoursPerWeek_34.5_to_40.5__AND__age_24.5_to_29.5]: (income > 50K) = False
+else if [education_masters_doctorate]: (income > 50K) = True
+else if [capitalGain_-inf_to_5095.5__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else if [capitalLoss_1568.5_to_1820.5]: (income > 50K) = False
+else (income > 50K) = True",0.8067511792452831,0.045047856845609635
+1,0.8054941274755516,0.004641106545481222,0.1975058725244484,0.003195526263231476,0.8070459905660378,0.02813999054117966,889169,378465,3,"RULELIST:
+ if [capitalLoss_1568.5_to_1820.5]: (income > 50K) = False
+else if [occupation_blueCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else (income > 50K) = True",0.8030660377358491,0.08763139931740616
+2,0.7515970515970516,0.0035491227623195565,0.2504029484029484,0.0054869684499314125,0.7567448031844317,0.0015735511815341274,23863,13844,2,"RULELIST:
+ if [not_workclass_fedGov]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else (income > 50K) = True",0.7589917452830188,0.008510638297872353
+3,0.7520884520884521,0.0,0.2479115479115479,1.0,0.7573345127524694,0.0,0,0,0,"RULELIST:
+(income > 50K) = False",0.746314858490566,0.0
+4,0.8093366093366093,0.003600780833052264,0.19466339066339067,0.003130502837018196,0.8071649712516585,0.012157880324940362,1360395,424627,4,"RULELIST:
+ if [education_hs_grad__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [occupation_whiteCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else if [capitalGain_-inf_to_5095.5__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else if [education_dropout]: (income > 50K) = False
+else (income > 50K) = True",0.8214917452830188,0.02013892710607257
+Average,0.7858438938315099,0.0033956313009771435,0.2167561061684901,0.20287806342756198,0.7877158385697874,0.019257121127440602,840642.6,288053.2,2.6,,0.7873231132075472,0.03226576431339214

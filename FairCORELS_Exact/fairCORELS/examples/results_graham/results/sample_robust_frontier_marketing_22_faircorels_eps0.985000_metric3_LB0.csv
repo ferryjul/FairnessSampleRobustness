@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8903460837887067,0.00028183977988687175,0.11265391621129328,0.1318745291418396,0.8937462052216151,0.0005823056658876336,461196,226392,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.891317547055252,0.00042874924274349953,0.11168245294474799,0.13093121837823055,0.8898603521554341,6.029950299294286e-06,772632,311155,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.8862477231329691,0.0,0.11375227686703093,1.0,0.8916818457802065,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+3,0.8915604128718883,0.00039698574814121704,0.11143958712811175,0.1364971983053164,0.8843958712811172,0.0023746726094747966,1140156,398673,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [emp_var_rate_high]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+4,0.892440801457195,0.002132444638712659,0.11055919854280505,0.10862499572342536,0.8942319368548877,0.003526342400151099,1828041,502142,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [month_may]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.8903825136612022,0.0006480038818968495,0.1120174863387978,0.30158558830976234,0.8907832422586521,0.0012978701251625646,287672.4,2.4,

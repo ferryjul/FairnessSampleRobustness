@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8982797004654928,0.006331786914093746,0.10572029953450723,0.06359859379993608,0.9011536126290225,0.010307166981871688,2525446,779244,4,"RULELIST:
+ if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8975106253794778,0.0070182149990749825
+1,0.8972272819267355,0.007484628694000947,0.1067727180732645,0.04949817518248175,0.8972677595628415,0.002430533812946303,2273941,667913,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9017607771706132,0.0072823095377097915
+2,0.8982797004654928,0.00855323152330651,0.10572029953450723,0.03331811958010041,0.9016393442622951,0.014638337087105425,3338293,945539,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [education_basic.9y]: (subscribe:yes) = False
+else if [cons_price_idx_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8969034608378871,0.004448554031326681
+3,0.8993725966403562,0.00490669640217272,0.10462740335964382,0.07575205104831358,0.8922890103217972,0.008372926526673713,2537398,786894,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.9003035822707954,0.00916030534351145
+4,0.8993321190042501,0.006937464208809998,0.10366788099574986,0.04324620227179417,0.8972677595628415,0.010103318980834615,1333680,375109,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [euribor3m_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8970248937462052,0.013478412098298679
+Average,0.8984982797004655,0.006842761548476783,0.10530172029953452,0.0530826283765252,0.8979234972677596,0.009170456677886348,2401751.6,710939.8,3.8,,0.8987006678809957,0.008277559201984317

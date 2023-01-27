@@ -1,0 +1,21 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.7810016119170696,0.0,0.21899838808293037,1.0,0.782427475825275,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False",0.768050692012673,0.0
+1,0.779500861541882,0.0,0.22049913845811797,1.0,0.7822244455561114,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False",0.772757585861954,0.0
+2,0.7847812795286532,0.001763420598562604,0.21821872047134683,0.016645962732919253,0.7848924462231116,0.007445913094180079,718025,387036,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [PAY_AMT1_middle]: (default_payment:yes) = True
+else if [BILL_AMT6_low]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.792597532510837,0.008731808731808677
+3,0.7890056139180701,0.0026638720497333956,0.2139943860819299,0.01678962096158738,0.7943971985992997,0.05458316559606535,2454132,895976,3,"RULELIST:
+ if [BILL_AMT6_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else if [not_BILL_AMT2_very_low]: (default_payment:yes) = True
+else (default_payment:yes) = False",0.7835945315105035,0.01956964871914957
+4,0.7891167806125284,0.0023183774298849436,0.21388321938747157,0.01687232435154873,0.7808904452226113,0.017087660504834234,1110363,519592,3,"RULELIST:
+ if [PAY_6_Pay_duly__AND__PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [EDUCATION_University]: (default_payment:yes) = True
+else if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7860953651217072,0.018030709882379647
+Average,0.7846812295036407,0.0013491340156361886,0.2171187704963593,0.4100615816092111,0.7849664022852817,0.015823347839015935,856504.0,360520.8,1.8,,0.7806191414035349,0.009266433466667579

@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8925723537745396,0.003842926679066081,0.11042764622546042,0.013600485731633272,0.8954462659380692,5.251582741163524e-05,1270113,395312,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [education_basic.4y]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8901032179720705,0.0007691796054134989
+1,0.8930580854078122,0.011700177723849764,0.10994191459218783,0.007043108682452945,0.8918032786885246,0.006738958337903077,369346,173111,3,"RULELIST:
+ if [contact_cellular__AND__poutcome_failure]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8966605950212507,0.00853928120344959
+2,0.8941509815826756,0.010867741874306787,0.10884901841732442,0.00777170613236187,0.898360655737705,0.017065574248450784,763481,286926,3,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8932604735883425,0.010637160770433505
+3,0.8940700263104635,0.012870341174522534,0.1089299736895365,0.009147945759967618,0.8868245294474802,0.016627062502682637,1083861,371813,3,"RULELIST:
+ if [education_basic.6y]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.894474802671524,0.011972293744559742
+4,0.8937462052216151,0.007349841233093304,0.10925379477838493,0.01068609593199757,0.8933819064966606,0.01620337841907036,1406847,422261,3,"RULELIST:
+ if [contact_cellular__AND__poutcome_failure]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8930176077717061,0.012168892677823305
+Average,0.8935195304594211,0.009326205736967694,0.10948046954057881,0.009649868447682656,0.8931633272616878,0.011337497867103698,978729.6,329884.6,3.0,,0.8935033394049787,0.008817361600335928

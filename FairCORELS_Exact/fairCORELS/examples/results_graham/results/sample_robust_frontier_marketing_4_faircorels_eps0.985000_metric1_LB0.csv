@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8923193685488767,0.010064627555240822,0.11068063145112328,0.004037644201578628,0.8950819672131147,0.006543450076274559,1151243,406463,3,"RULELIST:
+ if [loan_no__AND__poutcome_failure]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [loan_yes]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8937462052216151,0.010796016549434514,0.10925379477838493,0.0035822707953855493,0.891317547055252,0.010871335315438553,1702544,442983,3,"RULELIST:
+ if [day_of_week_mon]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8926533090467517,0.010308713809186746,0.11034669095324834,0.004007285974499089,0.8969034608378871,0.014669301557963779,1695090,455812,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [job_housemaid]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.8941408621736491,0.009490054394289946,0.10885913782635093,0.003916211293260473,0.8876745598057073,0.011085894626681594,727957,277797,3,"RULELIST:
+ if [day_of_week_fri]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8928051001821493,0.010229792396818274,0.11019489981785069,0.0040680024286581665,0.8919247115968427,0.014055936080362368,1699720,469946,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [cons_price_idx_middle]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.8931329690346083,0.01017784094099406,0.10986703096539163,0.003922282938676381,0.8925804493017608,0.011445183531344171,410600.2,3.0,

@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.5564337654125829,0.0022726496730098855,0.44656623458741707,0.007271577616187164,0.5099526066350711,0.03925303454715212,931987,502307,3,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [gender_Male__AND__juvenile-misdemeanors_=0]: (recidivism:yes) = True
+else if [priors_2-3__AND__juvenile-felonies_=0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5440758293838862,0.05649965558221748
+1,0.5599114764464116,0.0024428919523625803,0.4430885235535884,0.0075877331647170405,0.5516587677725119,0.06175629861064946,1473329,724147,3,"RULELIST:
+ if [priors_2-3__AND__charge_degree_Felony]: (recidivism:yes) = True
+else if [gender_Male__AND__age_26-45]: (recidivism:yes) = False
+else if [priors_0]: (recidivism:yes) = False
+else (recidivism:yes) = True",0.524170616113744,0.0044043085118811165
+2,0.5368321214037306,0.0018609470208501566,0.4661678785962694,0.0075877331647170405,0.5175355450236967,0.0427924589823776,1979850,869542,3,"RULELIST:
+ if [age_23-25__AND__priors_0]: (recidivism:yes) = False
+else if [age_>45__AND__gender_Female]: (recidivism:yes) = False
+else if [age_26-45]: (recidivism:yes) = False
+else (recidivism:yes) = True",0.543127962085308,0.005529225908372848
+3,0.5347661188369153,0.004192067932741987,0.46723388116308473,0.06573957016434892,0.5351043643263758,0.0030950098740053812,18464,12959,2,"RULELIST:
+ if [not_priors_1]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5298578199052133,0.006546644844517185
+4,0.547724399494311,0.00142477026357213,0.45427560050568905,0.03002528445006321,0.4990512333965844,0.007704160246533128,17279,12282,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5327014218009478,0.009276814734561213
+Average,0.5471335763187903,0.002438665368507348,0.4554664236812097,0.023642379712006674,0.522660503430848,0.030920192452143537,884181.8,424247.4,2.6,,0.5347867298578198,0.016451329916309966

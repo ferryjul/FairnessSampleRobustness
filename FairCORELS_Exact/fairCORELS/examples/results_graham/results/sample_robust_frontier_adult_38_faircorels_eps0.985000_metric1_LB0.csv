@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.761434415656212,0.005211057590969061,0.24056558434378805,0.18247152913426454,0.7582547169811321,0.004486563105534799,4465,3861,2,"RULELIST:
+ if [occupation_professional__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7597022076438286,0.007015697393524622,0.24229779235617144,0.21232447573066007,0.7579599056603774,0.008292179193643391,7559,6042,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__education_bachelors]: (income > 50K) = False
+else if [education_bachelors__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.761590624308985,0.006658943741824393,0.24140937569101495,0.11188914277290485,0.762936753648828,0.002163198708136386,1300956,584302,3,"RULELIST:
+ if [workclass_private__AND__education_bachelors]: (income > 50K) = False
+else if [not_occupation_professional]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7598584801356232,0.004367329299758498,0.24314151986437682,0.195068917225621,0.7661801562730355,0.008129413012064268,725359,370281,3,"RULELIST:
+ if [not_occupation_professional]: (income > 50K) = False
+else if [capitalLoss_-inf_to_1534.0__AND__education_bachelors]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7601533131864082,0.0058342076844195845,0.24284668681359178,0.2601164590550601,0.7561550936163939,0.008630153006915938,799563,405444,3,"RULELIST:
+ if [education_hs_grad__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7605478081862114,0.0058174471420992325,0.24205219181378862,0.19237410478370212,0.7602973252359534,0.006340301405258956,273986.0,2.6,

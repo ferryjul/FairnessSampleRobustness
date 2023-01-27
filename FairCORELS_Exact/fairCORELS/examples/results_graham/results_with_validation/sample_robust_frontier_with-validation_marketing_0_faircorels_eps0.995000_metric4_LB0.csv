@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8950010119409026,0.0025300612959445745,0.10799898805909736,0.0010706638115631692,0.8971463266545234,0.009709724975852763,1223908,375044,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.892896174863388,0.02834938475358806
+1,0.8942724144909937,2.1347075827349293e-05,0.1087275855090063,0.0017953321364452424,0.8943533697632058,0.008344832117747503,652262,276680,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8994535519125683,0.003069734429526294
+2,0.8963772515685084,0.00014097744360896947,0.10662274843149155,0.0017889087656529517,0.9016393442622951,0.0003587830080367116,1108750,327176,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8961748633879781,0.02998167059439638
+3,0.8986035215543412,0.002406309506819082,0.1043964784456588,0.002531645569620253,0.8898603521554341,0.01601079469931932,1093324,366186,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.9012750455373406,0.008929109741833585
+4,0.89605343047966,0.0032719365053914817,0.10694656952033998,0.0014367816091954023,0.8941105039465695,0.04052464947987333,567212,240269,3,"RULELIST:
+ if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [job_student]: (subscribe:yes) = False
+else if [loan_no__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8932604735883425,0.011659554837965658
+Average,0.8960615260068812,0.0016741263655182914,0.1069384739931188,0.0017246663784954038,0.8954219793564056,0.014989756856165926,929091.2,317071.0,3.0,,0.8966120218579234,0.016397890871461995

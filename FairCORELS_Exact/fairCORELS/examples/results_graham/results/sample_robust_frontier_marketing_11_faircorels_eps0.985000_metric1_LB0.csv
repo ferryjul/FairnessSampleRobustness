@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.890528233151184,0.005348746744241113,0.11247176684881599,0.024833029751062538,0.8948391013964785,0.005197195280489567,933320,392541,3,"RULELIST:
+ if [not_job_admin.]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+1,0.8916818457802065,0.008718331713573096,0.11131815421979352,0.0222829386763813,0.8899817850637523,0.013431720729217974,752360,298192,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [cons_conf_idx_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8900121432908318,0.0032912821688239734,0.11298785670916822,0.07516697024893747,0.8950819672131147,0.0018340354212792722,1608090,524439,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.8925925925925926,0.005765946538617324,0.1104074074074074,0.017941712204007285,0.8858530661809351,0.004466819101537283,1032071,362891,3,"RULELIST:
+ if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [not_job_admin.]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8912871888281725,0.0052049453759630705,0.11171281117182752,0.02316332726168792,0.8899817850637523,0.005334688412944261,1331036,440919,3,"RULELIST:
+ if [nr_employed_low]: (subscribe:yes) = False
+else if [not_job_admin.]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.8912204007285975,0.005665850508243715,0.11177959927140253,0.0326775956284153,0.8911475409836065,0.006052891789093672,403796.4,3.0,

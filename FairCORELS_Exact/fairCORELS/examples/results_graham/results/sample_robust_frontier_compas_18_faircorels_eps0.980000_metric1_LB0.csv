@@ -1,0 +1,23 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5341394025604552,0.007560702190971996,0.4678605974395448,0.10881934566145092,0.5516587677725119,0.010401493930905696,22301,14444,2,"RULELIST:
+ if [age_26-45__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5301090564248458,0.003384148560517891,0.47189094357515415,0.30369843527738266,0.5488151658767773,0.0026184197891968943,18788,13003,2,"RULELIST:
+ if [not_priors_1]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.540303461356093,0.005235942111920969,0.46169653864390703,0.12399241346609767,0.5364928909952607,0.010211794696980924,20570,13818,2,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5373311211187485,0.007136220657539766,0.4646688788812515,0.12514813936951885,0.5379506641366224,0.0044692866464182196,24955,15153,2,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [age_18-20__AND__juvenile-crimes_=0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.547760132732875,0.01447414554787316,0.45523986726712495,0.11329698980801138,0.5,0.01663337708535449,2058782,883264,3,"RULELIST:
+ if [gender_Male__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.5379286348386035,0.007558231813764757,0.4642713651613965,0.1549910647164923,0.5349834977562344,0.008866874429771245,187936.4,2.2,

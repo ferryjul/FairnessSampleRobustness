@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.760218184498581,0.00890368716479433,0.24278181550141897,0.3051265986068625,0.7551591981132075,0.006453078412401671,1563151,653342,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else if [not_age_35.5_to_61.5]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7589282423616998,0.00935147214807571,0.24407175763830025,0.31585154608778976,0.7589917452830188,0.011165172729087543,665862,345677,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [not_hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7583843148816982,0.0073863510520050125,0.24361568511830178,0.29111078351883246,0.7616099071207431,0.007811737792057056,12474,9246,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7590108351146163,0.008802534257177272,0.2439891648853837,0.2793543156187809,0.7647058823529411,0.006821368538552169,785179,406281,3,"RULELIST:
+ if [not_age_35.5_to_61.5]: (income > 50K) = False
+else if [education_hs_grad__AND__age_35.5_to_61.5]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7566521707083365,0.005558434298395766,0.24534782929166354,0.320962629910813,0.7508477075040543,0.005240174672489083,7175,5990,2,"RULELIST:
+ if [occupation_blueCollar__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [occupation_blueCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7586387495129863,0.00800049578408962,0.24396125048701361,0.3024811747486157,0.7582628880747929,0.0074983064289175045,284107.2,2.6,

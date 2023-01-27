@@ -1,0 +1,21 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8924509208662215,0.011480474235233473,0.11054907913377854,0.008922198429693077,0.898360655737705,0.011228458136342767,1022442,382656,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [campaign_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8909532483302975,0.016961679204046246
+1,0.8924509208662215,0.008300873220972393,0.11054907913377854,0.008617594254937163,0.8893746205221615,0.003761745186937393,885991,348981,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [education_basic.4y]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8945962355798421,0.01811675637309984
+2,0.8918032786885246,0.011844197104551719,0.1111967213114754,0.008586762075134168,0.8943533697632058,0.03712208189820132,325027,158342,3,"RULELIST:
+ if [contact_cellular__AND__poutcome_failure]: (subscribe:yes) = False
+else if [campaign_low]: (subscribe:yes) = False
+else if [loan_no__AND__contact_cellular]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8932604735883425,0.07515056297460077
+3,0.8880793361667678,0.0,0.11192066383323218,1.0,0.8825743776563448,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False",0.8898603521554341,0.0
+4,0.8873102610807528,0.0,0.11268973891924716,1.0,0.8873102610807528,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False",0.8874316939890711,0.0
+Average,0.8904189435336975,0.006325108912151517,0.11138105646630236,0.4052253109519529,0.890394656952034,0.010422457044296295,446692.0,177995.8,1.8,,0.8912204007285975,0.02204579971034937

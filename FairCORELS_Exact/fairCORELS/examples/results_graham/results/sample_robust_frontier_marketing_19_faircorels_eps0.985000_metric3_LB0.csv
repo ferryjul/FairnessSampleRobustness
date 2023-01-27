@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8914389799635701,0.0019225711613079146,0.11156102003642987,0.11608793918224779,0.8959319975713418,0.005102085554940421,463520,226359,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8931693989071038,0.0027252831264618477,0.10983060109289622,0.1061465882674689,0.8893746205221615,0.00016605555439594974,605138,244798,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [euribor3m_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.8862477231329691,0.0,0.11375227686703093,1.0,0.8916818457802065,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+3,0.893290831815422,0.0013903351852482784,0.10970916818457799,0.12334290009566762,0.8867030965391621,0.004118611098347349,538220,222368,3,"RULELIST:
+ if [cons_price_idx_low]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.892835458409229,0.0034477417287395156,0.11016454159077105,0.10335625577337576,0.8911961141469338,0.0017647042591139592,917183,330268,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.8913964784456587,0.0018971862403515112,0.1110035215543412,0.289786736663752,0.8909775349119611,0.0022302912933595356,204758.6,2.4,

@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5692271218587008,0.0020961638804093685,0.43377287814129917,0.010978043912175649,0.5383886255924171,0.08974958133738364,488427,280591,3,"RULELIST:
+ if [priors_>3__AND__gender_Female]: (recidivism:yes) = True
+else if [juvenile-felonies_=0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [priors_2-3__AND__juvenile-crimes_=0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5597439544807966,0.0040853254211763446,0.4432560455192034,0.011286681715575621,0.5819905213270142,0.05631914180355346,1805360,823028,3,"RULELIST:
+ if [age_18-20__AND__priors_0]: (recidivism:yes) = True
+else if [priors_2-3]: (recidivism:yes) = True
+else if [gender_Male__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5365101944049312,0.0031388172457828965,0.4654898055950688,0.0715725806451613,0.5345971563981042,0.01240810471579712,24323,15020,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [not_age_18-20]: (recidivism:yes) = False
+else (recidivism:yes) = True"
+3,0.5354349371889073,0.0063539019677254505,0.46656506281109267,0.014063284781516826,0.538899430740038,0.005052067223425096,19807,13586,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5439677648731926,0.0021291906733955754,0.45803223512680735,0.08205128205128205,0.4990512333965844,0.014367816091954033,19439,13159,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.5489767945613057,0.003560679837697927,0.45342320543869424,0.037990374621142284,0.5385853934908316,0.035579342234422676,229076.8,2.4,

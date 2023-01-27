@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8046245344894669,0.007434378423770038,0.1993754655105331,0.00989253433919294,0.8039346448816272,0.00580380201989502,5917032,2130692,4,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_6_Pay_duly]: (default_payment:yes) = True
+else if [BILL_AMT3_very_low]: (default_payment:yes) = False
+else if [MARRIAGE_Married]: (default_payment:yes) = True
+else (default_payment:yes) = False",0.7948974487243622,0.02407147447823288
+1,0.793229948307487,0.0029160291946377717,0.20977005169251295,0.010553337136337706,0.7935634483908621,0.018127517038413865,952739,466269,3,"RULELIST:
+ if [PAY_AMT6_very_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7854284761587196,0.002627067816627436
+2,0.802012117169696,0.005348330243052923,0.201987882830304,0.009737934984963482,0.8025679506419877,0.025673940949935803,4725815,1778553,4,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else if [BILL_AMT2_very_low]: (default_payment:yes) = False
+else if [MARRIAGE_Single]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.8069356452150717,0.014837509574351704
+3,0.7815018620421321,0.0,0.21849813795786788,1.0,0.7723861930965483,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False",0.7765921973991331,0.0
+4,0.7939525318214663,0.002519336150022977,0.2090474681785337,0.0110803324099723,0.7890611972652993,0.007152251763005978,736113,382545,3,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else if [MARRIAGE_Single]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7970990330110037,0.017576869256079597
+Average,0.7950641987660497,0.003643614802296742,0.2077358012339503,0.2082528277740933,0.7923026868552651,0.011351502354250132,2466339.8,951611.8,2.8,,0.7921905601016581,0.011822584225058323

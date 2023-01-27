@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8943128921270997,0.007170052791553351,0.10868710787290026,0.006780870806566738,0.8969034608378871,0.01904453256062233,1400736,431989,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [euribor3m_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8925318761384335,0.032611193515365455
+1,0.8937866828577211,0.006315783911320669,0.10921331714227889,0.005385996409335727,0.893624772313297,0.004139562389118834,1636827,463170,3,"RULELIST:
+ if [cons_price_idx_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8988463873709776,0.004986100431773832
+2,0.8947581461242663,0.007593320548678317,0.1082418538757337,0.0064400715563506265,0.8979963570127505,0.014159969383850002,1138584,368951,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8927747419550698,0.007396652825983105
+3,0.8880793361667678,0.0,0.11192066383323218,1.0,0.8825743776563448,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False",0.8898603521554341,0.0
+4,0.89605343047966,0.01111609517735647,0.10694656952033998,0.0033757584051822454,0.8954462659380692,0.014755999856505672,373548,178364,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [month_nov]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8930176077717061,0.02633164461247637
+Average,0.893398097551103,0.006439050485781761,0.109001902448897,0.2043965394354871,0.8933090467516698,0.010420012838019367,909939.0,288494.8,2.4,,0.8934061930783243,0.014265118277119754

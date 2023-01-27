@@ -1,0 +1,15 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7777638819409705,0.0,0.22223611805902954,1.0,0.782427475825275,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+1,0.7831506106965692,0.00048545054348353043,0.2198493893034308,0.3129856905514765,0.7873936968484242,0.0022067057758892636,876049,471180,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_BILL_AMT1_low]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+2,0.7781900037517195,0.0,0.22180999624828046,1.0,0.7807236951809238,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+3,0.7802742923840094,0.0,0.21972570761599064,1.0,0.7723861930965483,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+4,0.7794405769310934,0.0,0.22055942306890663,1.0,0.7757211939302985,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+Average,0.7797638731408724,9.709010869670609e-05,0.22083612685912762,0.8625971381102954,0.779730450976294,0.0004413411551778527,94236.0,0.6,

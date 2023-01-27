@@ -1,0 +1,20 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8105996388162017,0.004710051719581804,0.19340036118379833,0.002235136343316942,0.8110259433962265,0.07552824697918636,1273427,367438,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [not_education_masters_doctorate]: (income > 50K) = False
+else if [hoursPerWeek_34.5_to_40.5__AND__workclass_otherGov]: (income > 50K) = False
+else (income > 50K) = True"
+1,0.7544318726274278,0.002234883094292983,0.24756812737257217,0.00669443617970842,0.7525058962264151,0.0076177285318559385,22934,13405,2,"RULELIST:
+ if [not_workclass_fedGov]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7512714675315103,0.0,0.2487285324684897,1.0,0.754828247088309,0.0,0,0,0,"RULELIST:
+(income > 50K) = False"
+3,0.7506449472985922,0.0,0.2493550527014078,1.0,0.7573345127524694,0.0,0,0,0,"RULELIST:
+(income > 50K) = False"
+4,0.7552517137171076,0.004728768143737905,0.24674828628289236,0.028955223880597014,0.7502579979360166,0.008665945156537291,19618,12560,2,"RULELIST:
+ if [not_occupation_sales]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.764439927998168,0.0023347405915225385,0.23716007200183203,0.4075769592807245,0.7651905194798874,0.01836238413351592,78680.6,1.6,

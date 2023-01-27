@@ -1,0 +1,19 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7777638819409705,0.0,0.22223611805902954,1.0,0.782427475825275,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+1,0.7778148317979073,0.0,0.22218516820209266,1.0,0.7822244455561114,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+2,0.7896119054566676,0.00036617077203027204,0.2133880945433324,0.004134561172711896,0.7865599466399866,0.007989015691198031,1777380,717973,3,"RULELIST:
+ if [BILL_AMT4_low]: (default_payment:yes) = False
+else if [BILL_AMT6_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+3,0.806703072241444,0.0006999097666068321,0.197296927758556,0.00398406374501992,0.8072369518092379,0.03300194283513902,2919392,857424,4,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_AMT6_middle]: (default_payment:yes) = True
+else if [PAY_AMT2_very_high]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+4,0.7794405769310934,0.0,0.22055942306890663,1.0,0.7757211939302985,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+Average,0.7862668536736166,0.00021321610772742083,0.21513314632638342,0.6016237249835463,0.786834002752182,0.008198191705267411,315079.4,1.4,

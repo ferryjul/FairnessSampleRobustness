@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7858512589628147,0.00031340616981443727,0.2171487410371853,0.23063729431312643,0.7900966988996332,0.003820017667749604,538351,306868,3,"RULELIST:
+ if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_4_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+1,0.7891533619575639,0.0006184003839776603,0.2138466380424361,0.17616163781553137,0.7953976988494247,0.0012858378612377354,958196,460541,3,"RULELIST:
+ if [not_MARRIAGE_Married]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+2,0.7832339822418608,0.0005367006567375586,0.2197660177581392,0.30571030640668523,0.7815574453893613,0.0008753359197152593,2926327,1021380,3,"RULELIST:
+ if [not_PAY_AMT1_high]: (default_payment:yes) = False
+else if [not_BILL_AMT1_high]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.7869023302346909,0.0006496005756928287,0.21609766976530909,0.27828827866225025,0.7808904452226113,0.0017337978961668816,535647,306216,3,"RULELIST:
+ if [not_PAY_AMT1_high]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_4_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+4,0.7838592688315478,0.00041590094633038024,0.21914073116845223,0.3238849074767355,0.7783891945972986,0.0036633865119439822,2413774,957488,3,"RULELIST:
+ if [not_MARRIAGE_Married]: (default_payment:yes) = False
+else if [not_PAY_AMT1_high]: (default_payment:yes) = False
+else if [PAY_2_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+Average,0.7858000404456955,0.0005068017465105731,0.21719995955430438,0.26293648493486577,0.7852662965916658,0.0022756751713626927,610498.6,3.0,

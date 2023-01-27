@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7938969484742371,0.004315091981748967,0.20910305152576292,0.010130065032516258,0.7955985328442814,2.4155599221448165e-05,1602836,617366,3,"RULELIST:
+ if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [MARRIAGE_Single]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+1,0.7883613322772938,0.004227330520511385,0.21463866772270623,0.01029638584351161,0.7927296981824246,0.0038188030275784213,1478537,659299,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else if [MARRIAGE_Single]: (default_payment:yes) = False
+else if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+2,0.7855683855100254,0.00010917394469927774,0.2174316144899746,0.014631706198674392,0.7873936968484242,0.000521214950894848,845636,447788,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT4_low]: (default_payment:yes) = False
+else if [PAY_4_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.8015340364333653,0.008708586391221573,0.2014659635666347,0.007420067530951686,0.7963981990995498,0.011695139817079217,816107,352497,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [AGE_very_low]: (default_payment:yes) = True
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+4,0.7861103005544208,0.000715274673760178,0.21688969944557923,0.09900371003376547,0.7818909454727364,0.002868146007873395,860515,455225,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT4_low]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+Average,0.7910942006498685,0.0036150915023882763,0.21190579935013157,0.02829638692788388,0.7908022144894832,0.003785491880529466,506435.0,3.0,

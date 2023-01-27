@@ -1,0 +1,18 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7808070702017675,0.0002637682001801851,0.22219292979823246,0.2608387527096882,0.7842614204734911,0.00036558570360150765,1481559,746589,3,"RULELIST:
+ if [not_PAY_AMT4_low]: (default_payment:yes) = False
+else if [not_PAY_AMT1_middle]: (default_payment:yes) = False
+else if [PAY_2_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+1,0.7778148317979073,0.0,0.22218516820209266,1.0,0.7822244455561114,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+2,0.7781900037517195,0.0,0.22180999624828046,1.0,0.7807236951809238,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+3,0.7840676976947768,0.0005492817859100232,0.2189323023052232,0.205760973779649,0.7737201934300484,0.001341496868634398,1709952,819350,3,"RULELIST:
+ if [not_PAY_AMT3_middle]: (default_payment:yes) = False
+else if [not_PAY_AMT1_middle]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+4,0.7794405769310934,0.0,0.22055942306890663,1.0,0.7757211939302985,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+Average,0.7800640360754529,0.00016260999721804168,0.22113596392454707,0.6933199452978674,0.7793301897141747,0.00034141651444718113,313187.8,1.2,

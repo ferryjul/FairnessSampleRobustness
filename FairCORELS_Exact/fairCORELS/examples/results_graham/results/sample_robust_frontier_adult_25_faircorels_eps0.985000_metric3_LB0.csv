@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7931669922234917,0.0001807971820397999,0.20883300777650826,0.3605915189501518,0.7934846698113207,0.0003170577045022194,3704,3016,2,"RULELIST:
+ if [occupation_other__AND__hoursPerWeek_-inf_to_34.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7961891423727564,0.00015724032389165168,0.2078108576272436,0.3553476066826711,0.7946639150943396,0.0019261637239165329,7283938,2228572,4,"RULELIST:
+ if [workclass_private__AND__age_-inf_to_21.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [not_occupation_blueCollar]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7872410997272794,0.0002690932428715504,0.2157589002727206,0.37949472651459404,0.787704555506413,0.001223004125212327,789286,371617,3,"RULELIST:
+ if [workclass_private__AND__occupation_other]: (income > 50K) = False
+else if [occupation_blueCollar__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7921795533279281,8.456166773892387e-05,0.2098204466720719,0.3667517674783975,0.7986141825151113,0.0005928051113402797,7765,5681,2,"RULELIST:
+ if [age_-inf_to_21.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.803456917520454,0.0002618985552010839,0.200543082479546,0.3634139179798375,0.7980244729470736,0.00024473982312195135,5929675,2094633,4,"RULELIST:
+ if [age_-inf_to_21.5__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [not_hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7944467410343818,0.00019071819434860195,0.20855325896561805,0.3651199075211304,0.7944983591748516,0.0008607540976186621,940703.8,3.0,

@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8039575343227169,0.001124200638042399,0.20004246567728312,0.0024909259127464238,0.8037679226408803,0.007996153311858805,5277904,2021773,4,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_5_Pay_duly]: (default_payment:yes) = True
+else if [not_PAY_AMT2_very_low]: (default_payment:yes) = False
+else if [PAY_AMT4_high]: (default_payment:yes) = True
+else (default_payment:yes) = False",0.792562948140737,0.007250234279332822
+1,0.7872269468067367,0.0010126873093653926,0.21577305319326334,0.002567027952082145,0.7917291979322995,0.0020602956448454723,1698851,736426,3,"RULELIST:
+ if [BILL_AMT6_middle]: (default_payment:yes) = False
+else if [BILL_AMT5_very_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7844281427142381,0.0001951299809831858
+2,0.7834472791951531,0.0005517182552432481,0.2195527208048469,0.030789059143634542,0.7860596965149241,0.00023832836067356512,715839,393386,3,"RULELIST:
+ if [not_PAY_AMT4_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False",0.7874291430476825,0.0047332762966217305
+3,0.7815018620421321,0.0,0.21849813795786788,1.0,0.7723861930965483,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False",0.7765921973991331,0.0
+4,0.784058696014674,0.0011651211877193512,0.21894130398532596,0.07375178316690442,0.7787226946806737,0.0014146946901662633,2903649,1011842,3,"RULELIST:
+ if [not_PAY_AMT2_very_low]: (default_payment:yes) = False
+else if [not_PAY_AMT3_very_low]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False",0.7832610870290097,0.004216254916392398
+Average,0.7880384636762827,0.0007707454780740781,0.21456153632371744,0.2219197592350735,0.7865331409730651,0.002341894401508821,2119248.6,832685.4,2.6,,0.7848547036661601,0.003278979094666027

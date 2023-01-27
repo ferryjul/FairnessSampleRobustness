@@ -1,0 +1,23 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.542674253200569,0.002731340156205705,0.45932574679943106,0.3026196928635953,0.5620853080568721,0.002587494989006183,22268,14229,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5431484115694643,0.0015218254654874377,0.45885158843053575,0.30203160270880364,0.5601895734597157,0.006872852233676976,20972,13766,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5436225699383594,0.0035739328547061636,0.45837743006164056,0.3102059086839749,0.5412322274881517,0.003745318352059925,21329,14086,2,"RULELIST:
+ if [priors_1]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5482341787153354,0.003280425337519318,0.4537658212846646,0.18043087971274685,0.5607210626185958,0.015723270440251572,21809,14038,2,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5605593742593031,0.0015219654740180983,0.44244062574069687,0.21419127368884971,0.5170777988614801,0.014164904862579281,1210074,623707,3,"RULELIST:
+ if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [age_18-20__AND__juvenile-crimes_=0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.5476477575366062,0.002525897857587345,0.45455224246339376,0.2618958715315941,0.5482611940969631,0.008618768175514787,135965.2,2.2,

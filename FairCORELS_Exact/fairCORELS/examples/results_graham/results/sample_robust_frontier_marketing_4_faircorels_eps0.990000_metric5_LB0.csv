@@ -1,0 +1,18 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8865209471766848,0.0,0.11347905282331516,1.0,0.8905889496053431,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+1,0.8911657559198543,0.004744079940650934,0.11183424408014575,0.004338394793926247,0.8877959927140255,0.004123135554241375,1161550,411877,3,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [not_day_of_week_thu]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8862477231329691,0.0,0.11375227686703093,1.0,0.8916818457802065,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+3,0.8885245901639345,0.0,0.11147540983606552,1.0,0.8825743776563448,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+4,0.8904068002428658,0.004241647429929385,0.11259319975713422,0.004311506332524926,0.8901032179720705,0.008651665377364014,483773,211169,3,"RULELIST:
+ if [not_default_no]: (subscribe:yes) = False
+else if [not_day_of_week_thu]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.8885731633272617,0.0017971454741160637,0.11262683667273832,0.6017299802252902,0.8885488767455982,0.0025549601863210777,124609.2,1.2,

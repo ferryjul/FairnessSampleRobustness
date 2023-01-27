@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.895203400121433,0.005051991681330987,0.10779659987856705,0.06469433410948272,0.8973891924711597,0.0057590000631648555,1418016,378118,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.893624772313297,0.002312072571516369
+1,0.8967415502934628,0.00627130537470525,0.1072584497065372,0.05885036496350365,0.8954462659380692,0.0008242478216804543,2432095,740529,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [cons_price_idx_low]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.901517911353977,0.007123478533897847
+2,0.8978344464683262,0.007437101408648119,0.10616555353167378,0.04536741214057508,0.9013964784456587,0.010301905873961199,2195502,642012,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [month_may]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.896782027929569,0.0002406703642889238
+3,0.8941914592187816,0.0017908884327191938,0.10780854078121838,0.11440291704649043,0.8870673952641166,0.00839804561258405,13240,8414,2,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8947176684881603,0.006904482286161676
+4,0.8955676988463873,0.003913509158984593,0.10743230115361269,0.07353679120478081,0.8949605343047966,0.005938610797089517,772269,291165,3,"RULELIST:
+ if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8949605343047966,0.005596975425330814
+Average,0.8959077109896783,0.004892959211277629,0.10729228901032181,0.07137036389296654,0.8952519732847601,0.006244362033696015,1366224.4,412047.6,3.2,,0.89632058287796,0.004435535836239126

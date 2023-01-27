@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8865209471766848,0.0,0.11347905282331516,1.0,0.8905889496053431,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+1,0.8950212507589557,0.0020973593345884334,0.10797874924104434,0.002440347071583514,0.8931390406800243,0.01429134634338658,568707,237926,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [loan_no__AND__poutcome_failure]: (subscribe:yes) = False
+else if [loan_no__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.8942622950819672,0.002932714286313476,0.10873770491803281,0.0018681611956231651,0.899210686095932,0.014590508993494122,525888,231391,3,"RULELIST:
+ if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [job_retired]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.8972677595628415,0.0034603694178162447,0.10573224043715845,0.0013616557734204794,0.8875531268973892,0.012929471945865356,1235919,383916,3,"RULELIST:
+ if [month_nov]: (subscribe:yes) = False
+else if [job_retired]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8954766241651487,0.004286285162842685,0.10752337583485128,0.0008084074373484236,0.8943533697632058,0.009746720940750797,903704,321721,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.8937097753491194,0.0025553456403121675,0.10869022465088041,0.20129571429559512,0.8929690346083788,0.010311609644699371,234990.8,2.4,

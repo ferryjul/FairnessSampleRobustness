@@ -1,0 +1,16 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7526628091254193,0.0,0.24733719087458073,1.0,0.7492629716981132,0.0,0,0,0,"RULELIST:
+(income > 50K) = False"
+1,0.7522573987395422,0.0,0.24774260126045777,1.0,0.7508844339622641,0.0,0,0,0,"RULELIST:
+(income > 50K) = False"
+2,0.7548463182722783,0.005891932958998784,0.24715368172772167,0.32321073192304856,0.7580716497125166,0.003905868896028528,5187,4461,2,"RULELIST:
+ if [occupation_blueCollar__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [occupation_blueCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7531510282302646,0.004421538260875929,0.24884897176973542,0.3235792732365298,0.7593984962406015,0.003686767426595236,17722,11888,2,"RULELIST:
+ if [not_occupation_blueCollar]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7530773199675683,0.0,0.24692268003243167,1.0,0.7476043048798466,0.0,0,0,0,"RULELIST:
+(income > 50K) = False"
+Average,0.7531989748670146,0.0020626942439749426,0.24760102513298543,0.7293580010319156,0.7530443712986685,0.0015185272645247528,3269.8,0.8,

@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.892046144505161,0.006601341949830338,0.11095385549483905,0.0026715239829993927,0.8949605343047966,0.008461213593430172,572914,245665,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [day_of_week_tue]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8908318154219793,0.010060250207276782
+1,0.8906699048775552,0.004590264625795797,0.11233009512244485,0.004573972879983809,0.8875531268973892,0.0012585902858232943,898772,358497,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8932604735883425,0.004126975610826754
+2,0.892936652499494,0.008272854687908164,0.11006334750050595,0.001497672535923902,0.8971463266545234,0.016112719571820592,302120,146049,3,"RULELIST:
+ if [contact_cellular__AND__poutcome_failure]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8916818457802065,0.009522444979509957
+3,0.8931795183161303,0.00236519396285975,0.10982048168386971,0.0012548067192875937,0.8870673952641166,0.005967477924731741,1161548,400384,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8941105039465695,0.008159076268135024
+4,0.8937462052216151,0.007349841233093304,0.10925379477838493,0.002266747621938879,0.8933819064966606,0.01620337841907036,1423615,423807,3,"RULELIST:
+ if [contact_cellular__AND__poutcome_failure]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8930176077717061,0.012168892677823305
+Average,0.8925156850839912,0.005835899291897472,0.1104843149160089,0.002452944748026715,0.8920218579234973,0.009600675958975232,871793.8,314880.4,3.0,,0.8925804493017608,0.008807527948714365

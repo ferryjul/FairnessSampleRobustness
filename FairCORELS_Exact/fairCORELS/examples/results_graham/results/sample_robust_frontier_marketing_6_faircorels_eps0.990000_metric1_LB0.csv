@@ -1,0 +1,20 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8865209471766848,0.0,0.11347905282331516,1.0,0.8905889496053431,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+1,0.8880388585306618,0.0,0.11196114146933822,1.0,0.8845173041894353,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+2,0.8900121432908318,0.0032912821688239734,0.11298785670916822,0.03066180935033394,0.8950819672131147,0.0018340354212792722,1592818,515440,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.8922890103217972,0.002906088944979861,0.11071098967820281,0.035610200364298725,0.8859744990892532,0.003382117237096761,1123204,391675,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8911353976927747,0.006516781794568757,0.11086460230722528,0.00294474802671524,0.8896174863387978,0.006182679408885861,26433,13020,2,"RULELIST:
+ if [not_job_admin.]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.88959927140255,0.0025428305816745183,0.11200072859744994,0.41384335154826957,0.8891560412871888,0.002279766413452379,184027.0,1.6,

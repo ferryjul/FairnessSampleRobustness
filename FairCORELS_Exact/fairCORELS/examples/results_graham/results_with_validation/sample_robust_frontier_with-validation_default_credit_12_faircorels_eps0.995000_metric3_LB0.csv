@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.7938969484742371,0.0009076166156721938,0.20910305152576292,0.002562095224539179,0.7899299766588863,0.009440580103903556,649427,352929,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_MARRIAGE_Single]: (default_payment:yes) = True
+else if [PAY_3_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False",0.7905619476404869,0.001389009479954767
+1,0.7864487799455283,0.0011495989460248157,0.2165512200544717,0.0027096406160867087,0.7873936968484242,0.00921884918183026,1548448,719059,3,"RULELIST:
+ if [AGE_middle]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7779259753251083,0.014211212156893166
+2,0.7819465288199655,0.0007913512724167173,0.2210534711800345,0.10167549763711872,0.7815574453893613,0.0008753359197152593,2832798,1032200,3,"RULELIST:
+ if [not_BILL_AMT1_high]: (default_payment:yes) = False
+else if [not_PAY_AMT1_high]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7872624208069356,0.00019269159325116959
+3,0.7815018620421321,0.0,0.21849813795786788,1.0,0.7723861930965483,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False",0.7765921973991331,0.0
+4,0.7839475293202156,0.0003308305185828497,0.2190524706797844,0.10256776034236804,0.7788894447223612,0.00039954643971752907,1255862,626686,3,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else if [not_BILL_AMT5_low]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7827609203067689,0.0019221956311421158
+Average,0.7855483297204158,0.0006358794705393153,0.21685167027958427,0.24190299876402252,0.7820313513431162,0.003986862329033321,1257307.0,546174.8,2.4,,0.7830206922956865,0.0035430217722482436

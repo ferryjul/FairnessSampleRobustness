@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8930985630439182,0.003060488099681829,0.10990143695608179,0.11509838834862804,0.8953248330297511,0.0069341636415654485,969307,346464,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8914389799635701,0.0051460743212098595
+1,0.891317547055252,0.0024045167575284803,0.11168245294474799,0.12043795620437957,0.8911961141469338,0.0011322391292751767,1197738,430526,3,"RULELIST:
+ if [nr_employed_low]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8965391621129326,0.004508592818630938
+2,0.8918032786885246,0.0019114970576180191,0.1111967213114754,0.12140575079872204,0.8964177292046145,0.0056268412618536955,514814,229991,3,"RULELIST:
+ if [euribor3m_low]: (subscribe:yes) = False
+else if [not_duration_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8902246508803886,0.00018785868560483414
+3,0.8880793361667678,0.0,0.11192066383323218,1.0,0.8825743776563448,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False",0.8898603521554341,0.0
+4,0.8926937866828577,0.0029163399051806826,0.1103062133171423,0.11874458282012681,0.891317547055252,0.00015652532782167944,1526250,447469,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8922890103217972,0.004231077504725898
+Average,0.8913985023274641,0.002058568364001802,0.11100149767253593,0.2951373356343713,0.8913661202185793,0.0027699538721032,841621.8,290890.0,2.4,,0.8920704310868246,0.002814720666034306

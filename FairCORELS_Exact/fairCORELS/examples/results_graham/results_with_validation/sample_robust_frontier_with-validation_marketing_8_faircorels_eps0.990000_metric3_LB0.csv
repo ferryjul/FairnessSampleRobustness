@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8986439991904472,0.007276702394283581,0.10435600080955276,0.0023741040040177143,0.9028536733454766,0.012007862166851827,37017,18040,3,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8965391621129326,0.01524867283553822
+1,0.8939890710382513,0.005800182925765155,0.10901092896174869,0.023768248175182482,0.8899817850637523,0.0007820381695853944,180981,91130,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [month_mar]: (subscribe:yes) = True
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.896782027929569,0.006964647530085903
+2,0.8943128921270997,0.004086927159321862,0.10868710787290026,0.03664993153811045,0.8979963570127505,0.006938625826277706,1031899,338803,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [cons_price_idx_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.892896174863388,0.0033496184431660333
+3,0.8993725966403562,0.00490669640217272,0.10462740335964382,0.04083865086599818,0.8922890103217972,0.008372926526673713,2537398,786894,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.9003035822707954,0.00916030534351145
+4,0.8954462659380692,0.005139335166249124,0.1075537340619308,0.04028100907805301,0.8949605343047966,0.008335548603643834,182659,92988,3,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [cons_price_idx_very_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8939890710382513,0.012722873345935729
+Average,0.8963529649868448,0.005441968809558489,0.10684703501315526,0.028782388732272367,0.8956162720097147,0.007287400258606495,793990.8,265571.0,3.2,,0.8961020036429872,0.009489223499647467

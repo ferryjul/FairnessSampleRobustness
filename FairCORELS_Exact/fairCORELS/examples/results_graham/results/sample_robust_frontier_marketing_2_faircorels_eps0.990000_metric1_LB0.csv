@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8917425622343655,0.007466911956899443,0.11125743776563446,0.002185792349726776,0.8949605343047966,0.008461213593430172,1361743,441499,3,"RULELIST:
+ if [day_of_week_tue]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8929568913175471,0.0037963824450064874,0.11004310868245293,0.002246508803885853,0.8914389799635701,0.0028634839985881982,1310286,418392,3,"RULELIST:
+ if [education_basic.4y]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8920157862780813,0.00708133490455207,0.11098421372191869,0.0024893746205221614,0.8962962962962963,0.01162299379252948,1471081,449315,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [loan_no__AND__poutcome_failure]: (subscribe:yes) = False
+else if [loan_no__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.8937462052216151,0.002584539546090933,0.10925379477838493,0.0020340012143290833,0.8882817243472981,0.002042578376665688,1751016,464920,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [education_basic.4y]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8935640558591378,0.00855659291674473,0.10943594414086222,0.0012446873102610807,0.8933819064966606,0.01620337841907036,1278366,407747,3,"RULELIST:
+ if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.8928051001821494,0.005897152353858732,0.11019489981785065,0.002040072859744991,0.8928718882817244,0.00823872963605678,436374.6,3.0,

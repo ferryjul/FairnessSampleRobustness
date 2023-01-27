@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7550584159510559,0.01066167897362369,0.24694158404894406,0.134257189688571,0.7517688679245284,0.013221990257480831,5627,4849,2,"RULELIST:
+ if [not_occupation_blueCollar]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.8052555928205506,0.006706524041823481,0.1987444071794494,0.0046117227015769115,0.8064563679245284,0.01844469968245388,1981279,750722,4,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [workclass_private__AND__education_dropout]: (income > 50K) = False
+else if [occupation_blueCollar__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else (income > 50K) = True"
+2,0.7536669860691384,0.010768951550096384,0.2483330139308616,0.12861164616980295,0.7573345127524694,0.01282965074839626,14107,10318,2,"RULELIST:
+ if [not_occupation_blueCollar]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.8139603449546694,0.006257518015842289,0.1900396550453306,0.004433934377771209,0.8168951791242813,0.03354641991005625,1204871,347254,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [not_education_masters_doctorate]: (income > 50K) = False
+else if [occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.8160978845728606,0.005708571682704888,0.18790211542713942,0.004029850746268657,0.8146837682441398,0.019032721022623773,1139879,311231,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [not_education_masters_doctorate]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7888078448736551,0.008020648852818146,0.21439215512634502,0.05518886873679816,0.7894277391939895,0.019415096324202196,284874.8,3.2,

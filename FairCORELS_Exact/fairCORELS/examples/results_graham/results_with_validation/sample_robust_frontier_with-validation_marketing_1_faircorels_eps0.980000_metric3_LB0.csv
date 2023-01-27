@@ -1,0 +1,30 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.9017607771706132,0.016021614319486663,0.1022392228293868,0.003424188467333242,0.9051608986035216,0.021328022531275893,7678269,1398237,4,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else if [month_mar]: (subscribe:yes) = True
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.9003035822707954,0.017719879716411688
+1,0.8995749848208865,0.01369817760345303,0.10342501517911351,0.008211678832116789,0.9013964784456587,0.004867097576191901,24722,9255,3,"RULELIST:
+ if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.903096539162113,0.012316455137293764
+2,0.9001821493624772,0.010359987852454039,0.1038178506375228,0.04586946599726152,0.9045537340619307,0.014955595970354157,1326161,284505,4,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9001821493624772,0.0058691881879286995
+3,0.9020845982594616,0.007319496185914495,0.10091540174053837,0.05305378304466728,0.8926533090467517,0.013715327237360044,24555,8491,3,"RULELIST:
+ if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.9043108682452945,0.022795556860442358
+4,0.9032584497065371,0.014564916445689444,0.10074155029346288,0.004698690753159071,0.9005464480874317,0.017963159364859774,1229208,257128,4,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else if [month_mar]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9004250151791136,0.025386465028355384
+Average,0.901372191863995,0.012392838481399535,0.10222780813600488,0.02305156141890758,0.900862173649059,0.014565840536008354,2056583.0,391523.2,3.6,,0.9016636308439587,0.016817508986086378

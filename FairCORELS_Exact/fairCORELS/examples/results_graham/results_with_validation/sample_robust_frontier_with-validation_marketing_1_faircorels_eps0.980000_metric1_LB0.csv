@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8947581461242663,0.012717597676878334,0.1082418538757337,0.006193078324225865,0.8970248937462052,0.012561081301987366,520966,211861,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8927747419550698,0.018557116524783323
+1,0.8932199959522363,0.014418895652931068,0.10878000404776367,0.004776361060514066,0.8926533090467517,0.009183687712742302,20440,9875,2,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8975106253794778,0.011900721128851429
+2,0.8943128921270997,0.013151971829176453,0.10868710787290026,0.0058287795992714025,0.8979963570127505,0.016458941107661537,339696,153823,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8931390406800243,0.01339038494084359
+3,0.8943533697632058,0.011966929488015091,0.10864663023679422,0.006840720501922688,0.8891317547055252,0.005415528815345521,472434,210298,3,"RULELIST:
+ if [contact_cellular__AND__poutcome_failure]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8954462659380692,0.009222243475422234
+4,0.8942319368548877,0.010403237735160685,0.10776806314511234,0.008136004857316333,0.8939890710382513,0.016473835484893562,22758,11456,2,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8931390406800243,0.016684279215313243
+Average,0.8941752681643391,0.012531726476432326,0.10842473183566084,0.006354988868650072,0.8941590771098967,0.012018614884526057,275258.8,119462.6,2.6,,0.894401942926533,0.013950949057042764

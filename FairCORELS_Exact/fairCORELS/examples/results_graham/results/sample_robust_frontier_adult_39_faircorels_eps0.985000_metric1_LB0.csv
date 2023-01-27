@@ -1,0 +1,23 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7616186931043379,0.004769971817351456,0.24138130689566206,0.1972505804739616,0.7591391509433962,0.006508004568505381,772122,391256,3,"RULELIST:
+ if [not_occupation_professional]: (income > 50K) = False
+else if [education_bachelors]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7594442192164523,0.00781998269073869,0.24255578078354767,0.22179633656433126,0.7573702830188679,0.006077224701849164,4418,3765,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7605587086312375,0.00601227277933264,0.24144129136876247,0.15113879265865704,0.7617573345127525,0.0012884993860283606,9585,7415,2,"RULELIST:
+ if [occupation_professional__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7587160020638314,0.005679474464847831,0.24328399793616862,0.20682538512567258,0.7644110275689223,0.006860085701930259,22241,12859,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [workclass_private__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7589739809832682,0.0068746400883742415,0.24302601901673182,0.2896366182649075,0.7536488279522335,0.004447190908784567,16289,10981,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_sales]: (income > 50K) = False
+else if [occupation_sales]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7598623207998255,0.006231268368128972,0.24233767920017452,0.213329542617506,0.7592653247992345,0.005036201053419546,85255.2,2.2,

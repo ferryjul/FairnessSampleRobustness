@@ -1,0 +1,30 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7550584159510559,0.01066167897362369,0.24694158404894406,0.134257189688571,0.7517688679245284,0.013221990257480831,5627,4849,2,"RULELIST:
+ if [not_occupation_blueCollar]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.8134375115173406,0.004631336323062563,0.19056248848265944,0.0043141922047009815,0.8129422169811321,0.02097831227619751,1140216,316239,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [capitalLoss_-inf_to_1534.0__AND__hoursPerWeek_-inf_to_34.5]: (income > 50K) = False
+else if [education_masters_doctorate__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.8157293432593794,0.005652511628896351,0.1882706567406206,0.004445102978218996,0.8173374613003096,0.05975382422281916,1173635,330820,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [not_occupation_whiteCollar]: (income > 50K) = False
+else if [education_masters_doctorate]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.8157293432593794,0.0011762454723316385,0.1882706567406206,0.0031037540644398465,0.8216128556685832,0.04521320430411335,1131706,317377,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [education_hs_grad__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.8167981130684749,0.005227703562871389,0.18720188693152506,0.002238805970149254,0.8173374613003096,0.026433349415185603,1145956,319131,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [education_hs_grad__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.803350545411126,0.005469895192157126,0.20024945458887394,0.029671808981216012,0.8041997726349726,0.03312013609515929,257683.2,3.6,

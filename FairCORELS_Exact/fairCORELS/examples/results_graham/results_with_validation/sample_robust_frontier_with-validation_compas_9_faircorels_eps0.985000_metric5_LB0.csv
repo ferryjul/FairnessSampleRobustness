@@ -1,0 +1,23 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.5273474549478343,0.003053900458183323,0.4746525450521657,0.09530112508272667,0.5421800947867299,0.0012147863798151097,23298,14746,2,"RULELIST:
+ if [age_23-25__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [age_23-25__AND__charge_degree_Misdemeanor]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5298578199052133,0.005914287539119883
+1,0.5324059437243124,0.0020060166035116137,0.4695940562756876,0.08032128514056225,0.5488151658767773,0.002918498945002068,23974,14814,2,"RULELIST:
+ if [not_priors_1]: (recidivism:yes) = False
+else if [age_18-20__AND__charge_degree_Felony]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5222748815165876,0.010137259980021462
+2,0.5349351881125514,0.004354614958724468,0.46706481188744864,0.0114247311827957,0.5308056872037915,0.0062040523578984486,18833,13152,2,"RULELIST:
+ if [not_priors_1]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.533649289099526,0.005113636363636376
+3,0.5328697850821744,0.001987830598046192,0.4691302149178256,0.11788345612860013,0.5360531309297912,0.007865850079245562,22032,14360,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20__AND__juvenile-crimes_=0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.533649289099526,0.004623094297007357
+4,0.5651074589127687,0.004726816221821917,0.4378925410872313,0.008168028004667444,0.5275142314990512,0.03441558441558443,1665151,765451,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [priors_2-3__AND__juvenile-felonies_=0]: (recidivism:yes) = True
+else if [charge_degree_Felony__AND__juvenile-misdemeanors_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5658767772511848,0.06175553034600112
+Average,0.5385331661559281,0.003225835768057503,0.46366683384407176,0.06261972510787044,0.5370736620592282,0.010523754435509122,350657.6,164504.6,2.2,,0.5370616113744076,0.01750876170515724

@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.9005059704513256,0.009128139497680371,0.10349402954867437,0.027941377893439256,0.9049180327868852,0.012327402029449687,1353274,292363,4,"RULELIST:
+ if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [not_duration_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8988463873709776,0.012133873501550579
+1,0.8993725966403562,0.011462504265471466,0.10462740335964382,0.0030565693430656933,0.9013964784456587,0.003722798546318136,1437287,315179,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.90394656952034,0.010679085329657122
+2,0.8997773730014167,0.009774102366435396,0.10422262699858331,0.012870835235052487,0.9044323011536126,0.01479696652872979,1378188,298236,4,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [not_nr_employed_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8996964177292046,0.004904092482604588
+3,0.9021655535316737,0.007917923245225002,0.10183444646832629,0.03997265268915223,0.8939890710382513,0.009151924520210145,1368874,294387,4,"RULELIST:
+ if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [not_duration_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9047965998785671,0.018934723037776473
+4,0.9011131349929165,0.009270312358551691,0.10188686500708355,0.01633137174398978,0.8986035215543412,0.013147820925213397,27576,11742,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8979963570127505,0.01346359168241966
+Average,0.9005869257235378,0.009510596346672786,0.10321307427646227,0.02003456138093989,0.9006678809957498,0.010629382509984232,1113039.8,242381.4,3.8,,0.9010564663023679,0.012023073206801686

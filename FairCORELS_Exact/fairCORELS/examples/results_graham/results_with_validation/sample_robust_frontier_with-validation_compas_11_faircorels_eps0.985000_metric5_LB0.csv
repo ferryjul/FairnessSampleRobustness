@@ -1,0 +1,22 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.5263989883022447,0.0069927044618803835,0.47560101169775526,0.1813368630046327,0.5497630331753555,0.012618296529968487,21545,14055,2,"RULELIST:
+ if [gender_Male__AND__juvenile-misdemeanors_=0]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5345971563981042,0.00392156862745098
+1,0.5314574770787227,0.0015128286714298112,0.4705425229212773,0.1278447121820616,0.5497630331753555,0.018398375105992737,21221,14072,2,"RULELIST:
+ if [gender_Male__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.524170616113744,0.010137259980021462
+2,0.5336705659184319,0.005580128025679754,0.46832943408156813,0.14448924731182797,0.5279620853080569,0.0060606060606061,20684,13964,2,"RULELIST:
+ if [age_26-45__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [age_26-45__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5327014218009478,0.009375000000000022
+3,0.5322376738305942,0.00399990303265374,0.46976232616940583,0.1346282652377763,0.5332068311195446,0.0037959575009294255,22029,14363,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5317535545023697,0.010834274421230972
+4,0.5470922882427307,0.0036855036855036856,0.4549077117572693,0.04,0.4990512333965844,0.011835973904939512,23039,14307,2,"RULELIST:
+ if [juvenile-felonies_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5308056872037915,0.006430868167202572
+Average,0.5341713986745449,0.004354213575429475,0.4678286013254551,0.12565981754725972,0.5319492432349794,0.010541841820487253,21703.6,14152.2,2.0,,0.5308056872037914,0.008139794239181201

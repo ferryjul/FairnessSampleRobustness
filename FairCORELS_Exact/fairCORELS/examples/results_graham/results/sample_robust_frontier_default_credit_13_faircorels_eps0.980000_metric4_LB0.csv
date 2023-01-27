@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7910205102551275,0.002773529659074958,0.21197948974487246,0.016319639842431063,0.7999333111037013,0.011616941015089144,256547,164146,3,"RULELIST:
+ if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly__AND__PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT2_very_high]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+1,0.7844845554212347,0.0018674950756614184,0.21851544457876526,0.016885553470919325,0.7903951975987994,0.011491248451053204,905464,483172,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT3_low]: (default_payment:yes) = True
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+2,0.7886114469131685,0.002703532079812554,0.21438855308683147,0.016726179289607217,0.7853926963481741,0.007939642727832763,687389,362211,3,"RULELIST:
+ if [BILL_AMT6_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [not_BILL_AMT4_low]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+3,0.7802742923840094,0.0,0.21972570761599064,1.0,0.7723861930965483,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+4,0.8051606986535496,0.0025981811129384136,0.19883930134645045,0.015309015309015309,0.8034017008504252,0.0022692448992392977,3818787,1342310,4,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [not_PAY_AMT3_low]: (default_payment:yes) = True
+else if [PAY_6_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+Average,0.789910300725418,0.001988547585497469,0.21268969927458206,0.21304807758239458,0.7903018197995297,0.0066634154186428814,470367.8,2.6,

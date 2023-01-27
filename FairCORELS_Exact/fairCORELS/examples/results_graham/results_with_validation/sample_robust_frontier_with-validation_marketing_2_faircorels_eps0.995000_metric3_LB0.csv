@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8947581461242663,0.004412094064949608,0.1082418538757337,0.0005478701547733187,0.8970248937462052,0.005119920337969138,499059,211645,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8927747419550698,0.0011981324060166875
+1,0.892896174863388,0.00408453654955169,0.11010382513661199,0.0008211678832116788,0.8901032179720705,0.00015399565379736128,810792,314322,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8961748633879781,0.0024437897690756647
+2,0.8943128921270997,0.0031270161846936664,0.10868710787290026,0.0011866727521679598,0.8979963570127505,0.006632054200886248,352977,158864,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8931390406800243,0.0036443076102232546
+3,0.8961748633879781,0.0029833498061278803,0.10682513661202186,0.0011850501367365541,0.8896174863387978,0.00039455344698188094,429979,190827,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8962962962962963,0.006290369935408104
+4,0.8942319368548877,0.003000458737525848,0.10776806314511234,0.0011860772774964646,0.8939890710382513,0.006586174934913978,23092,11572,2,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8931390406800243,0.005682873345935728
+Average,0.894474802671524,0.0035214910685697383,0.10832519732847604,0.0009853676408771953,0.893746205221615,0.0037773397149097206,423179.8,177446.0,2.8,,0.8943047965998785,0.003851894613331888

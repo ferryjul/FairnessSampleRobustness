@@ -1,0 +1,29 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8098993845133232,0.00014541499695882665,0.1941006154866768,0.310841249632749,0.8066037735849056,0.0006641939781718343,1302241,383253,4,"RULELIST:
+ if [education_hs_grad__AND__age_-inf_to_21.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [not_capitalLoss_1881.5_to_1978.5]: (income > 50K) = False
+else if [not_age_21.5_to_24.5]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.8091622747208197,0.00030891182569403597,0.1928377252791803,0.2890108274949782,0.8092570754716981,0.0018786341659657545,657,558,2,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.808800766565932,0.0007658690137831974,0.19419923343406797,0.3252391464311994,0.8095238095238095,3.8825527784518274e-05,107164,56029,3,"RULELIST:
+ if [occupation_other__AND__hoursPerWeek_-inf_to_34.5]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.8102012235571607,0.001986382959550628,0.19379877644283927,0.2970836606441477,0.8170426065162907,0.0008159712340797183,1181263,327166,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [not_workclass_selfEmployed]: (income > 50K) = False
+else if [education_prof_school]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.8133338247217513,0.002059205786952016,0.1906661752782487,0.2584418126651659,0.8076072534276869,0.0014205120958457806,1175801,319024,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [not_hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [education_prof_school]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.8102794948157974,0.0010531569165877406,0.1931205051842026,0.29612333937364804,0.8100069037048783,0.0009636274003695211,217206.0,3.4,

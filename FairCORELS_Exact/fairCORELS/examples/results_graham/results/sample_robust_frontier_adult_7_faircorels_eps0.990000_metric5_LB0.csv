@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8118158699738326,0.0064128815262691555,0.1921841300261674,0.0019371181642080166,0.8107311320754716,0.06886189662807618,5629585,1613830,4,"RULELIST:
+ if [capitalLoss_1568.5_to_1820.5]: (income > 50K) = False
+else if [education_masters_doctorate]: (income > 50K) = True
+else if [education_prof_school]: (income > 50K) = True
+else if [capitalGain_-inf_to_5095.5__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else (income > 50K) = True"
+1,0.8073563557291858,0.0052314296178849196,0.19564364427081415,0.003124070217197263,0.8074882075471698,0.0037778978897822224,71290,36431,3,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [education_hs_grad__AND__occupation_blueCollar]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7534458612810496,0.0007609645105091101,0.24855413871895038,0.010371906949177657,0.7567448031844317,0.0015735511815341274,23411,13487,2,"RULELIST:
+ if [not_workclass_fedGov]: (income > 50K) = False
+else if [not_capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.752671924522739,0.003218701240899402,0.249328075477261,0.005764114691102572,0.7588087866725638,0.0011419556874101566,23410,13685,2,"RULELIST:
+ if [not_workclass_otherGov]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.8126704503574851,0.0031318968440597894,0.19132954964251492,0.0029850746268656717,0.8083443903877341,0.021176253188123235,1205111,345469,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [hoursPerWeek_34.5_to_40.5__AND__workclass_otherGov]: (income > 50K) = False
+else if [education_masters_doctorate__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7875920923728584,0.0037511747479244753,0.21540790762714157,0.004836456929710236,0.7884234639734742,0.019306310914985185,404580.4,3.0,

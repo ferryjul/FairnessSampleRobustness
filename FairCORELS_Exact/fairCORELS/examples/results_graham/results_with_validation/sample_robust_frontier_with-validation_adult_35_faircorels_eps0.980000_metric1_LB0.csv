@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.7687847068652022,0.006640479006906215,0.23421529313479783,0.020983832129342964,0.7653301886792453,0.0053109520669467405,1679211,617060,3,"RULELIST:
+ if [workclass_private__AND__occupation_blueCollar]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False",0.7669516509433962,0.0065818341377797285
+1,0.7684407096171803,0.007393824380668367,0.23455929038281975,0.07164971251658558,0.769310141509434,0.006685972431368006,581157,290087,3,"RULELIST:
+ if [workclass_private__AND__occupation_blueCollar]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False",0.7640035377358491,0.0029985508197112355
+2,0.7618181818181818,0.006329386436082229,0.24118181818181816,0.16373464373464375,0.7632316084328469,0.0016652929401672015,715833,371254,3,"RULELIST:
+ if [capitalLoss_-inf_to_1534.0__AND__age_61.5_to_inf]: (income > 50K) = False
+else if [not_occupation_professional]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else (income > 50K) = True",0.7659198113207547,0.004921034095196528
+3,0.7681572481572482,0.008064350247783052,0.23484275184275183,0.037002457002457,0.7708978328173375,0.002035331496352844,1020201,481729,3,"RULELIST:
+ if [capitalLoss_-inf_to_1534.0__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [workclass_private__AND__occupation_blueCollar]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False",0.7632665094339622,0.005544341919774445
+4,0.7606879606879607,0.006240735894651791,0.24231203931203926,0.20638820638820637,0.759545923632611,0.0042402480143194955,933851,475922,3,"RULELIST:
+ if [not_occupation_professional]: (income > 50K) = False
+else if [education_hs_grad]: (income > 50K) = False
+else if [not_capitalGain_7073.5_to_inf]: (income > 50K) = False
+else (income > 50K) = True",0.7762382075471698,0.005293799875384294
+Average,0.7655777614291546,0.00693375519321833,0.23742223857084538,0.09995177035424714,0.765663139014295,0.003987559389830858,986050.6,447210.4,3.0,,0.7672759433962264,0.005067912169569247

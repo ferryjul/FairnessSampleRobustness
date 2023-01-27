@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8942015786278081,0.0035672651530327393,0.10879842137219187,0.004815409309791332,0.8994535519125683,0.013954552386762242,310420,149634,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+1,0.8950212507589557,0.0020973593345884334,0.10797874924104434,0.004067245119305857,0.8931390406800243,0.01429134634338658,561569,233811,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [loan_no__AND__poutcome_failure]: (subscribe:yes) = False
+else if [loan_no__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.8945355191256831,0.0020645385876836286,0.10846448087431693,0.0026688017080330933,0.8984820886460231,0.0028941829314963474,1375690,408367,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.8885245901639345,0.0,0.11147540983606552,1.0,0.8825743776563448,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+4,0.8954766241651487,0.004286285162842685,0.10752337583485128,0.004850444624090542,0.8943533697632058,0.009746720940750797,984048,360832,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.893551912568306,0.002403089647629497,0.10884808743169398,0.20328038015224417,0.8936004857316332,0.008177360520479193,230528.8,2.4,

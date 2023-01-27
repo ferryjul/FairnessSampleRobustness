@@ -1,0 +1,22 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.5273474549478343,0.003053900458183323,0.4746525450521657,0.1786896095301125,0.5421800947867299,0.0012147863798151097,23298,14746,2,"RULELIST:
+ if [age_23-25__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [age_23-25__AND__charge_degree_Misdemeanor]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5298578199052133,0.005914287539119883
+1,0.5330382548213721,0.0017827364408798951,0.4689617451786279,0.08835341365461848,0.5526066350710901,0.008932973122202315,22263,14382,2,"RULELIST:
+ if [gender_Male__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [age_21-22__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5184834123222749,0.011894631691886537
+2,0.5352513436610813,0.006593406593406593,0.4667486563389187,0.0793010752688172,0.5345971563981042,0.00937780168549407,18680,13124,2,"RULELIST:
+ if [not_priors_1]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.533649289099526,0.005113636363636376
+3,0.5338179519595448,0.0029878063562095436,0.46818204804045516,0.14266577361018085,0.5370018975332068,0.0017610112117714127,25377,15365,2,"RULELIST:
+ if [charge_degree_Felony__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [priors_2-3__AND__juvenile-misdemeanors_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5289099526066351,0.0037313432835820895
+4,0.5480404551201011,0.0020850390262540097,0.45395954487989887,0.030344827586206897,0.5,0.01758310034172106,13832,10476,2,"RULELIST:
+ if [not_age_23-25]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5364928909952607,0.006948383437322736
+Average,0.5354990921019868,0.003300577774986673,0.46650090789801324,0.1038709399299872,0.5332771567578262,0.007773934548200792,20690.0,13618.6,2.0,,0.529478672985782,0.006720456463109525

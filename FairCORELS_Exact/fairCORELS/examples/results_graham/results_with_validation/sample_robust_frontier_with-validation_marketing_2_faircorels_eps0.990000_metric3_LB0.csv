@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.899939283545841,0.008534101210472992,0.10406071645415904,0.001278363694471077,0.903096539162113,0.012721550734384347,1357517,294018,4,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else if [not_nr_employed_low]: (subscribe:yes) = True
+else if [contact_cellular]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8972677595628415,0.01562777309172094
+1,0.8975511030155839,0.008946900553649235,0.10644889698441606,0.0009124087591240876,0.8969034608378871,0.0021165125550522868,2029915,567444,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [not_job_self-employed]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9020036429872496,0.008259825445340057
+2,0.8990892531876138,0.008603520664632165,0.10491074681238621,0.0012323140118667274,0.9035822707953856,0.014479707645481059,1443822,325508,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [month_may]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8978749241044323,0.005359630933882495
+3,0.9020845982594616,0.007106616994855421,0.10191540174053837,0.0025068368277119417,0.8926533090467517,0.014667708189740999,1399956,311814,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else if [not_duration_low]: (subscribe:yes) = True
+else if [not_month_mar]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.9045537340619307,0.022795556860442358
+4,0.9000607164541591,0.00884432726802986,0.10293928354584092,0.0010036038501893161,0.8975106253794778,0.012828638033416396,518474,176600,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [month_may]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8971463266545234,0.013448771266540642
+Average,0.8997449908925319,0.008407093338327936,0.10405500910746812,0.00138670542867263,0.898749241044323,0.011362823431615019,1349936.8,335076.8,3.8,,0.8997692774741954,0.013098311519585298

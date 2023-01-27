@@ -1,0 +1,29 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8012339503084875,0.009522624894649653,0.20276604969151246,0.0035434383858595963,0.8057685895298433,0.012822674675176879,5880876,2358287,4,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else if [MARRIAGE_Single]: (default_payment:yes) = False
+else if [AGE_very_low]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+1,0.7974488307140772,0.009718399270230667,0.20555116928592276,0.003376547584309475,0.7980656995164249,0.006638299661137284,255487,162217,3,"RULELIST:
+ if [PAY_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+2,0.7938638542665388,0.003367536416425322,0.20913614573346118,0.00737838175830589,0.7938969484742371,0.0001459632999956037,934246,449184,3,"RULELIST:
+ if [MARRIAGE_Single]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.8045770978365084,0.010774568299753443,0.19942290216349157,0.0027512609946225355,0.8012339503084875,0.019490109787487372,5799712,1991277,4,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else if [PAY_AMT6_high]: (default_payment:yes) = False
+else if [BILL_AMT4_very_high]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+4,0.7900704489557714,0.003021044330822259,0.21292955104422862,0.007670182166826462,0.7852259463064866,0.01394511169520199,936571,448183,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_AMT3_high]: (default_payment:yes) = True
+else if [not_BILL_AMT1_middle]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+Average,0.7974388364162766,0.007280834642376268,0.2059611635837233,0.0049439621779847915,0.7968382268270958,0.010608431823799825,1081829.6,3.4,

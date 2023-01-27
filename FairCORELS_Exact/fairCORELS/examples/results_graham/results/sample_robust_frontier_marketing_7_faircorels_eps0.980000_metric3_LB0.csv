@@ -1,0 +1,29 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8981177899210686,0.009210291937200651,0.10488221007893139,0.05492774467502226,0.9028536733454766,0.012007862166851827,39009,19322,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8985731633272617,0.008930948223997625,0.10442683667273833,0.056338028169014086,0.8973891924711597,0.0019564869509556314,71382,39138,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.8982088646023072,0.008976916888576924,0.1047911353976928,0.05778782584866235,0.9024893746205221,0.01560080099470889,39507,20332,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [cons_price_idx_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.9010625379477839,0.00882405843648485,0.1029374620522161,0.06344813448134481,0.8926533090467517,0.007568809447226945,1981639,448806,4,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.9000303582270796,0.009106271807006157,0.10396964177292045,0.05604023401416402,0.898360655737705,0.013942712036629073,2139469,504032,4,"RULELIST:
+ if [contact_telephone]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [contact_cellular__AND__poutcome_failure]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.8991985428051,0.009009697458653241,0.10420145719489982,0.0577083934376415,0.8987492410443231,0.010215334319274473,206326.0,3.4,

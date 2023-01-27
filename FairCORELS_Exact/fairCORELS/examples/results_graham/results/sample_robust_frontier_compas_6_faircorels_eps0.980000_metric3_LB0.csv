@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5611664295874822,0.010466850454196232,0.4418335704125178,0.04878048780487805,0.576303317535545,0.008369878156926105,868265,472466,3,"RULELIST:
+ if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [age_18-20__AND__charge_degree_Felony]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5592697961119014,0.006951619627675966,0.4437302038880986,0.0600451467268623,0.576303317535545,0.010055176419340787,905623,482231,3,"RULELIST:
+ if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [charge_degree_Felony__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.560692271218587,0.0033232156822782574,0.441307728781413,0.08415398388540735,0.557345971563981,0.0017495431748376818,6426,5426,2,"RULELIST:
+ if [priors_>3__AND__age_23-25]: (recidivism:yes) = True
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5591372363119222,0.004566676062452818,0.44386276368807775,0.15933572710951527,0.5740037950664136,0.016960511392927105,921438,495439,3,"RULELIST:
+ if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5750177767243423,0.008715008452762095,0.4279822232756577,0.05376817981489643,0.538899430740038,0.012941709453337362,814174,435353,3,"RULELIST:
+ if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.563056701990847,0.006804674055873074,0.439743298009153,0.08121670506831188,0.5645711664883045,0.010015363719473808,378183.0,2.8,

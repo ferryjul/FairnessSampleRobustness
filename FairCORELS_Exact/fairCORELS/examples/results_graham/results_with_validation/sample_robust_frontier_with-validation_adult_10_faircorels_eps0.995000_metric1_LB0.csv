@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.7564008059364097,0.0007287512689353524,0.24659919406359032,0.06717774829229937,0.7530955188679245,0.0022941850880353054,722519,377581,3,"RULELIST:
+ if [not_workclass_otherGov]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_other]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False",0.7569280660377359,0.00171336634697758
+1,0.7572362278244631,0.0017853870618741736,0.2447637721755369,0.04702933805100988,0.7567806603773585,0.0008192216408585565,11960,9129,2,"RULELIST:
+ if [age_35.5_to_61.5__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__workclass_otherGov]: (income > 50K) = True
+else (income > 50K) = False",0.7505896226415094,0.0007218070820983495
+2,0.7531203931203931,0.0022449182081608968,0.24887960687960686,0.026535626535626536,0.7607253427686864,0.005594711433329408,22045,13242,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [hoursPerWeek_34.5_to_40.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False",0.7606132075471698,0.0007410680865003621
+3,0.7556756756756757,0.00033891633717563104,0.24632432432432427,0.06545454545454546,0.7604304879846675,0.0009351684077477211,9265,7404,2,"RULELIST:
+ if [age_35.5_to_61.5__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_other]: (income > 50K) = True
+else (income > 50K) = False",0.7505896226415094,0.0012703447392028704
+4,0.7532678132678132,0.0007170220325401966,0.24973218673218678,0.04791154791154791,0.7521745540321392,0.0024993706478065843,836362,438940,3,"RULELIST:
+ if [workclass_private__AND__hoursPerWeek_-inf_to_34.5]: (income > 50K) = False
+else if [not_occupation_other]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False",0.7716686320754716,0.002514017293881953
+Average,0.755140183164951,0.0011629989817372502,0.24725981683504905,0.05082176124900584,0.7566413128061551,0.002428531443555515,320430.2,169259.2,2.4,,0.7580778301886792,0.001392120709732223

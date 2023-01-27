@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8907508601497672,0.004801672105808175,0.11224913985023277,0.0039257673090649535,0.8939890710382513,0.009919424533577303,1399780,444710,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_cons_price_idx_high]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8893746205221615,0.007740196795286924
+1,0.891317547055252,0.004751607937093949,0.11168245294474799,0.0039497307001795335,0.8908318154219793,0.003909586700834411,1843166,492309,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8955676988463873,0.013000532323889535
+2,0.8918032786885246,0.003251879699248117,0.1111967213114754,0.004293381037567084,0.896782027929569,0.008884928157199181,1681482,500105,3,"RULELIST:
+ if [job_technician]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8914389799635701,0.00667714061272584
+3,0.8951629224853268,0.003348454513968086,0.1078370775146732,0.003978300180831827,0.8891317547055252,0.014893059975027212,1031073,365092,3,"RULELIST:
+ if [education_basic.9y]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.89605343047966,0.04377132797144612
+4,0.8924104432301153,0.003547485436863578,0.11058955676988469,0.0035919540229885057,0.8891317547055252,0.006254727570809698,921016,369873,3,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [not_education_university.degree]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8910746812386157,0.017662322684811493
+Average,0.8922890103217972,0.00394021993859638,0.11071098967820281,0.0039478266501263804,0.89197328476017,0.008772345387489562,1375303.4,434417.8,3.0,,0.892701882210079,0.01777030407763198

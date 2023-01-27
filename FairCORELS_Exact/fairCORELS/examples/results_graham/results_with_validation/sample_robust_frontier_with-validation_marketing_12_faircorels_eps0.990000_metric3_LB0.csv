@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8982797004654928,0.006331786914093746,0.10572029953450723,0.022508332191937177,0.9011536126290225,0.010307166981871688,2525446,779244,4,"RULELIST:
+ if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8975106253794778,0.0070182149990749825
+1,0.8927342643189637,0.002982300184549745,0.11026573568103626,0.08626824817518249,0.8893746205221615,6.029950299294286e-06,847312,329942,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8954462659380692,0.002602620772887609
+2,0.892046144505161,0.003291560216362235,0.10995385549483905,0.06307622090369694,0.8969034608378871,0.006441362985690067,11236,7670,2,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8909532483302975,0.0008840675011716648
+3,0.8940700263104635,0.0015266479130236449,0.1089299736895365,0.10373746581586143,0.8868245294474802,0.00839804561258405,1134659,391207,3,"RULELIST:
+ if [education_basic.6y]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.894474802671524,0.007063515365042083
+4,0.8931390406800243,0.0038692119987834813,0.10886095931997575,0.0713927284339218,0.892046144505161,0.0004757082196186793,3721,2946,2,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.892896174863388,0.009422155009451797
+Average,0.894053835256021,0.003600301445362571,0.10874616474397895,0.06939659910411997,0.8932604735883425,0.005125662750012755,904474.8,302201.8,2.8,,0.8942562234365512,0.005398114729525627

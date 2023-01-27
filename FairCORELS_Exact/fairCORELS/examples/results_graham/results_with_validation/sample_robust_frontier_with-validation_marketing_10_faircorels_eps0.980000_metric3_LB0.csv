@@ -1,0 +1,30 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8982797004654928,0.006331786914093746,0.10572029953450723,0.08414372460393553,0.9011536126290225,0.010307166981871688,2525446,779244,4,"RULELIST:
+ if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8975106253794778,0.0070182149990749825
+1,0.8973891924711597,0.00858686505900289,0.10661080752884033,0.06487226277372263,0.8979963570127505,0.0022705082088496477,2284171,668873,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9024893746205221,0.007123478533897847
+2,0.8978344464683262,0.007437101408648119,0.10616555353167378,0.07047010497489731,0.9013964784456587,0.010301905873961199,2195502,642012,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [month_may]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.896782027929569,0.0002406703642889238
+3,0.8941914592187816,0.0017908884327191938,0.10780854078121838,0.12201458523245214,0.8870673952641166,0.00839804561258405,13240,8414,2,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8947176684881603,0.006904482286161676
+4,0.9001011940902651,0.006995187833182286,0.10389880590973488,0.0770950230372702,0.8986035215543412,0.008976980505314655,2513168,776317,4,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8979963570127505,0.012868052930056712
+Average,0.897559198542805,0.006228365929529247,0.10604080145719492,0.08371914012445555,0.8972434729811779,0.008050921436516246,1906305.4,574972.0,3.6,,0.8978992106860959,0.006830979822696028

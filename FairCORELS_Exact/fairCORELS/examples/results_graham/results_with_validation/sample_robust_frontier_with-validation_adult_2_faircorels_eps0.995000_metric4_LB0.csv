@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8122757875079857,0.002032829126886182,0.19172421249201432,0.0013877874702616971,0.8089622641509434,0.05201809324982598,1292271,374387,4,"RULELIST:
+ if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [occupation_blueCollar__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [age_35.5_to_61.5__AND__education_bachelors]: (income > 50K) = True
+else (income > 50K) = False",0.808372641509434,0.014232787719054896
+1,0.7539436827362523,0.0,0.24605631726374766,1.0,0.7508844339622641,0.0,0,0,0,"RULELIST:
+(income > 50K) = False",0.7471992924528302,0.0
+2,0.8110565110565111,0.00088639192861939,0.1929434889434889,0.0015677052714089751,0.8139466312840926,0.012215581994626912,2612972,697149,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else if [age_24.5_to_29.5]: (income > 50K) = False
+else if [education_masters_doctorate__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False",0.8170695754716981,0.04442240653924745
+3,0.7520884520884521,0.0,0.2479115479115479,1.0,0.7573345127524694,0.0,0,0,0,"RULELIST:
+(income > 50K) = False",0.746314858490566,0.0
+4,0.8144471744471744,0.00043815539871538967,0.1895528255528256,0.0011739385638818234,0.8173374613003096,0.026433349415185603,1235245,352972,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [education_hs_grad__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False",0.8238502358490566,0.02042326295256791
+Average,0.7887623215672751,0.0006714752908441923,0.21363767843272488,0.4008258862611105,0.7896930606900159,0.0181334049319277,1028097.6,284901.6,2.4,,0.788561320754717,0.01581569144217405

@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7592599417683263,0.0023303381137142545,0.24374005823167366,0.1575572181476431,0.7563384433962265,0.0021312937751780062,617219,321804,3,"RULELIST:
+ if [education_hs_grad__AND__age_29.5_to_35.5]: (income > 50K) = False
+else if [occupation_professional__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [workclass_private__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7559798031916855,0.003996325689638804,0.24702019680831455,0.2946596395533115,0.7545695754716981,0.004146089596821696,1266857,600256,3,"RULELIST:
+ if [not_occupation_sales]: (income > 50K) = False
+else if [not_age_35.5_to_61.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7567258789710326,0.0036528073521580728,0.2452741210289674,0.22278322399941033,0.7596933510246203,0.0029554744402765397,16504,11111,2,"RULELIST:
+ if [not_age_29.5_to_35.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7573523992039508,0.0028344444035907764,0.2456476007960492,0.15651949583548316,0.7641161727849034,0.003967913597586908,660518,344553,3,"RULELIST:
+ if [workclass_private]: (income > 50K) = False
+else if [workclass_selfEmployed]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7581263359622614,0.003787520554884078,0.24487366403773858,0.2483968452863566,0.7511425622880731,0.001643253443597159,732584,375340,3,"RULELIST:
+ if [occupation_professional__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else if [not_age_29.5_to_35.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7574888718194513,0.0033202872227971977,0.24531112818054868,0.21598328456444094,0.7571720209931043,0.002968804970692062,330612.8,2.8,

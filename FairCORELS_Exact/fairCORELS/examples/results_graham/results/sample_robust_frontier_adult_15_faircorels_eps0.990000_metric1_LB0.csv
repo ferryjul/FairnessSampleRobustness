@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7629086352412192,0.0031305379685072354,0.2400913647587808,0.005049202078649615,0.7612028301886793,0.0052076551368421264,365183,194709,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else if [capitalGain_-inf_to_5095.5__AND__age_21.5_to_24.5]: (income > 50K) = False
+else if [workclass_private__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7586702539343235,0.0021339829444240723,0.24332974606567648,0.1562672760107618,0.7591391509433962,0.0026903199252743676,20366,12371,2,"RULELIST:
+ if [workclass_private__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [workclass_private__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7587897103265276,0.005298704393692598,0.24321028967347236,0.027861723299181837,0.7641161727849034,0.00837692812326532,21403,12565,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [workclass_private__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7591582516400088,0.0025832902405501304,0.24384174835999117,0.006228348197832977,0.7644110275689223,0.006385353714048135,461547,236133,3,"RULELIST:
+ if [workclass_private__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [workclass_private__AND__occupation_professional]: (income > 50K) = True
+else if [workclass_private__AND__education_associates]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7598584801356232,0.0026433048639007955,0.24214151986437682,0.13116385346797377,0.7543859649122807,0.0006319290685389322,16574,11116,2,"RULELIST:
+ if [occupation_professional__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [workclass_private__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7598770662555404,0.003157964082214966,0.24252293374445952,0.06531408061088,0.7606510292796365,0.004658437193593776,93378.8,2.4,

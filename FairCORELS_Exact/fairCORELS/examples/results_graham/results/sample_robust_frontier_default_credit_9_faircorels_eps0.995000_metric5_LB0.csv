@@ -1,0 +1,21 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7900616975154244,0.0007272084917181731,0.21293830248457557,0.002304764967572493,0.7967655885295098,0.0017734905471399644,722785,380497,3,"RULELIST:
+ if [PAY_6_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [MARRIAGE_Single]: (default_payment:yes) = False
+else if [PAY_3_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+1,0.7778148317979073,0.0,0.22218516820209266,1.0,0.7822244455561114,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+2,0.7821501521530702,0.0012110467342119347,0.22084984784692985,0.0026248125133919004,0.7815574453893613,0.023767204126639352,1012756,537349,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [AGE_high]: (default_payment:yes) = False
+else if [PAY_AMT6_high]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.7802742923840094,0.0,0.21972570761599064,1.0,0.7723861930965483,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+4,0.7827754387427571,0.0012724985125010246,0.22022456125724288,0.0025671194780190394,0.7770551942637985,0.03175822797286765,2845200,1040649,3,"RULELIST:
+ if [PAY_AMT6_high]: (default_payment:yes) = False
+else if [PAY_AMT1_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+Average,0.7826152825186338,0.0006421507476862265,0.2191847174813663,0.4014993393917966,0.7819977733670658,0.011459784529329392,391699.0,1.8,

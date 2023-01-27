@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.899149969641773,0.01033359463528192,0.10385003035822704,0.004006574892130676,0.9033394049787492,0.013041090596982207,26582,10636,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.9005160898603521,0.011265669530580962,0.10348391013964786,0.0032134554902228905,0.9013964784456587,0.003722798546318136,1409444,310021,4,"RULELIST:
+ if [nr_employed_low]: (subscribe:yes) = False
+else if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8997571341833637,0.008534737781169716,0.10424286581663633,0.026376186072003562,0.9044323011536126,0.01479696652872979,1350889,305168,4,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.9025804493017607,0.01021380357723045,0.10141955069823927,0.014179308459751265,0.8931390406800243,0.00802616060898467,1337743,295697,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.9012750455373406,0.010140344090068816,0.10272495446265939,0.018680078004721337,0.9001821493624772,0.011220459102124113,1324896,298214,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [not_duration_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.900655737704918,0.010097629922866374,0.10314426229508197,0.013291120583765947,0.9004978749241044,0.010161495076627784,243947.2,3.8,

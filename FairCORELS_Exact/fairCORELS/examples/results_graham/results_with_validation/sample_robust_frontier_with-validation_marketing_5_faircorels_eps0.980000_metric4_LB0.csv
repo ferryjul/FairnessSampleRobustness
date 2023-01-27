@@ -1,0 +1,21 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8924509208662215,0.009261038119882214,0.11054907913377854,0.008922198429693077,0.898360655737705,0.011228458136342767,1046512,394991,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [campaign_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8909532483302975,0.007061232164121467
+1,0.8922890103217972,0.008618567937696664,0.11071098967820281,0.00933572710951526,0.892046144505161,0.012550101846376283,1793180,493064,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [campaign_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8977534911961141,0.02996392026971073
+2,0.8946771908520542,0.008367794486215496,0.10832280914794579,0.00966010733452594,0.8994535519125683,0.02898966704936856,570376,236287,3,"RULELIST:
+ if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [job_student]: (subscribe:yes) = False
+else if [contact_cellular__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8949605343047966,0.03290564720258349
+3,0.8880793361667678,0.0,0.11192066383323218,1.0,0.8825743776563448,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False",0.8898603521554341,0.0
+4,0.8873102610807528,0.0,0.11268973891924716,1.0,0.8873102610807528,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False",0.8874316939890711,0.0
+Average,0.8909613438575187,0.005249480108758875,0.1108386561424813,0.4055836065747469,0.8919489981785063,0.010553645406417522,682013.6,224868.4,1.8,,0.8921918639951427,0.013986159927283137

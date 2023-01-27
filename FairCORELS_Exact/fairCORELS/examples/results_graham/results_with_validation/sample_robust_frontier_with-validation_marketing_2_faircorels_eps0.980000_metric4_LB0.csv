@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8946367132159482,0.0002296642333938781,0.10836328678405183,0.006780870806566738,0.8989678202792957,0.00040033551929230526,1224630,375434,3,"RULELIST:
+ if [job_student]: (subscribe:yes) = False
+else if [education_basic.4y]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8919247115968427,0.04341195395575237
+1,0.8940295486743575,0.01016937021103459,0.10897045132564254,0.007899461400359067,0.8939890710382513,0.008985478677968284,644070,273344,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8989678202792957,0.010457207073993002
+2,0.8958105646630237,0.010892857142857149,0.10718943533697634,0.0075134168157423974,0.9010321797207043,0.048746651358591686,1218628,342002,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [job_retired]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8932604735883425,0.01767478397486255
+3,0.8880793361667678,0.0,0.11192066383323218,1.0,0.8825743776563448,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False",0.8898603521554341,0.0
+4,0.89605343047966,0.00591754519581511,0.10694656952033998,0.008979885057471264,0.8954462659380692,0.008932609678878323,374545,175798,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [month_nov]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8930176077717061,0.0022719409526006373
+Average,0.8937219186399513,0.005441887356620145,0.10867808136004857,0.2062347268160279,0.8944019429265332,0.01341301504694612,692374.6,233315.6,2.4,,0.8934061930783243,0.014763177191441712

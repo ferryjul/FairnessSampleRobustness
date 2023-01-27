@@ -1,0 +1,18 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.7810016119170696,0.0,0.21899838808293037,1.0,0.782427475825275,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False",0.768050692012673,0.0
+1,0.779500861541882,0.0,0.22049913845811797,1.0,0.7822244455561114,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False",0.772757585861954,0.0
+2,0.7857261964315491,0.000751621894469201,0.21727380356845094,0.012422360248447204,0.7838919459729865,0.01824448551021085,517525,294037,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [LIMIT_BAL_very_high]: (default_payment:yes) = False
+else if [MARRIAGE_Others]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7930976992330777,0.031257978626399674
+3,0.7968984492246123,0.0019500946691433096,0.20610155077538772,0.012465021622996692,0.7992329498082374,0.04194160992771245,817325,363930,3,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [PAY_AMT3_middle]: (default_payment:yes) = True
+else if [PAY_6_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7942647549183061,0.010022375008766793
+4,0.7792785281529654,0.0,0.2207214718470346,1.0,0.7757211939302985,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False",0.7799266422140714,0.0
+Average,0.7844811294536157,0.0005403433127225022,0.21671887054638433,0.6049774763742888,0.7846996022185817,0.01203721908758466,266970.0,131593.4,1.2,,0.7816194748480164,0.008256070727033294

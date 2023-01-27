@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8986439991904472,0.007276702394283581,0.10435600080955276,0.0461580605396521,0.9028536733454766,0.012007862166851827,37017,18040,3,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8965391621129326,0.01524867283553822
+1,0.8974296701072657,0.009155796533598992,0.1055703298927343,0.025912408759124088,0.8973891924711597,0.0019564869509556314,79516,36513,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9020036429872496,0.008259825445340057
+2,0.8983201781015989,0.00988181627049102,0.10467982189840108,0.01834778639890461,0.9024893746205221,0.012872038713522861,26914,12092,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [euribor3m_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8978749241044323,0.006485575923427292
+3,0.8992916413681441,0.00553418316058018,0.1037083586318559,0.05861440291704649,0.8926533090467517,0.010586775720259154,66068,36219,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9011536126290225,0.010606283029947153
+4,0.901558388990083,0.008902050892402147,0.102441611009917,0.027735960950686558,0.899939283545841,0.010582093318530114,1325154,288840,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8988463873709776,0.011588052930056712
+Average,0.8990487755515078,0.008150109850271184,0.1041512244484922,0.03535372391308277,0.8990649666059503,0.009601051374023919,306933.8,78340.8,3.2,,0.8992835458409228,0.010437682032861887

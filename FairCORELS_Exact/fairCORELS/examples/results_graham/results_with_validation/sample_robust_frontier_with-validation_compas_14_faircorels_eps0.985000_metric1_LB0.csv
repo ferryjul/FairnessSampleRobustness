@@ -1,0 +1,23 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.5324059437243124,0.0005121581344452574,0.4705940562756876,0.029402466013278533,0.5402843601895735,0.0062371615312791775,2102093,892341,3,"RULELIST:
+ if [age_26-45__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [age_21-22__AND__gender_Female]: (recidivism:yes) = False
+else if [juvenile-crimes_>0__AND__charge_degree_Misdemeanor]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5308056872037915,0.007176001271696427
+1,0.5352513436610813,0.0015255102676180882,0.4667486563389187,0.07398039835599114,0.5507109004739337,0.016286644951140065,20031,13648,2,"RULELIST:
+ if [age_26-45__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [priors_2-3__AND__juvenile-misdemeanors_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5213270142180095,0.010728443810992468
+2,0.5365159658552008,0.004157372409867714,0.4654840341447992,0.0840973759089472,0.5355450236966824,0.009274354908034563,21681,14242,2,"RULELIST:
+ if [gender_Male__AND__age_26-45]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5374407582938389,0.010268562401263823
+3,0.5360303413400759,0.005764770219282846,0.4659696586599241,0.11883691529709228,0.538899430740038,0.002132631181839529,21874,14309,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.533649289099526,0.0014265492988897246
+4,0.5486725663716814,0.007231279410514266,0.4533274336283186,0.15518331226295828,0.5018975332068312,0.010470048888127984,23946,14567,2,"RULELIST:
+ if [not_age_26-45]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5345971563981042,0.017214397496087636
+Average,0.5377752321904704,0.0038382180883456346,0.46442476780952974,0.09230009356765348,0.5334674496614118,0.008880168292084264,437925.0,189821.4,2.2,,0.5315639810426541,0.009362790855786016

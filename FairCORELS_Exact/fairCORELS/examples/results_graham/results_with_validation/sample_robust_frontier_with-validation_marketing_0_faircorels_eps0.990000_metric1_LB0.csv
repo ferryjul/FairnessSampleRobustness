@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.894474802671524,0.008824434109402125,0.10852519732847599,0.0010119409026512851,0.8970248937462052,0.011405512906782975,627214,261028,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8939890710382513,0.01649686104915308
+1,0.8922080550495851,0.003950139225999693,0.11079194495041489,0.002266747621938879,0.8914389799635701,0.0028634839985881982,1312942,428010,3,"RULELIST:
+ if [education_basic.4y]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.895203400121433,0.003350576546141539
+2,0.8932604735883425,0.009768328501363333,0.10973952641165752,0.00020238818053025704,0.8979963570127505,0.0157230961018216,403096,181374,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [default_yes]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.892046144505161,0.00913791039562091
+3,0.8938271604938272,0.008707094825895535,0.10917283950617285,0.0011333738109694394,0.8891317547055252,0.00451028051050224,833143,341443,3,"RULELIST:
+ if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [loan_no__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8937462052216151,0.009405505934653014
+4,0.8951629224853268,0.009038418677998011,0.1078370775146732,0.0008500303582270795,0.8947176684881603,0.014819878020774897,1510498,422781,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8942319368548877,0.012458035369741764
+Average,0.893786682857721,0.00805768306813174,0.10921331714227889,0.001092896174863388,0.8940619307832423,0.009864450307693982,937378.6,326927.2,3.0,,0.8938433515482697,0.01016977785906206

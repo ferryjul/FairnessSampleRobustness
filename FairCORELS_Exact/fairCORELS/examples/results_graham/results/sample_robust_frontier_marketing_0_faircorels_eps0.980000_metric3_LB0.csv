@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.901517911353977,0.01902600717564655,0.10248208864602304,0.0008561057461817684,0.9032179720704311,0.023902176215087487,2240701,504966,4,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [not_poutcome_failure]: (subscribe:yes) = True
+else if [job_retired]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+1,0.9020643594414086,0.019044007017105104,0.10193564055859139,0.0008546424176124709,0.9024893746205221,0.010842314480461801,1315043,278163,4,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else if [month_mar]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.9008803885853066,0.01903750356981647,0.10311961141469339,0.0008563696776624533,0.9057680631451124,0.0239991535691777,2106576,487299,4,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else if [job_retired]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.9040376442015786,0.017163709369963802,0.09996235579842139,0.0024600246002460025,0.8945962355798421,0.018452112913354468,1220754,261010,4,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else if [month_mar]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+4,0.9025500910746812,0.01729364629080017,0.1014499089253188,0.0023606691983988504,0.9005464480874317,0.017963159364859774,1248537,274548,4,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else if [not_month_mar]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.9022100789313903,0.01831297468466642,0.1017899210686096,0.0014775623280203092,0.9013236187006679,0.019031783308588245,361197.2,4.0,

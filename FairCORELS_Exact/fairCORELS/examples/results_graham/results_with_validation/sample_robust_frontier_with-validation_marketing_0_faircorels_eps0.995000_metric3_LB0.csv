@@ -1,0 +1,29 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8947581461242663,0.004412094064949608,0.1082418538757337,0.0005478701547733187,0.8970248937462052,0.005119920337969138,498893,211581,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8927747419550698,0.0011981324060166875
+1,0.8941509815826756,0.004658112774849968,0.10884901841732442,0.00031934306569343066,0.8945962355798421,0.0003562309099890762,1405064,391001,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8973891924711597,0.001209936565718014
+2,0.8969844161100992,0.004885861912983645,0.10701558388990084,0.00013692377909630305,0.9009107468123861,0.009973959732855194,3932293,1314459,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [month_may]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [duration_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8956891317547055,0.0007232182169509796
+3,0.8994940295486744,0.004798398337514889,0.10450597045132559,0.00018231540565177758,0.8926533090467517,0.008372926526673713,2508953,774457,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [not_month_may]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9005464480874317,0.009962810726169505
+4,0.8955676988463873,0.003913509158984593,0.10743230115361269,0.0009579854933625291,0.8949605343047966,0.005938610797089517,778411,293704,3,"RULELIST:
+ if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8949605343047966,0.005596975425330814
+Average,0.8961910544424205,0.0045335952498565405,0.10720894555757945,0.00042888757971547184,0.8960291438979965,0.005952329660915327,1824722.8,597040.4,3.4,,0.8962720097146327,0.0037382146680372

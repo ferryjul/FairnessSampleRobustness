@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5301090564248458,0.00579004329004329,0.47289094357515415,0.1751497005988024,0.5497630331753555,0.018927444794952675,2110141,899934,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_26-45]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5301090564248458,0.0029265990087326,0.47189094357515415,0.16674987518721918,0.5488151658767773,0.002918498945002068,18788,13000,2,"RULELIST:
+ if [not_priors_1]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5334281650071123,0.009738328445376698,0.4695718349928877,0.2938508064516129,0.5298578199052133,0.009090909090909038,2048571,888948,3,"RULELIST:
+ if [charge_degree_Felony__AND__gender_Female]: (recidivism:yes) = False
+else if [not_priors_2-3]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5314055463379947,0.008409111919315815,0.47059445366200525,0.28679055750878957,0.5360531309297912,0.0008805056058857064,24257,14973,2,"RULELIST:
+ if [gender_Male__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5406494429959706,0.006807902140292477,0.4613505570040294,0.3071794871794872,0.49620493358633777,0.006644518272425249,19115,13093,2,"RULELIST:
+ if [gender_Male__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.5331402534381539,0.006734396960752176,0.4692597465618461,0.24594408538518225,0.532138816694695,0.007692375341834948,365989.6,2.4,

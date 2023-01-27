@@ -1,0 +1,22 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.5251343661081253,0.0010500855406760934,0.47686563389187475,0.07279947054930509,0.5450236966824644,0.0,21134,13936,2,"RULELIST:
+ if [gender_Male__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [juvenile-crimes_>0__AND__charge_degree_Misdemeanor]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5289099526066351,0.005899705014749235
+1,0.5305090104331331,0.004272214722464862,0.47149098956686686,0.12248995983935743,0.547867298578199,0.009287925696594423,20897,13968,2,"RULELIST:
+ if [gender_Male__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5194312796208531,0.008379888268156388
+2,0.5327220992728422,0.0036018886587163568,0.4692779007271578,0.010080645161290322,0.5298578199052133,0.009090909090909038,21520,14212,2,"RULELIST:
+ if [gender_Male__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.533649289099526,0.012499999999999956
+3,0.5306573957016435,0.0019959112102332366,0.4713426042983565,0.13395847287340926,0.5332068311195446,0.002915451895043719,22033,14367,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20__AND__priors_0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5317535545023697,0.010834274421230972
+4,0.5445638432364096,0.0038207521423503366,0.4574361567635904,0.1296551724137931,0.49620493358633777,0.005747126436781658,17278,12297,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20__AND__charge_degree_Felony]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5327014218009478,0.012478729438457181
+Average,0.5327173429504308,0.002948170454888177,0.4692826570495693,0.09379674416743104,0.5304321159743518,0.005408282623865768,20572.4,13756.0,2.0,,0.5292890995260664,0.010018519428518747

@@ -1,0 +1,29 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8986439991904472,0.007276702394283581,0.10435600080955276,0.07126877596676254,0.9028536733454766,0.012007862166851827,37017,18040,3,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8965391621129326,0.01524867283553822
+1,0.897632058287796,0.010133668015669436,0.10536794171220398,0.03941605839416058,0.8988463873709776,0.003402747338124825,43991,22194,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.9013964784456587,0.008113259383907414
+2,0.8987249544626594,0.009191784691118912,0.10527504553734057,0.058922866271109084,0.9026108075288403,0.014151761504375058,1442902,325457,4,"RULELIST:
+ if [cons_price_idx_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [not_duration_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8984820886460231,0.0030549292761088112
+3,0.8998178506375227,0.005435177441563817,0.10418214936247727,0.08878760255241568,0.8926533090467517,0.00821210311078436,2495074,769451,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.9005464480874317,0.01076531610882756
+4,0.9001011940902651,0.009169410445992555,0.10289880590973488,0.05916700880434287,0.8970248937462052,0.011383116666099435,38841,19090,3,"RULELIST:
+ if [cons_price_idx_low]: (subscribe:yes) = False
+else if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8979963570127505,0.012548052930056711
+Average,0.8989840113337382,0.008241348597725661,0.1044159886662619,0.06351246239775815,0.8987978142076501,0.009831518157247102,811565.0,230846.4,3.4,,0.8989921068609593,0.009946046106887744

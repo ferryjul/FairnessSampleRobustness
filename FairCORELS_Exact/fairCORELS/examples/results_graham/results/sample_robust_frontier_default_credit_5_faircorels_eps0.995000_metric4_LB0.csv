@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7777638819409705,0.0,0.22223611805902954,1.0,0.782427475825275,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+1,0.7859018716911917,0.0006842238849188442,0.21709812830880826,0.004315196998123828,0.7898949474737369,0.01074581784386619,716271,395677,3,"RULELIST:
+ if [LIMIT_BAL_very_high]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT2_very_high]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+2,0.7973237733961399,0.0006609497583186519,0.2056762266038601,0.003946626573952265,0.7917291979322995,0.016897308938387257,1079745,410876,3,"RULELIST:
+ if [BILL_AMT4_low]: (default_payment:yes) = False
+else if [BILL_AMT5_very_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+3,0.8067864437867356,0.00015903708832842867,0.19721355621326442,0.0037943464238284954,0.806903451725863,0.041490907181488734,2873339,807389,4,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_AMT3_very_low]: (default_payment:yes) = True
+else if [PAY_AMT2_very_high]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+4,0.7970319729876193,0.0006908180503863992,0.2059680270123807,0.004347004347004347,0.7910621977655494,0.022049533606329663,549445,270304,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [EDUCATION_University]: (default_payment:yes) = True
+else if [PAY_4_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+Average,0.7929615887605315,0.0004390057563904648,0.2096384112394686,0.20328063486858183,0.7924034541445448,0.018236713514014367,376849.2,2.6,

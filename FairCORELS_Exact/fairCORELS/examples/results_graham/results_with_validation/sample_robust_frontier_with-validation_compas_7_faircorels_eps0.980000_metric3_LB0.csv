@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.5564337654125829,0.0018055227755487367,0.44656623458741707,0.21246973365617433,0.5753554502369668,0.0013727086091910728,938468,502008,3,"RULELIST:
+ if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5658767772511848,0.02865172127482915
+1,0.5618084097375909,0.003689508547626624,0.44119159026240906,0.1288196524865189,0.5744075829383887,0.006788151589952083,1163005,599993,3,"RULELIST:
+ if [juvenile-crimes_=0__AND__gender_Female]: (recidivism:yes) = False
+else if [priors_>3__AND__age_23-25]: (recidivism:yes) = True
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5393364928909953,0.011447440836543754
+2,0.5592791653493518,0.0011922717805070739,0.44372083465064815,0.13611940298507463,0.5554502369668246,0.009240179878957531,1323648,669699,3,"RULELIST:
+ if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [juvenile-felonies_=0__AND__gender_Female]: (recidivism:yes) = False
+else if [priors_>3__AND__age_23-25]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5639810426540285,0.0046494714148419426
+3,0.5638432364096081,0.00019618308497900902,0.4391567635903919,0.10831837223219629,0.5521821631878557,0.000567068769976288,1065013,556073,3,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [priors_>3__AND__age_23-25]: (recidivism:yes) = True
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5582938388625592,0.016758766720033052
+4,0.5922882427307206,0.002184002184002186,0.41071175726927944,0.009918319719953326,0.5607210626185958,0.008577469042585321,441979,247648,3,"RULELIST:
+ if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else if [juvenile-crimes_>0]: (recidivism:yes) = True
+else if [priors_>3__AND__age_23-25]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5914691943127962,0.006931632491697849
+Average,0.5667305639279709,0.001813497674532726,0.4362694360720291,0.11912909621598348,0.5636232991897263,0.005309115578132459,986422.6,515084.2,3.0,,0.5637914691943128,0.013687806547589148

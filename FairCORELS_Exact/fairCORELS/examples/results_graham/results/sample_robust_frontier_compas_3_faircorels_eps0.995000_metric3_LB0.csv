@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5459933617828354,8.052687584481077e-05,0.4570066382171646,0.004968383017163505,0.5298578199052133,0.022509991617974012,2084994,894746,3,"RULELIST:
+ if [gender_Male__AND__priors_1]: (recidivism:yes) = False
+else if [priors_2-3__AND__age_26-45]: (recidivism:yes) = False
+else if [gender_Male__AND__juvenile-felonies_=0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.541488857278331,0.0008898600447896218,0.46151114272166904,0.011738148984198645,0.5582938388625592,0.006872852233676976,2009196,867960,3,"RULELIST:
+ if [age_23-25__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5770507349454718,0.0013514464358936329,0.42594926505452824,0.0035810205908683975,0.5848341232227489,0.02668377331104288,1504199,683387,3,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [priors_2-3__AND__age_26-45]: (recidivism:yes) = False
+else if [priors_1__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else (recidivism:yes) = True"
+3,0.5432566958995022,0.000319132736538916,0.4597433041004978,0.08931777378815081,0.5512333965844403,0.009433962264150943,2013357,871671,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [age_23-25__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5548708224697796,0.002119044236902121,0.4481291775302204,0.006610841780520053,0.50853889943074,0.0008758683177287827,1690414,787941,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [age_>45__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.552532094475184,0.0009520020659938205,0.450467905524816,0.023243233632180282,0.5465516156011404,0.01327528954891472,821141.0,3.0,

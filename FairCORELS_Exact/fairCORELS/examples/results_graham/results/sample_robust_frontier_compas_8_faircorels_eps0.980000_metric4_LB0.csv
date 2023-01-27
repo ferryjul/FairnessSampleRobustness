@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5301090564248458,0.00579004329004329,0.47289094357515415,0.1751497005988024,0.5497630331753555,0.018927444794952675,2110141,899934,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_26-45]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5303461356092936,0.0029176079211481465,0.47165386439070645,0.14278582126809786,0.5488151658767773,0.002918498945002068,18791,13000,2,"RULELIST:
+ if [not_priors_1]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5711237553342816,0.004815087965961862,0.4318762446657184,0.011088709677419355,0.5838862559241706,0.051013089474627904,745763,406545,3,"RULELIST:
+ if [age_26-45__AND__priors_0]: (recidivism:yes) = False
+else if [age_26-45__AND__juvenile-felonies_=0]: (recidivism:yes) = True
+else if [priors_2-3]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5347238682152169,0.004077725943446242,0.4672761317847831,0.08940231039678553,0.5370018975332068,0.008472420607744557,19960,13631,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.544441810855653,0.0010103051121438389,0.457558189144347,0.057435897435897436,0.5028462998102466,0.01758310034172106,19282,13112,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.5421489252878582,0.0037221540465486756,0.46025107471214177,0.09517248787540052,0.5444625304639514,0.019782910832809652,269244.4,2.4,

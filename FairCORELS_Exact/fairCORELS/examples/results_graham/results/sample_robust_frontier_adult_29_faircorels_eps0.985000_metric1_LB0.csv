@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7641248663988501,0.005464779496147329,0.23887513360114987,0.0750377768768658,0.7613502358490566,0.006406197497969569,569554,293717,3,"RULELIST:
+ if [education_hs_grad]: (income > 50K) = False
+else if [not_occupation_professional]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7617661150628386,0.007716350488977769,0.24023388493716136,0.10964508163490952,0.7606132075471698,0.006221352504368442,20504,12094,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7628068106434731,0.0061672130069742185,0.2401931893565269,0.0681432888626815,0.7630841810408374,0.0017107100203535806,580526,291729,3,"RULELIST:
+ if [capitalLoss_-inf_to_1534.0__AND__age_61.5_to_inf]: (income > 50K) = False
+else if [not_occupation_professional]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7622539986732513,0.004561193462805145,0.24074600132674873,0.0852436058082111,0.7688338493292054,0.010033403977265282,1078451,517444,3,"RULELIST:
+ if [education_hs_grad__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else if [not_occupation_professional]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7638018721898725,0.006202821558601163,0.2391981278101275,0.0971474902336552,0.7580716497125166,0.005418177277115168,1027112,494202,3,"RULELIST:
+ if [not_occupation_professional]: (income > 50K) = False
+else if [age_29.5_to_35.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7629507325936571,0.006022471602701125,0.23984926740634288,0.08704344868326463,0.7623906246957572,0.0059579682554144085,321837.2,2.8,

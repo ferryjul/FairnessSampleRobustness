@@ -1,0 +1,30 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8968731026108075,0.004446509202394862,0.10712689738919245,0.045510581467022804,0.9000607164541591,0.007356699376154151,4624616,1554255,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [month_may]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8950516089860352,0.004888142040882285,0.1079483910139648,0.02386161629974019,0.893624772313297,0.002916640575535564,1249855,369538,3,"RULELIST:
+ if [cons_price_idx_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8977231329690346,0.0061645434703827915,0.1062768670309654,0.016236769088480114,0.9017607771706132,0.010619164757209929,2536002,797456,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [not_nr_employed_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.8962962962962963,0.006038667709966861,0.10670370370370375,0.015955992893262265,0.886581663630844,0.00723460307249307,693777,253364,3,"RULELIST:
+ if [cons_price_idx_very_low]: (subscribe:yes) = False
+else if [euribor3m_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+4,0.8981785063752277,0.007402376971401881,0.10582149362477233,0.0022580314071641177,0.8989678202792957,0.003050634180532419,3684167,1277408,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [not_month_may]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.8968245294474801,0.0057880478790057355,0.10677547055251975,0.0207645982311339,0.8961991499696419,0.006235548392385026,850404.2,3.6,

@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7958145739536435,0.0010693771955067669,0.20718542604635648,0.002519161708742027,0.796598866288763,0.006839729258238489,1026637,475224,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else if [PAY_AMT3_high]: (default_payment:yes) = True
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+1,0.7836508399683189,8.106195033501067e-05,0.21934916003168115,0.04560801757864837,0.7872269468067367,0.00012626194787262058,842386,454591,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT2_high]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+2,0.7853182708741506,0.0011522222455190578,0.21768172912584938,0.0027319477180201414,0.783725195931299,0.007919878859624585,1011213,525413,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_AGE_high]: (default_payment:yes) = True
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.7923214806786444,0.0010756111519123757,0.21067851932135562,0.002564376535954696,0.7952309488077371,0.0048878850278238906,860321,445713,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [MARRIAGE_Married]: (default_payment:yes) = True
+else if [PAY_4_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+4,0.782983867605986,6.130108572697276e-05,0.22001613239401396,0.24778051128462938,0.7798899449724862,0.0004141711263836173,1135049,574156,3,"RULELIST:
+ if [not_PAY_AMT3_very_low]: (default_payment:yes) = False
+else if [not_BILL_AMT5_low]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+Average,0.7880178066161487,0.0006879147258000368,0.21498219338385133,0.060240802965198924,0.7885343805614045,0.00403758524398864,495019.4,3.0,

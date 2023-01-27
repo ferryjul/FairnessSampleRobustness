@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.536036036036036,0.0021996984350669893,0.466963963963964,0.3920505871725384,0.557345971563981,0.006389776357827476,2104990,898200,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [gender_Male__AND__juvenile-misdemeanors_=0]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5303461356092936,0.002457002457002457,0.47265386439070645,0.46139954853273135,0.547867298578199,0.006872852233676976,2057369,885285,3,"RULELIST:
+ if [gender_Male__AND__priors_1]: (recidivism:yes) = False
+else if [charge_degree_Felony__AND__gender_Female]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_>0__AND__age_21-22]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5374585111427217,0.001463864780950024,0.4645414888572783,0.4243509400179051,0.5327014218009478,0.003745318352059925,20357,13762,2,"RULELIST:
+ if [not_age_26-45]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5425456269258118,0.002123771662956951,0.45945437307418824,0.35816876122082586,0.5398481973434535,0.001907413135374781,24637,15063,2,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5532116615311685,0.000586932326390569,0.4497883384688315,0.40899074482150727,0.5028462998102466,0.0036695862277257626,2053658,877274,3,"RULELIST:
+ if [age_23-25__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [age_26-45__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-misdemeanors_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.5399195942490064,0.0017662539324733982,0.4626804057509936,0.40899211635310156,0.5361218378193657,0.004516989261332984,537916.8,2.6,

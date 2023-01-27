@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7586702539343235,0.006819264128406705,0.24332974606567648,0.28194449563262447,0.7548643867924528,0.00466981583249926,13455,9605,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_sales]: (income > 50K) = False
+else if [occupation_sales]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7577857221833192,0.00526503150038393,0.2442142778166808,0.2851509232300151,0.7564858490566038,0.006997592119304697,13612,9745,2,"RULELIST:
+ if [not_occupation_sales]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7601533131864082,0.004739692337116276,0.24284668681359178,0.18814034053217366,0.7645584549609318,0.009032952614846337,1136073,540094,3,"RULELIST:
+ if [not_hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else if [workclass_private__AND__age_35.5_to_61.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7579420653055208,0.0055472929475830594,0.24505793469447923,0.24828628289231222,0.7639687453928939,0.0035125401913938294,941070,478654,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [workclass_private__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7580526276995652,0.006911516330270505,0.24494737230043484,0.31543451020859437,0.7529116909921864,0.007187994933467066,1207950,578777,3,"RULELIST:
+ if [occupation_sales]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7585207964618274,0.005856559448752095,0.2440792035381726,0.26379131049914395,0.7585578254390136,0.006280179138302237,323375.0,2.6,

@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8029431382357846,0.0011222478963897192,0.20105686176421544,0.0024655625234496436,0.8081027009003001,0.007236140755630158,6028943,2429027,4,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else if [PAY_AMT3_low]: (default_payment:yes) = False
+else if [PAY_AMT1_middle]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+1,0.7910709074992704,0.0011368429473194303,0.21192909250072955,0.002626078567983279,0.7923961980990495,0.005562241767452361,974026,440611,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [not_MARRIAGE_Single]: (default_payment:yes) = True
+else if [PAY_4_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+2,0.7915711367710201,0.0010822832288470557,0.2114288632289799,0.0026248125133919004,0.7940636985159246,0.007150997548486068,1036732,495352,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [MARRIAGE_Married]: (default_payment:yes) = True
+else if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.7931551961315603,0.0010561737728629964,0.20984480386843973,0.0025109520247889733,0.7902284475571119,0.016327388544108527,544535,296550,3,"RULELIST:
+ if [PAY_3_Pay_duly]: (default_payment:yes) = False
+else if [not_MARRIAGE_Single]: (default_payment:yes) = True
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+4,0.7838592688315478,0.00041590094633038024,0.21914073116845223,0.13135094662530752,0.7783891945972986,0.0036633865119439822,2413774,957488,3,"RULELIST:
+ if [not_MARRIAGE_Married]: (default_payment:yes) = False
+else if [not_PAY_AMT1_high]: (default_payment:yes) = False
+else if [PAY_2_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+Average,0.7925199294938367,0.0009626897583499165,0.21068007050616339,0.028315670450984265,0.7926360479339369,0.00798803102552422,923805.6,3.2,

@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5305832147937412,0.002273492936418967,0.47141678520625885,0.03698435277382646,0.5535545023696683,0.00011204481792717255,23324,14735,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5308202939781888,1.2719706429175151e-05,0.47217970602181125,0.13679468942626838,0.5488151658767773,0.005236839578393789,1962589,867086,3,"RULELIST:
+ if [not_priors_2-3]: (recidivism:yes) = False
+else if [age_21-22__AND__charge_degree_Misdemeanor]: (recidivism:yes) = True
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5419630156472262,0.0014772265224986536,0.46103698435277385,0.00734945471787577,0.5317535545023697,0.04033955328956146,2084550,894253,3,"RULELIST:
+ if [age_23-25__AND__priors_1]: (recidivism:yes) = False
+else if [juvenile-crimes_=0__AND__gender_Female]: (recidivism:yes) = False
+else if [age_26-45__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else (recidivism:yes) = True"
+3,0.5330647072766058,0.0018931973626767264,0.4689352927233942,0.17113059966816782,0.5360531309297912,0.0014435680382487793,19964,13634,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20__AND__juvenile-crimes_=0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.544441810855653,6.918829969753543e-05,0.457558189144347,0.02844275894761792,0.49620493358633777,0.003675169776864693,25988,15117,2,"RULELIST:
+ if [priors_1]: (recidivism:yes) = False
+else if [age_21-22__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.536174608510283,0.0011451649655442116,0.46622539148971703,0.07614037110675127,0.5332762574529888,0.010161435100199179,360965.0,2.4,

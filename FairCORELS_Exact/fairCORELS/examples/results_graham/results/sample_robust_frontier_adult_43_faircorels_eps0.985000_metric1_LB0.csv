@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.759370508237202,0.005238381488449798,0.24262949176279802,0.2577304389488814,0.7567806603773585,0.004568008761963449,4466,3897,2,"RULELIST:
+ if [occupation_professional__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [occupation_professional__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7592230862787012,0.0057019341037530084,0.24377691372129884,0.2568827626875023,0.7588443396226415,0.002920411779638251,888319,456669,3,"RULELIST:
+ if [workclass_private__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7605218544998894,0.004168376950310812,0.2424781455001106,0.18345986585096188,0.7642636001769129,0.007690625578226716,909179,447452,3,"RULELIST:
+ if [occupation_blueCollar__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else if [age_35.5_to_61.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7575735239920395,0.007241889076995181,0.24442647600796052,0.24780717918478662,0.7648533097449506,0.008386137587694376,11528,8703,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7585685855384389,0.007231011396850751,0.24443141446156114,0.3090218913540208,0.7546808196962995,0.008463548119178493,1089257,531747,3,"RULELIST:
+ if [occupation_blueCollar__AND__age_35.5_to_61.5]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7590515117092542,0.00591631860327191,0.2435484882907458,0.25098042760523065,0.7598845459236326,0.0064057463653402575,289693.6,2.6,

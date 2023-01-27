@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7577857221833192,0.004274238248772377,0.2442142778166808,0.19625548225408174,0.7553066037735849,0.00552072429423614,11336,8546,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__education_bachelors]: (income > 50K) = False
+else if [hoursPerWeek_34.5_to_40.5__AND__education_bachelors]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7546530055651789,0.004250581263171488,0.2473469944348211,0.32185899089669406,0.7533903301886793,0.004376181451185579,16616,11365,2,"RULELIST:
+ if [not_occupation_blueCollar]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7565047541829439,0.0037200886738842204,0.24649524581705606,0.24087860249133927,0.7593984962406015,0.0031892882975323384,1088217,532941,3,"RULELIST:
+ if [not_age_29.5_to_35.5]: (income > 50K) = False
+else if [workclass_private__AND__education_associates]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7546989017468858,0.0039875324833835955,0.2473010982531142,0.27765902557676714,0.7610201975527053,0.004738087324477229,10817,8357,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_sales]: (income > 50K) = False
+else if [workclass_private__AND__occupation_sales]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7571681285472102,0.004492068451415706,0.24583187145278984,0.29217955332792805,0.7520271266401297,0.0031888829642785638,1254611,601432,3,"RULELIST:
+ if [education_hs_grad__AND__workclass_private]: (income > 50K) = False
+else if [not_occupation_sales]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7561621024451076,0.004144901824125477,0.2462378975548924,0.2657663309093621,0.7562285508791401,0.00420263286634197,232528.2,2.4,

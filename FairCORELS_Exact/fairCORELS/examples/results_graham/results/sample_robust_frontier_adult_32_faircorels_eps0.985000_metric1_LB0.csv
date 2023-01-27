@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7623558028968415,0.007416486459057092,0.23964419710315854,0.1085762724357793,0.7582547169811321,0.007419997272563749,22364,12375,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7615081266354623,0.006998157824660115,0.2404918733645377,0.1318320863892677,0.7610554245283019,0.008885745198409862,7557,6041,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__education_bachelors]: (income > 50K) = False
+else if [workclass_private__AND__education_bachelors]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7623645610672957,0.005041498538439292,0.24063543893270434,0.07827817498341565,0.7670647206250921,0.010736934178876011,673700,343782,3,"RULELIST:
+ if [hoursPerWeek_34.5_to_40.5__AND__education_bachelors]: (income > 50K) = False
+else if [not_hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7612220829955038,0.004147901175591419,0.24177791700449625,0.13414903810717183,0.7679492849771488,0.008725359503753182,1499212,615398,3,"RULELIST:
+ if [hoursPerWeek_34.5_to_40.5__AND__education_bachelors]: (income > 50K) = False
+else if [not_occupation_professional]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7622539986732513,0.006974276500265152,0.23974600132674873,0.1383872632122061,0.7586613592805543,0.009181703393744536,23032,12815,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7619409144536708,0.006115664099602613,0.2404590855463291,0.11824456702556811,0.7625971012784458,0.008989947909469468,198082.2,2.4,

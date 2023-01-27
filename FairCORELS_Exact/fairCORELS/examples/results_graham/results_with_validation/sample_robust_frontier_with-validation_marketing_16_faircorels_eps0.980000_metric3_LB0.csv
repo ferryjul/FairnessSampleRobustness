@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8939081157660392,0.00335804049129917,0.10909188423396077,0.09674473816372187,0.8966605950212507,0.006238309857061644,497213,210752,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [euribor3m_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8921675774134791,0.0010085822779253278
+1,0.8930580854078122,0.004444572044198034,0.10994191459218783,0.10059306569343066,0.8890103217972071,0.00030799130759472256,794687,305511,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [job_self-employed]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8956891317547055,0.0035801366805178754
+2,0.8933819064966606,0.0018516937544199438,0.1096180935033394,0.09936102236421725,0.8971463266545234,0.004061921361324584,1070909,349922,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8924104432301153,0.003966006178664625
+3,0.8923699655940093,0.000682565025300523,0.11063003440599073,0.13268003646308113,0.8854887674559806,0.0064932837078221445,269799,130161,3,"RULELIST:
+ if [job_admin.]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8933819064966606,0.0024148561362301825
+4,0.8931390406800243,0.0038692119987834813,0.10886095931997575,0.10788741389535149,0.892046144505161,0.0004757082196186793,3721,2946,2,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.892896174863388,0.009422155009451797
+Average,0.893171422788909,0.0028412166628002306,0.1096285772110909,0.10745325531596048,0.8920704310868246,0.0035154428906843545,527265.8,199858.4,2.8,,0.8933090467516698,0.004078347256557961

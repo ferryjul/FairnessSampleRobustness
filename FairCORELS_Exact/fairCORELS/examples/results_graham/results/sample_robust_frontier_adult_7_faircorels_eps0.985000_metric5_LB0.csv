@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7554638263369329,0.0014261771418730973,0.24653617366306713,0.05215318134406199,0.7505896226415094,0.0020086037831340553,18427,11856,2,"RULELIST:
+ if [not_age_29.5_to_35.5]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.8100099509821987,0.005131044798046713,0.19399004901780126,0.0044629574531389465,0.8122051886792453,0.039766457221358964,1204581,336390,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [not_education_masters_doctorate]: (income > 50K) = False
+else if [occupation_professional__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else (income > 50K) = True"
+2,0.7543672145647528,0.005916001594663212,0.24763278543524725,0.07023262705586013,0.7585139318885449,0.013260047151707921,10615,8264,2,"RULELIST:
+ if [not_workclass_selfEmployed]: (income > 50K) = False
+else if [not_capitalLoss_1881.5_to_1978.5]: (income > 50K) = False
+else (income > 50K) = True"
+3,0.8142551780054544,0.004819791000213236,0.18974482199454556,0.0042861365651788354,0.8166003243402624,0.03240446422264598,1129332,314774,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [not_education_masters_doctorate]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.8162453010982531,0.0036509842508741785,0.1877546989017469,0.002537313432835821,0.8137992038920832,0.01978589404232567,1126034,309797,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [not_hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [education_masters_doctorate]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7900682941975183,0.004188799757134087,0.2131317058024816,0.026734443170215144,0.790341654288329,0.021445093284234516,196216.2,3.2,

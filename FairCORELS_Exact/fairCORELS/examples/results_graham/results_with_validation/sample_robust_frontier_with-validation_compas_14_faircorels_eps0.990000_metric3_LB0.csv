@@ -1,0 +1,23 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.527979766044894,0.0,0.47502023395510595,1.0,0.5450236966824644,0.0076045627376425855,2093236,892411,3,"RULELIST:
+ if [gender_Male__AND__juvenile-misdemeanors_=0]: (recidivism:yes) = False
+else if [age_26-45__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [priors_2-3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.5345971563981042,0.003257328990228013
+1,0.5276636104963642,0.0,0.47233638950363577,1.0,0.5450236966824644,0.0,0,0,0,"RULELIST:
+(recidivism:yes) = False",0.5175355450236967,0.0
+2,0.5371482769522605,0.00020828844358256114,0.4658517230477395,0.3982089552238806,0.5298578199052133,0.003745318352059925,2050479,881737,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [gender_Male__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [age_26-45__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.533649289099526,0.0
+3,0.5417193426042983,0.00040102130606003766,0.4612806573957017,0.3405146618791143,0.547438330170778,0.009433962264150943,2064258,893370,3,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [gender_Male__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.543127962085308,0.0040024789547074315
+4,0.5581542351453855,0.0018700518700518701,0.44384576485461447,0.23570595099183198,0.5104364326375711,0.0008758683177287827,21673,13809,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False",0.547867298578199,0.006430868167202572
+Average,0.5385330462486405,0.0004958723239388938,0.46366695375135947,0.5948859136189654,0.5355559952156982,0.004331942334316447,1245929.2,536265.4,2.2,,0.5353554502369668,0.0027381352224276033

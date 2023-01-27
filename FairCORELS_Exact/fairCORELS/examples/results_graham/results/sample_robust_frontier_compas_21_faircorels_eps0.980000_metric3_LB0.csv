@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.542674253200569,0.002731340156205705,0.45932574679943106,0.36314363143631434,0.5620853080568721,0.002587494989006183,22268,14229,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5445708866761498,0.002785756306883067,0.45842911332385017,0.28397291196388263,0.5592417061611374,0.006872852233676976,1332272,670717,3,"RULELIST:
+ if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [not_priors_1]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5436225699383594,0.0035739328547061636,0.45837743006164056,0.3701880035810206,0.5412322274881517,0.003745318352059925,21329,14086,2,"RULELIST:
+ if [priors_1]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5425456269258118,0.002123771662956951,0.45945437307418824,0.3999102333931777,0.5398481973434535,0.001907413135374781,24637,15063,2,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5515525005925574,0.001532111910511552,0.45144749940744255,0.44601145879241955,0.50853889943074,0.0008758683177287827,1954328,862959,3,"RULELIST:
+ if [age_23-25__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [priors_1]: (recidivism:yes) = False
+else if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.5449931674666896,0.002549382578252688,0.4574068325333105,0.37264524783336295,0.5421892676960709,0.0031977894055693298,315410.8,2.4,

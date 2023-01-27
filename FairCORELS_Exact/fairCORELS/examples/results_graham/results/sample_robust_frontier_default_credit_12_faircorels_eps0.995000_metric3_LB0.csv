@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7934800733700184,0.0012499157305025516,0.20951992662998165,0.0025727608940344106,0.790430143381127,0.010488979146376004,870416,436108,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [MARRIAGE_Married]: (default_payment:yes) = True
+else if [PAY_6_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+1,0.7831922964692151,0.00029124366097487645,0.21980770353078494,0.05611233185058149,0.7872269468067367,0.0015132244998837157,951537,506089,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [not_BILL_AMT1_low]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+2,0.7844845554212347,0.0005734902296989502,0.21851544457876526,0.022123419755731732,0.783725195931299,0.0019995118759958616,839427,449973,3,"RULELIST:
+ if [not_PAY_AMT2_high]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.7907374213181041,0.0011180462220152232,0.2122625786818959,0.002671225558286142,0.7982324495581123,0.00673687360613337,987521,496662,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [not_MARRIAGE_Single]: (default_payment:yes) = True
+else if [PAY_6_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+4,0.7794405769310934,0.0,0.22055942306890663,1.0,0.7757211939302985,0.0,0,0,0,"RULELIST:
+(default_payment:yes) = False"
+Average,0.786266984701933,0.0006465391686383203,0.21613301529806686,0.21669594761172678,0.7870671859215147,0.0041477178256777904,377766.4,2.4,

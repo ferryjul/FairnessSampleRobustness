@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.7971763659607581,0.00363656102699092,0.20582363403924187,0.009949419154021455,0.7962654218072691,0.002672909960003911,2055611,689056,3,"RULELIST:
+ if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [not_MARRIAGE_Married]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7875604468901117,0.013125570598385969
+1,0.7888388638763827,0.004300744700810086,0.2141611361236173,0.010282919237396475,0.7927296981824246,0.0038188030275784213,2584634,877852,3,"RULELIST:
+ if [MARRIAGE_Single]: (default_payment:yes) = False
+else if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7869289763254418,0.004009381807164508
+2,0.7841142793619031,0.0006435243006615542,0.21888572063809686,0.06575509977210828,0.7863931965982992,0.001331236146199061,715753,390882,3,"RULELIST:
+ if [not_PAY_AMT4_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7889296432144048,0.0005372538342862335
+3,0.7905619476404869,0.004799169942035858,0.21243805235951307,0.010727586015229837,0.7817241954310489,0.019472366355183846,415378,252839,3,"RULELIST:
+ if [not_PAY_0_Pay_delay>=1]: (default_payment:yes) = False
+else if [LIMIT_BAL_very_high]: (default_payment:yes) = False
+else if [PAY_AMT3_low]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7834278092697566,0.006866100184513446
+4,0.7921738647101328,0.004096676023925022,0.21082613528986716,0.010060585848479795,0.7863931965982992,0.006253344662562249,574421,306647,3,"RULELIST:
+ if [not_MARRIAGE_Married]: (default_payment:yes) = False
+else if [PAY_4_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7912637545848616,0.0051211653064956175
+Average,0.7905730643099328,0.003495335198884688,0.21242693569006726,0.021355122005447168,0.7887011417234682,0.006709732030305497,1269159.4,503455.2,3.0,,0.7876221260569153,0.005931894346169154

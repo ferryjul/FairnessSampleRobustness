@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.809237952309488,0.016747914391135987,0.19476204769051197,0.0021677505419376354,0.8072690896965655,0.028780235145467806,4846288,1340537,4,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [PAY_6_Pay_delay>=1]: (default_payment:yes) = True
+else if [PAY_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_4_Pay_duly__AND__PAY_3_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7998999499749875,0.02067321395999129
+1,0.8079595353232172,0.017180958829382587,0.19604046467678282,0.0018898338057917847,0.8095714523928631,0.007926141472266265,2186696,507392,4,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_6_Pay_delay>=1]: (default_payment:yes) = True
+else if [PAY_2_Pay_delay>=1]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.8011003667889296,0.025147700778160656
+2,0.8050136179200712,0.016276557785637177,0.1989863820799288,0.0025012506253126563,0.8067367016841754,0.0157116837669857,2793281,787905,4,"RULELIST:
+ if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_AMT3_high]: (default_payment:yes) = True
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.8066022007335779,0.010706199555606297
+3,0.8096270357400923,0.014713234319492771,0.1943729642599077,0.003501750875437719,0.8032349508087377,0.023050819758245744,2833019,794240,4,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_3_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = True
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.8027675891963988,0.01765519096586686
+4,0.8066255349897171,0.015989014806403273,0.19737446501028288,0.0026680006670001667,0.8054027013506754,0.02313271273097743,2500351,665803,4,"RULELIST:
+ if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_5_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = True
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.8039346448816272,0.01380648254913594
+Average,0.8076927352565171,0.01618153602641036,0.19630726474348284,0.0025457173030959926,0.8064429791866035,0.01972031857478859,3031927.0,819175.4,4.0,,0.8028609503151042,0.01759775756175221

@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.891712204007286,0.0093309972846894,0.11128779599271399,0.004796599878567092,0.8947176684881603,0.008181459468790845,335697,160293,3,"RULELIST:
+ if [not_education_university.degree]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.893290831815422,0.010370536499625344,0.10970916818457799,0.003946569520340012,0.8911961141469338,0.005300237094879829,602284,244134,3,"RULELIST:
+ if [loan_no__AND__poutcome_failure]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [loan_yes]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8919854280510018,0.010199096768479078,0.11101457194899822,0.004098360655737705,0.898360655737705,0.013254155541930022,865902,334581,3,"RULELIST:
+ if [day_of_week_mon]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.8937765634486946,0.009484948245037202,0.1092234365513054,0.004675166970248937,0.8864602307225258,0.007635188168488776,1290200,406841,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [not_education_university.degree]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8926229508196721,0.00838843937063659,0.11037704918032787,0.005585913782635094,0.8910746812386157,0.011963423439362358,1177651,391646,3,"RULELIST:
+ if [not_education_university.degree]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.8926775956284153,0.009554803633693524,0.11032240437158469,0.004620522161505768,0.892361870066788,0.009266892742690366,307499.0,3.0,

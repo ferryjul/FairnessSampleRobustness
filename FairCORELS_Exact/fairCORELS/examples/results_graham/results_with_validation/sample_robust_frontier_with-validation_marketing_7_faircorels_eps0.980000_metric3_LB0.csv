@@ -1,0 +1,29 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8983201781015989,0.005996907161520823,0.10467982189840108,0.07236451627630919,0.9022465088038859,0.011180625480703135,43496,23437,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8959319975713418,0.012990376685804593
+1,0.8974296701072657,0.009155796533598992,0.1055703298927343,0.056341240875912406,0.8973891924711597,0.0019564869509556314,79516,36513,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9020036429872496,0.008259825445340057
+2,0.8986035215543412,0.008766280790949654,0.1053964784456588,0.061296211775445,0.9026108075288403,0.011422999223189028,2008422,499303,4,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8984820886460231,0.005252800452430107
+3,0.8994940295486744,0.004798398337514889,0.10450597045132559,0.09134001823154056,0.8926533090467517,0.008372926526673713,2495175,769325,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [not_month_may]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9005464480874317,0.009962810726169505
+4,0.899979761181947,0.00784268252616889,0.103020238818053,0.06833629852652708,0.897632058287796,0.010901276210327115,37845,18679,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8977534911961141,0.014438412098298678
+Average,0.8987654320987655,0.00731201306995065,0.10463456790123456,0.06993565713714685,0.8985063752276867,0.008766862878369724,932890.8,269451.4,3.4,,0.8989435336976319,0.010180845081608587

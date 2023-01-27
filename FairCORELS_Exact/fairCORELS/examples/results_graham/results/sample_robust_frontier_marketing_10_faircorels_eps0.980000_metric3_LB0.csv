@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8979356405585914,0.006287846448240997,0.10606435944140857,0.08002876515307171,0.9009107468123861,0.009987627119273828,2243691,673152,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [not_nr_employed_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+1,0.8985428051001821,0.007623850276818464,0.10545719489981786,0.06649118009025023,0.896782027929569,0.0021165125550522868,3703292,1191311,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [education_basic.9y]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.8979052823315118,0.0064046202949666585,0.10609471766848821,0.08111533586818757,0.9018822100789314,0.010777794198834295,2523977,792049,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.9,0.006755248207930161,0.10399999999999998,0.07725160584939182,0.8926533090467517,0.00821210311078436,2551066,798782,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [not_nr_employed_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+4,0.899544626593807,0.007563745605773192,0.10445537340619304,0.072428068014643,0.8971463266545234,0.013301280134958255,10555673,2329529,4,"RULELIST:
+ if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [day_of_week_mon]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.8987856709168185,0.006927062166745895,0.10521432908318154,0.07546299099510886,0.8978749241044323,0.008879063423780604,1156964.6,4.0,

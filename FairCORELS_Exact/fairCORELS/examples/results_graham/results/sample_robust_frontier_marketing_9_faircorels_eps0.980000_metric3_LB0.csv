@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8980874316939891,0.006487550885673597,0.10591256830601092,0.07985754400383535,0.9011536126290225,0.010307166981871688,2232335,665900,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+1,0.8986642380085003,0.008222724393479142,0.10533576199149974,0.06597839463968276,0.8979963570127505,0.0022705082088496477,2298739,685908,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [not_nr_employed_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.8974499089253187,0.0070305573241661555,0.10555009107468127,0.07001678484568219,0.9018822100789314,0.009667388107463735,78186,43309,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.9001517911353977,0.006954626148754788,0.10384820886460233,0.07708077080770807,0.892896174863388,0.008533749942563066,2550998,798743,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+4,0.8995749848208865,0.008476401311995502,0.10442501517911351,0.0656197611960724,0.8986035215543412,0.008976980505314655,2269042,691003,4,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.8987856709168185,0.0074343720128138375,0.10501432908318156,0.07171065109859616,0.8985063752276868,0.007951158749212558,576972.6,3.8,

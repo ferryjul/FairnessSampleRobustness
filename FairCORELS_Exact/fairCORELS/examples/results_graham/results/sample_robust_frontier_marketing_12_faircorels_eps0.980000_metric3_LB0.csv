@@ -1,0 +1,30 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8968731026108075,0.004446509202394862,0.10712689738919245,0.09516471474556537,0.9000607164541591,0.007356699376154151,4624616,1554255,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [month_may]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8978445658773527,0.007347850725534924,0.10615543412264727,0.06973882127717763,0.8961748633879781,0.0008242478216804543,4937178,1642807,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [month_may]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.897571341833637,0.005608440737694001,0.10642865816636304,0.08481485287568938,0.9013964784456587,0.010301905873961199,2541683,798339,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [month_may]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.896842744383728,0.006876055061430296,0.10615725561627198,0.08015580155801558,0.8879174256223437,0.009003660647275959,176170,90219,3,"RULELIST:
+ if [cons_price_idx_very_low]: (subscribe:yes) = False
+else if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8954159077109897,0.004340112179744869,0.10758409228901034,0.08724212254952274,0.8949605343047966,0.005938610797089517,857932,298671,3,"RULELIST:
+ if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.896909532483303,0.005723793581359791,0.10669046751669702,0.08342326260119413,0.8961020036429872,0.006685024903232256,876858.2,3.6,

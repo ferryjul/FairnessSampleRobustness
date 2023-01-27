@@ -1,0 +1,23 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5296348980559507,0.000872397743879893,0.47236510194404935,0.1166429587482219,0.5450236966824644,0.007058823529411765,22914,14665,2,"RULELIST:
+ if [gender_Male__AND__juvenile-misdemeanors_=0]: (recidivism:yes) = False
+else if [priors_2-3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5286865813181603,0.0036625688012454005,0.47331341868183974,0.2757230915125652,0.547867298578199,0.0009897552940828884,22192,14294,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20__AND__charge_degree_Felony]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5355618776671408,0.0024221997168845256,0.4674381223328592,0.1337126600284495,0.5298578199052133,0.004168457559544101,2055003,889657,3,"RULELIST:
+ if [charge_degree_Felony__AND__priors_0]: (recidivism:yes) = False
+else if [gender_Male__AND__juvenile-crimes_=0]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5314055463379947,0.0036054239008354505,0.47059445366200525,0.31168523346764637,0.5360531309297912,0.0045385779122541605,17062,12234,2,"RULELIST:
+ if [not_priors_2-3]: (recidivism:yes) = False
+else if [juvenile-felonies_=0__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5425456269258118,0.0008442842517145145,0.45945437307418824,0.12230386347475705,0.4981024667931689,0.0061633281972265025,19440,13198,2,"RULELIST:
+ if [juvenile-misdemeanors_=0__AND__charge_degree_Felony]: (recidivism:yes) = False
+else if [age_18-20__AND__juvenile-crimes_=0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.5335669060610116,0.0022813748829119567,0.46863309393898833,0.192013561446328,0.5313808825777674,0.004583788498503883,188809.6,2.2,

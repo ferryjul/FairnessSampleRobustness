@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8939081157660392,0.00335804049129917,0.10909188423396077,0.0014153312331644068,0.8966605950212507,0.006238309857061644,497213,210752,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [euribor3m_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8921675774134791,0.0010085822779253278
+1,0.8924913985023275,0.0026134127374782363,0.1105086014976725,0.03613138686131387,0.8893746205221615,0.00016605555439594974,1649756,476311,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [euribor3m_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.895203400121433,0.003079113784323441
+2,0.8942319368548877,0.003502230943537272,0.10876806314511234,0.0013235965312642629,0.8977534911961141,0.0059761619186742415,1027916,339543,3,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8926533090467517,0.004609403315547366
+3,0.8941509815826756,0.0016330875085531819,0.10884901841732442,0.0626253418413856,0.8870673952641166,0.007767311491981804,605949,267039,3,"RULELIST:
+ if [default_yes]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8945962355798421,0.006904482286161676
+4,0.8941914592187816,0.0026888020237343267,0.10880854078121838,0.0020072077003786323,0.893624772313297,0.005459836459394018,1459537,423269,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [month_may]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8938676381299332,0.0038369754253308134
+Average,0.8937947783849423,0.0027591147409204374,0.10920522161505768,0.020700572833501355,0.8928961748633879,0.005121535056301531,1048074.2,343382.8,3.0,,0.8936976320582879,0.003887711417857725

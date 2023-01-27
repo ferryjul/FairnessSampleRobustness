@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7993163248290812,0.009140341189805001,0.2036836751709188,0.0038769384692346172,0.8052684228076026,0.009973010763177581,812592,332765,3,"RULELIST:
+ if [not_PAY_0_Pay_delay>=1]: (default_payment:yes) = False
+else if [AGE_very_low]: (default_payment:yes) = True
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+1,0.7971987160782025,0.009258803346914202,0.20580128392179753,0.003668347992830047,0.7982324495581123,0.005601393751007135,252897,160608,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [PAY_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+2,0.7923631664512901,0.0026703348879289907,0.21063683354870988,0.007461753303597482,0.7933966983491746,0.005433694755260121,936492,452499,3,"RULELIST:
+ if [MARRIAGE_Single]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [BILL_AMT2_very_low]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.8041185543374046,0.010274862358819872,0.19988144566259536,0.003043061403143107,0.8015674503918626,0.01313107376948712,3725458,1312137,4,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [not_MARRIAGE_Single]: (default_payment:yes) = True
+else if [PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+4,0.7888198757763976,0.002839680065120767,0.21418012422360244,0.0077118679394722585,0.7800566950141737,0.004302392986455725,394122,234760,3,"RULELIST:
+ if [PAY_4_Pay_duly__AND__PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [BILL_AMT2_very_low]: (default_payment:yes) = False
+else if [MARRIAGE_Single]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+Average,0.7963633274944752,0.006836804369717767,0.2068366725055248,0.005152393821655502,0.7957043432241853,0.007688313205077536,498553.8,3.2,

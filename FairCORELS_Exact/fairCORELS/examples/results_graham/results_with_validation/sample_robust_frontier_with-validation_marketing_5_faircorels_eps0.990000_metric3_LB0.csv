@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8997368953653107,0.00837910378783839,0.10426310463468935,0.0014153312331644068,0.9028536733454766,0.012110858038842673,1728410,378153,4,"RULELIST:
+ if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [default_yes]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.896782027929569,0.015786907401078035
+1,0.8972272819267355,0.007484628694000947,0.1067727180732645,0.0021897810218978104,0.8972677595628415,0.002430533812946303,2253191,660680,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9017607771706132,0.0072823095377097915
+2,0.8978344464683262,0.007437101408648119,0.10616555353167378,0.0022364217252396168,0.9013964784456587,0.010301905873961199,2195502,642012,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [month_may]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.896782027929569,0.0002406703642889238
+3,0.8998583282736288,0.0054883972393285855,0.10414167172637123,0.03176845943482224,0.892896174863388,0.008533749942563066,2495076,769208,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.9010321797207043,0.01140144842434919
+4,0.8994130742764622,0.0067766009278500475,0.10358692572353778,0.002782719766434013,0.8979963570127505,0.009784136089037616,731432,274827,3,"RULELIST:
+ if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8969034608378871,0.011893232514177694
+Average,0.8988140052620925,0.007113166411533217,0.10498599473790733,0.008078542636311617,0.8984820886460231,0.008632236751470172,1880722.2,544976.0,3.8,,0.8986520947176686,0.009320913648320725

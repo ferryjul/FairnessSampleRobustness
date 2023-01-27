@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.894019429265331,0.003527868790204903,0.10898057073466905,0.0959523320320526,0.8970248937462052,0.006877389582257362,1350783,395672,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8955676988463873,0.005240516437895804,0.10743230115361269,0.07907151647750581,0.8943533697632058,0.002276538159148942,1555794,399971,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8966605950212507,0.0038262089143460444,0.10733940497874928,0.09992121398965506,0.9009107468123861,0.009973959732855194,4796740,1669951,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [month_may]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.8962962962962963,0.006038667709966861,0.10670370370370375,0.08087330873308733,0.886581663630844,0.00723460307249307,693777,253364,3,"RULELIST:
+ if [cons_price_idx_very_low]: (subscribe:yes) = False
+else if [euribor3m_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+4,0.8949301760777171,0.002582221648382504,0.10806982392228293,0.08874747682096548,0.8947176684881603,0.0053002450134955175,960685,329204,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.8954948391013964,0.004243096700159222,0.10770516089860353,0.08891316961065325,0.8947176684881603,0.006332547112050018,609632.4,3.2,

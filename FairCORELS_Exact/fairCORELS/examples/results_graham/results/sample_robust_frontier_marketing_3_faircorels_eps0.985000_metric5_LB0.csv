@@ -1,0 +1,18 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8865209471766848,0.0,0.11347905282331516,1.0,0.8905889496053431,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+1,0.8955676988463873,0.005240516437895804,0.10743230115361269,0.004609544468546637,0.8943533697632058,0.008344832117747503,813282,305037,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8862477231329691,0.0,0.11375227686703093,1.0,0.8916818457802065,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+3,0.8939283545840923,0.006628477905073593,0.10907164541590775,0.006808278867102397,0.8879174256223437,0.006746687074555946,905246,337826,3,"RULELIST:
+ if [job_technician]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8873406193078324,0.0,0.11265938069216763,1.0,0.8873102610807528,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+Average,0.8899210686095932,0.0023737988685938794,0.11127893139040683,0.6022835646671297,0.8903703703703704,0.0030183038384606897,128572.6,1.2,

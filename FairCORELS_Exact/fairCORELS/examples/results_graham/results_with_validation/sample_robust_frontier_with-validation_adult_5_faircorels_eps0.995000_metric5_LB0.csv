@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8064278342916114,0.0013673830586498834,0.19757216570838865,0.0015860428231562252,0.8061615566037735,0.043137534003922284,4283541,1496829,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else if [occupation_professional__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else if [education_hs_grad__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False",0.8066037735849056,0.021723424423174764
+1,0.7539436827362523,0.0,0.24605631726374766,1.0,0.7508844339622641,0.0,0,0,0,"RULELIST:
+(income > 50K) = False",0.7471992924528302,0.0
+2,0.8082063882063882,0.0019783841241043376,0.19579361179361177,0.0015677052714089751,0.8099660916998378,0.02843357640221511,1364418,427655,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [occupation_professional__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else if [education_masters_doctorate__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else (income > 50K) = False",0.8175117924528302,0.08903113354970549
+3,0.7520884520884521,0.0,0.2479115479115479,1.0,0.7573345127524694,0.0,0,0,0,"RULELIST:
+(income > 50K) = False",0.746314858490566,0.0
+4,0.8103685503685504,0.0015139272320618957,0.19363144963144963,0.001565251418509098,0.8132094943240454,0.016385234251737435,1331349,397207,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else if [education_hs_grad]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False",0.8214917452830188,0.03539828420132207
+Average,0.7862069815382509,0.0009719388829632234,0.2161930184617491,0.4009437999026148,0.787511217868478,0.017591268931574967,1395861.6,464338.2,2.4,,0.7878242924528303,0.029230568434840464

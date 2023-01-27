@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8945557579437361,0.0045795339412360685,0.1084442420562639,0.09167693923206867,0.8971463266545234,0.006877389582257362,493581,209047,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [cons_price_idx_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8930176077717061,0.0018042538247108149
+1,0.8939890710382513,0.005800182925765155,0.10901092896174869,0.0853558394160584,0.8899817850637523,0.0007820381695853944,180981,91130,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [month_mar]: (subscribe:yes) = True
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.896782027929569,0.006964647530085903
+2,0.8942319368548877,0.003502230943537272,0.10876806314511234,0.09593792788680967,0.8977534911961141,0.0059761619186742415,1013806,334605,3,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8926533090467517,0.004609403315547366
+3,0.893705727585509,0.0009449470758677784,0.10929427241449097,0.12862351868732907,0.8864602307225258,0.007445664660203097,455386,211193,3,"RULELIST:
+ if [month_jun]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8939890710382513,0.006904482286161676
+4,0.8945962355798421,0.0038624987666978933,0.10840376442015787,0.0958441676930797,0.894474802671524,0.0044961555478493795,1416849,403846,3,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [marital_single]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8948391013964785,0.004986616257088846
+Average,0.8942157458004452,0.0037378787306208334,0.10878425419955476,0.09948767858306909,0.8931633272616878,0.005115481975713895,712120.6,249964.2,3.0,,0.8942562234365514,0.005053880642718922

@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8947581461242663,0.004412094064949608,0.1082418538757337,0.06524220426425603,0.8970248937462052,0.005119920337969138,498893,211581,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8927747419550698,0.0011981324060166875
+1,0.8939890710382513,0.005800182925765155,0.10901092896174869,0.06482664233576642,0.8899817850637523,0.0007820381695853944,180981,91130,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [month_mar]: (subscribe:yes) = True
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.896782027929569,0.006964647530085903
+2,0.8975106253794778,0.007011597508478859,0.10648937462052221,0.04847101780009128,0.9016393442622951,0.008376978058754269,4141912,1366619,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [education_basic.9y]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.89605343047966,0.0017951444037274788
+3,0.8941509815826756,0.0016330875085531819,0.10884901841732442,0.11731996353691887,0.8870673952641166,0.007767311491981804,605949,267039,3,"RULELIST:
+ if [default_yes]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8945962355798421,0.006904482286161676
+4,0.8954462659380692,0.005139335166249124,0.1075537340619308,0.07522467040737192,0.8949605343047966,0.008335548603643834,182659,92988,3,"RULELIST:
+ if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [cons_price_idx_very_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8939890710382513,0.012722873345935729
+Average,0.8951710180125481,0.0047992594347991855,0.10802898198745196,0.0742168996688809,0.8941347905282331,0.006076359332386888,1122078.8,405871.4,3.2,,0.8948391013964786,0.005917055994385495

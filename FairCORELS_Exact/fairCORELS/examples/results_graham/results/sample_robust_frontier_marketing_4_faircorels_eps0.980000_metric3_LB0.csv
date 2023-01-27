@@ -1,0 +1,31 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.899149969641773,0.01033359463528192,0.10385003035822704,0.03739469899321964,0.9033394049787492,0.013041090596982207,26582,10636,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.9005160898603521,0.011265669530580962,0.10348391013964786,0.036271024203473265,0.9013964784456587,0.003722798546318136,1409444,310021,4,"RULELIST:
+ if [nr_employed_low]: (subscribe:yes) = False
+else if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8997571341833637,0.008534737781169716,0.10424286581663633,0.056657417874147915,0.9044323011536126,0.01479696652872979,1350889,305168,4,"RULELIST:
+ if [duration_very_low]: (subscribe:yes) = False
+else if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.9025804493017607,0.01021380357723045,0.10141955069823927,0.047218805521388546,0.8931390406800243,0.00802616060898467,1337743,295697,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.9008803885853066,0.009581015284635336,0.10311961141469339,0.05111362003489685,0.899939283545841,0.010582093318530114,1327155,299139,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.9005768063145112,0.009985764161779678,0.10322319368548878,0.045731113325425246,0.9004493017607771,0.010033821919908982,244132.2,3.8,

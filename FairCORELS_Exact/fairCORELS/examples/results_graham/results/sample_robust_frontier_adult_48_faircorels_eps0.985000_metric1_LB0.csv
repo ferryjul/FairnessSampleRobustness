@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7578225776729444,0.006393792010492377,0.24417742232705564,0.2965761250138208,0.7572228773584906,0.009461800149641495,5368,4654,2,"RULELIST:
+ if [age_35.5_to_61.5__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [occupation_blueCollar__AND__age_35.5_to_61.5]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7579331441418199,0.007492184882525359,0.2450668558581801,0.2975343677440755,0.7548643867924528,0.005692259538485425,653426,339598,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__occupation_sales]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7584580231443945,0.0059330720259552095,0.24454197685560553,0.25606250460676644,0.7602830605926582,0.0015828693501993311,1275957,598380,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [workclass_private__AND__age_21.5_to_24.5]: (income > 50K) = False
+else if [occupation_professional__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7575735239920395,0.005789630884922684,0.24542647600796053,0.2627331023807769,0.7647058823529411,0.007969481344879388,1255964,584614,3,"RULELIST:
+ if [education_hs_grad__AND__age_35.5_to_61.5]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__occupation_whiteCollar]: (income > 50K) = False
+else if [occupation_whiteCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7565784624456402,0.005507916694106189,0.2464215375543598,0.3216628584064274,0.7507002801120448,0.005021834061135371,1178978,573579,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__education_dropout]: (income > 50K) = False
+else if [occupation_blueCollar__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [occupation_blueCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7576731462793677,0.006223319299600363,0.2451268537206323,0.2869137916303734,0.7575552974417176,0.005945648888868202,420165.0,2.8,

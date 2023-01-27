@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.891712204007286,0.010107294525317053,0.11128779599271399,0.020947176684881604,0.8939890710382513,0.008639349041547617,1244880,417632,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [job_student]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8926229508196721,0.011661410156106397,0.11037704918032787,0.030783242258652095,0.8911961141469338,0.019240777926446746,266976,128040,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [nr_employed_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8912871888281725,0.012112058849110648,0.11171281117182752,0.024833029751062538,0.8959319975713418,0.013974870611434962,504022,218180,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [cons_price_idx_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.8937765634486946,0.010986708141478976,0.1092234365513054,0.024711596842744384,0.8864602307225258,0.015576655248790143,799005,291162,3,"RULELIST:
+ if [month_jun]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8921372191863995,0.010818168577288378,0.11086278081360046,0.025865209471766848,0.8918032786885246,0.003578371994060534,827411,309728,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.8923072252580451,0.01113712804986029,0.11069277474195505,0.025428051001821494,0.8918761384335155,0.012202004964456,272948.4,3.0,

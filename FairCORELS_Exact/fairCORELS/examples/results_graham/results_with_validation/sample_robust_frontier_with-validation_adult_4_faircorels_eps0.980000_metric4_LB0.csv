@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.811391223155929,0.004782769874019266,0.19260877684407096,0.005947660586835844,0.8082252358490566,0.05023881824508125,2745464,751687,4,"RULELIST:
+ if [not_capitalGain_-inf_to_5095.5]: (income > 50K) = True
+else if [occupation_blueCollar__AND__age_35.5_to_61.5]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__education_bachelors]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False",0.8080778301886793,0.02858695149581536
+1,0.8096220944518158,0.005922425228131689,0.19437790554818424,0.006191332135010985,0.8113207547169812,0.04684368173321629,7097114,2350709,4,"RULELIST:
+ if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [occupation_blueCollar__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [education_masters_doctorate]: (income > 50K) = True
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False",0.808372641509434,0.10952901023890782
+2,0.8085012285012285,0.004761097822474025,0.19549877149877148,0.006074857926709779,0.8102609464838567,0.03288557486704313,1564201,558474,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [workclass_private__AND__occupation_blueCollar]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__education_bachelors]: (income > 50K) = True
+else (income > 50K) = False",0.8125,0.0867231638418079
+3,0.8186240786240786,0.006394312778143063,0.1853759213759214,0.005946481665014866,0.8216128556685832,0.04521320430411335,1139048,319845,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [education_hs_grad__AND__capitalLoss_-inf_to_1534.0]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False",0.8070459905660378,0.027314317210968775
+4,0.8144471744471744,0.0018873925650748635,0.1895528255528256,0.004108784973586382,0.8170426065162907,0.02366900940136385,1227029,345533,4,"RULELIST:
+ if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [education_hs_grad__AND__age_35.5_to_61.5]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_whiteCollar]: (income > 50K) = True
+else (income > 50K) = False",0.8237028301886793,0.019680320902047854
+Average,0.8125171598360452,0.004749599653568581,0.19148284016395473,0.0056538234574315714,0.8136924798469536,0.03977005771016358,2754571.2,865249.6,4.0,,0.811939858490566,0.05436675273790954

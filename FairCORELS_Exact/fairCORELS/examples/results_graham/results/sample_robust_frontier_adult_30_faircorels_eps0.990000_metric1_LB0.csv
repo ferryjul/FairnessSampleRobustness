@@ -1,0 +1,22 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7573803117974423,0.0037980217498223947,0.24461968820255775,0.2523863929532304,0.7535377358490566,0.0017974659077917964,16827,11217,2,"RULELIST:
+ if [not_occupation_professional]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7522573987395422,0.0,0.24774260126045777,1.0,0.7508844339622641,0.0,0,0,0,"RULELIST:
+(income > 50K) = False"
+2,0.7551042971917152,0.004501706178406128,0.24789570280828477,0.3027566890248397,0.7579242223205072,0.0023448670288818987,1109842,549793,3,"RULELIST:
+ if [workclass_private]: (income > 50K) = False
+else if [not_education_bachelors]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7538144025945308,0.004019258522257162,0.2481855974054692,0.30655266455369645,0.7607253427686864,0.0023206472080160015,10454,8196,2,"RULELIST:
+ if [not_workclass_selfEmployed]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.756836441365077,0.004386935882625856,0.246163558634923,0.295717549937348,0.7511425622880731,0.002551106371422851,941758,473030,3,"RULELIST:
+ if [workclass_private__AND__age_24.5_to_29.5]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__occupation_sales]: (income > 50K) = False
+else if [workclass_private__AND__occupation_sales]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7550785703376615,0.003341184466622308,0.2469214296623385,0.4314826592938229,0.7548428594377176,0.0018028173032225096,208447.2,2.0,

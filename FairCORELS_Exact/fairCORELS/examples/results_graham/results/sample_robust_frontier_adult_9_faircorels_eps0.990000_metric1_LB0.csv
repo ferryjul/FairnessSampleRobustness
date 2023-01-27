@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.771901374709763,0.0005074438103565282,0.23109862529023695,0.003685548962517967,0.7685731132075472,0.0066661283307424685,184416,97783,3,"RULELIST:
+ if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [age_35.5_to_61.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7699480337596285,0.0025454190854382885,0.2330519662403715,0.004385803265396381,0.7740271226415094,0.014903623158045207,175501,97286,3,"RULELIST:
+ if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else if [workclass_private__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7668239109604187,0.001278320345146619,0.23617608903958132,0.003906537922901157,0.7701606958572903,0.012979192248818314,534214,265018,3,"RULELIST:
+ if [education_hs_grad__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [education_hs_grad__AND__occupation_other]: (income > 50K) = True
+else if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.770472469963883,0.00041125063494612535,0.23252753003611704,0.0036485590034642883,0.7757629367536488,0.005724779341951189,212359,113676,3,"RULELIST:
+ if [education_hs_grad__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else if [education_hs_grad__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7694405542861354,0.00020016409246813305,0.23355944571386456,0.0035748507407680403,0.7623470440807902,0.010596705167823947,344747,166926,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [workclass_selfEmployed]: (income > 50K) = True
+else if [age_35.5_to_61.5__AND__occupation_professional]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7697172687359657,0.000988519593671139,0.2332827312640343,0.0038402599790095665,0.7701741825081572,0.010174085649476226,148137.8,3.0,

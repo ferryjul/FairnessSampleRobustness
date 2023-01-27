@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.892046144505161,0.012257720799648208,0.11095385549483905,0.016423800850030357,0.8948391013964785,0.011752645828856094,1455865,433110,3,"RULELIST:
+ if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [not_duration_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8929568913175471,0.01274392318512219,0.11004310868245293,0.013570127504553733,0.8922890103217972,0.016788736962938887,267309,128464,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [default_yes]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8920157862780813,0.00708133490455207,0.11098421372191869,0.010898603521554341,0.8962962962962963,0.01162299379252948,1437217,444037,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [loan_no__AND__poutcome_failure]: (subscribe:yes) = False
+else if [loan_no__AND__default_no]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.8939890710382513,0.012025671510378248,0.10901092896174869,0.015695203400121434,0.8870673952641166,0.015738961503113366,968159,331621,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [job_services]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8927747419550698,0.0013969388946726558,0.11022525804493022,0.021554341226472373,0.8921675774134791,0.0067893326968253495,1673327,461085,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [education_basic.4y]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+Average,0.8927565270188221,0.009101117858874675,0.11024347298117791,0.01562841530054645,0.8925318761384335,0.012538534156852636,359663.4,3.0,

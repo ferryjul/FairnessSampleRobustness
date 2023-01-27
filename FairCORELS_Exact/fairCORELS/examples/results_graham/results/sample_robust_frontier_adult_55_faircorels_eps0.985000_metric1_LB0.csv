@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7580437106106954,0.00719008845135956,0.24495628938930458,0.3159252570670401,0.7557488207547169,0.009107610868148123,671609,354250,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [capitalLoss_-inf_to_1534.0__AND__age_61.5_to_inf]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7560166586813106,0.005991752237760793,0.24698334131868938,0.32093760365606455,0.7529481132075472,0.0030708488703663083,834205,439755,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__education_dropout]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [occupation_blueCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7569470037591214,0.006777741775934263,0.24605299624087862,0.3033463551264097,0.7591036414565826,0.006341570085283184,786086,402889,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [occupation_blueCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7562099211321589,0.007570588905254485,0.2467900788678411,0.3037886047025872,0.7638213180008846,0.007334817689812382,938224,483500,3,"RULELIST:
+ if [hoursPerWeek_40.5_to_inf__AND__age_29.5_to_35.5]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__workclass_selfEmployed]: (income > 50K) = False
+else if [hoursPerWeek_40.5_to_inf__AND__workclass_selfEmployed]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7530773199675683,0.0,0.24692268003243167,1.0,0.7476043048798466,0.0,0,0,0,"RULELIST:
+(income > 50K) = False"
+Average,0.7560589228301708,0.00550603427406182,0.24634107716982906,0.4487995641104203,0.7558452396599156,0.005170969502721999,336078.8,2.4,

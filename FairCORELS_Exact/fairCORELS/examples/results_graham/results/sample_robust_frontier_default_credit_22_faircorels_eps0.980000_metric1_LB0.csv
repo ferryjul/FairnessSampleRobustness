@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7991912622978156,0.008857479147897349,0.20380873770218444,0.007378689344672337,0.8054351450483495,0.009332190587677855,815747,333731,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [AGE_very_low]: (default_payment:yes) = True
+else if [PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+1,0.7944891408562258,0.006387556887158211,0.2085108591437742,0.008503897619742382,0.7967316991829247,0.0027061142418092626,865418,395264,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [PAY_AMT2_very_low]: (default_payment:yes) = False
+else if [PAY_6_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+2,0.7900287631831256,0.0041287349590830025,0.21297123681687435,0.010129642752928426,0.7827246956811739,0.0023926193189303946,510326,288914,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [BILL_AMT3_high]: (default_payment:yes) = True
+else if [not_AGE_very_low]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.8047438409270916,0.011182386224741936,0.1992561590729084,0.005794322397765643,0.8019009504752376,0.022380071323928524,4331150,1526257,4,"RULELIST:
+ if [BILL_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_AMT6_middle]: (default_payment:yes) = True
+else if [PAY_6_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+4,0.7878194172328984,0.00427621819820409,0.2151805827671016,0.010754929342615365,0.7820576955144238,0.011184134069037316,2192616,840871,3,"RULELIST:
+ if [BILL_AMT6_very_low]: (default_payment:yes) = False
+else if [BILL_AMT6_middle]: (default_payment:yes) = False
+else if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+Average,0.7952544848994314,0.006966475083416917,0.2079455151005686,0.008512296291544829,0.7937700371804219,0.00959902590827667,677007.4,3.2,

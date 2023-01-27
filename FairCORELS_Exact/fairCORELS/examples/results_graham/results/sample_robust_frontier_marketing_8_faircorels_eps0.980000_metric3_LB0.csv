@@ -1,0 +1,30 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8977838494231937,0.0069296049290027955,0.10521615057680633,0.07044038079583591,0.9005464480874317,0.009959240089619785,70882,34016,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+1,0.8988463873709776,0.008462274040143413,0.10515361262902245,0.06577328045945577,0.8981177899210686,0.002430533812946303,2295516,685244,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.8985731633272617,0.00787082621020969,0.10542683667273833,0.06929743431644572,0.9026108075288403,0.011422999223189028,1945697,460905,4,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.8997571341833637,0.006792763618084369,0.10324286581663633,0.07120404537378706,0.8926533090467517,0.010586775720259154,62919,34484,3,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+4,0.8997874924104432,0.008754505310464785,0.1042125075895568,0.06387491874508194,0.8981177899210686,0.009618412406985475,1604751,377494,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [cons_price_idx_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [not_duration_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.898949605343048,0.007761994821581011,0.10465039465695206,0.06811801193812128,0.898409228901032,0.00880359225059995,318428.6,3.6,

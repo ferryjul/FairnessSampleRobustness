@@ -1,0 +1,28 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.8981177899210686,0.006118487708633286,0.1058822100789314,0.022690955576861616,0.9009107468123861,0.009987627119273828,2534147,784813,4,"RULELIST:
+ if [pdays_very_low__AND__poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [not_nr_employed_low]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8973891924711597,0.006859080689717885
+1,0.8924913985023275,0.0026134127374782363,0.1105086014976725,0.09087591240875913,0.8893746205221615,0.00016605555439594974,1649756,476311,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [euribor3m_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.895203400121433,0.003079113784323441
+2,0.8923699655940093,0.0025488609551963673,0.11063003440599073,0.08516659059790051,0.896782027929569,0.007393139635436259,504854,219367,3,"RULELIST:
+ if [nr_employed_low]: (subscribe:yes) = False
+else if [not_duration_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8910746812386157,0.00034870796982551934
+3,0.8939485934021453,0.0013156271910928644,0.10905140659785473,0.10820419325432999,0.8869459623557984,0.005540902755441193,911574,357523,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [education_basic.9y]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False",0.8948391013964785,0.006101976903503621
+4,0.8931795183161303,0.003445464652290178,0.10982048168386971,0.08033392637197208,0.8919247115968427,0.0004757082196186793,306981,147337,3,"RULELIST:
+ if [not_default_no]: (subscribe:yes) = False
+else if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True",0.8926533090467517,0.009582155009451797
+Average,0.8940214531471362,0.0032083706489381865,0.10917854685286381,0.07745431564196467,0.8931876138433517,0.004712686656833181,1181462.4,397070.2,3.2,,0.8942319368548877,0.005194206871364453

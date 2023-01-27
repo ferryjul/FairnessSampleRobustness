@@ -1,0 +1,30 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL,Validation accuracy,Validation unfairness
+0,0.804958034572842,0.008238154367700229,0.19904196542715802,0.001167250291812573,0.8054351450483495,0.014106637679947603,4550217,1715014,4,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else if [EDUCATION_Graduate_school]: (default_payment:yes) = False
+else if [PAY_AMT6_middle]: (default_payment:yes) = True
+else (default_payment:yes) = False",0.7940636985159246,0.0160664410941867
+1,0.7983991995997999,0.004999462851955808,0.20460080040020012,0.003223834139291868,0.7982324495581123,0.005601393751007135,250492,158958,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [PAY_AMT1_very_low]: (default_payment:yes) = False
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.7935978659553184,0.02203354907310834
+2,0.80040020010005,0.007575161245093082,0.20359979989995003,0.001611917069645934,0.7992329498082374,0.01427759145531074,4983946,2018737,4,"RULELIST:
+ if [not_PAY_0_Pay_delay>=1]: (default_payment:yes) = False
+else if [BILL_AMT2_very_low]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else if [not_AGE_very_low]: (default_payment:yes) = False
+else (default_payment:yes) = True",0.812270756918973,0.015495346747114225
+3,0.8055138680451337,0.008076920999539758,0.1984861319548663,0.0012784169862709131,0.7995664498916125,0.01224401888741676,5583518,2009701,4,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [PAY_5_Pay_delay>=1]: (default_payment:yes) = True
+else if [BILL_AMT3_very_low]: (default_payment:yes) = False
+else if [AGE_very_low]: (default_payment:yes) = True
+else (default_payment:yes) = False",0.7970990330110037,0.0159219108788978
+4,0.7997331999332999,0.008939469668610853,0.20326680006670006,0.0007225835139792118,0.7978989494747374,0.015350478882609563,879760,363247,3,"RULELIST:
+ if [PAY_6_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else if [AGE_middle]: (default_payment:yes) = False
+else if [PAY_0_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False",0.8009336445481827,0.012226379855288252
+Average,0.801800900450225,0.007565833826579946,0.20179909954977493,0.0016008004002001,0.8000731887562098,0.01231602413125836,3249586.6,1253131.4,3.6,,0.7995929997898804,0.01634872552971906

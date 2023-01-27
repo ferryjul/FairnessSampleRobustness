@@ -1,0 +1,18 @@
+Fold#,Training accuracy,Training Unfairness(4),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8865209471766848,0.0,0.11347905282331516,1.0,0.8905889496053431,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+1,0.8880388585306618,0.0,0.11196114146933822,1.0,0.8845173041894353,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+2,0.8904068002428658,0.002206088973329856,0.11259319975713422,0.0024019215372297837,0.8975106253794778,0.007749712973593503,725468,305820,3,"RULELIST:
+ if [cons_conf_idx_very_low]: (subscribe:yes) = False
+else if [job_retired]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.8969034608378871,0.0008709375730652225,0.10609653916211292,0.002178649237472767,0.8879174256223437,0.017501107665042093,1216331,386598,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [education_basic.4y]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+4,0.8873406193078324,0.0,0.11265938069216763,1.0,0.8873102610807528,0.0,0,0,0,"RULELIST:
+(subscribe:yes) = False"
+Average,0.8898421372191864,0.0006154053092790157,0.11135786278081364,0.6009161141549406,0.8895689131754706,0.005050164127727119,138483.6,1.2,

@@ -1,0 +1,32 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8980874316939891,0.006487550885673597,0.10591256830601092,0.014793507294020958,0.9011536126290225,0.010307166981871688,2222700,661332,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+1,0.8985428051001821,0.007623850276818464,0.10545719489981786,0.0020511418022699304,0.896782027929569,0.0021165125550522868,3716571,1131840,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_high]: (subscribe:yes) = True
+else if [education_basic.9y]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.8985731633272617,0.00787082621020969,0.10542683667273833,0.0018497585037508992,0.9026108075288403,0.011422999223189028,1969342,467440,4,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [not_euribor3m_very_low]: (subscribe:yes) = False
+else if [duration_very_low]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.9,0.006755248207930161,0.10399999999999998,0.00891758917589176,0.8926533090467517,0.00821210311078436,2551066,798782,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else if [not_duration_high]: (subscribe:yes) = False
+else if [not_nr_employed_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+4,0.8997874924104432,0.008754505310464785,0.1042125075895568,0.0010948031065038148,0.8981177899210686,0.009618412406985475,1604253,377532,4,"RULELIST:
+ if [poutcome_failure]: (subscribe:yes) = False
+else if [cons_price_idx_low]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [not_duration_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.8989981785063753,0.0074983961782193395,0.10500182149362478,0.005741359976487472,0.8982635094110503,0.008335438855576567,687385.2,4.0,

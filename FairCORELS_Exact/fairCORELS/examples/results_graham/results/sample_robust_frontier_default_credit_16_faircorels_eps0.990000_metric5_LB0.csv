@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7827246956811739,0.0021173370300643785,0.22027530431882614,0.005306319343945972,0.7815938646215406,0.009330060731929879,728543,404685,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT3_low]: (default_payment:yes) = True
+else if [AGE_very_low]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+1,0.7839426403768394,0.002863724292404805,0.21905735962316064,0.00525328330206379,0.7877271969317993,0.013795306691449793,1299703,634072,3,"RULELIST:
+ if [PAY_AMT4_high]: (default_payment:yes) = False
+else if [not_PAY_AMT1_high]: (default_payment:yes) = False
+else if [PAY_2_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+2,0.7859018716911917,0.002380013574284648,0.21709812830880826,0.005303192629097921,0.7865599466399866,0.02280795798125712,890407,480287,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT3_low]: (default_payment:yes) = True
+else if [PAY_4_Pay_duly__AND__PAY_6_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+3,0.7861103005544208,0.00313090525962767,0.21688969944557923,0.0052890266054065604,0.7832249458062365,0.02142588346489771,779297,430200,3,"RULELIST:
+ if [PAY_0_Pay_duly]: (default_payment:yes) = False
+else if [not_PAY_AMT3_low]: (default_payment:yes) = True
+else if [PAY_3_Pay_delay>=1]: (default_payment:yes) = True
+else (default_payment:yes) = False"
+4,0.7927383384051023,0.002413856111095125,0.21026166159489768,0.005027275644453952,0.7857261964315491,0.0255687673049525,937766,483937,3,"RULELIST:
+ if [PAY_0_Pay_duly__AND__PAY_2_Pay_duly]: (default_payment:yes) = False
+else if [not_MARRIAGE_Single]: (default_payment:yes) = True
+else if [PAY_4_Pay_duly__AND__PAY_5_Pay_duly]: (default_payment:yes) = False
+else (default_payment:yes) = True"
+Average,0.7862835693417456,0.002581167253495325,0.21671643065825438,0.005235819504993639,0.7849664300862224,0.0185855952348974,486636.2,3.0,

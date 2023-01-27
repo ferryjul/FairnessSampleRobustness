@@ -1,0 +1,25 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7635720340544724,0.006155683761017387,0.23942796594552762,0.22201746950208234,0.7610554245283019,0.0073181902020279365,1358036,592982,3,"RULELIST:
+ if [not_occupation_professional]: (income > 50K) = False
+else if [workclass_private__AND__age_29.5_to_35.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7612501382080861,0.008129757507341424,0.24074986179191393,0.2641801496332879,0.7594339622641509,0.007371811776187859,7558,6042,2,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__education_bachelors]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__education_bachelors]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7622171445419031,0.006578975191291244,0.24078285545809686,0.22698459497309648,0.762936753648828,0.0030681760837019973,834767,417291,3,"RULELIST:
+ if [not_occupation_professional]: (income > 50K) = False
+else if [age_35.5_to_61.5__AND__workclass_otherGov]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+3,0.7607429792879782,0.007989158554238717,0.24125702071202182,0.20844696690499004,0.7680967123691582,0.008628566595307956,17462,11197,2,"RULELIST:
+ if [education_hs_grad__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [education_hs_grad__AND__age_35.5_to_61.5]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7619591656224662,0.008107549392377573,0.24104083437753376,0.27065674062062356,0.7558602388323751,0.0034876022573426084,827202,409625,3,"RULELIST:
+ if [capitalGain_-inf_to_5095.5__AND__education_bachelors]: (income > 50K) = False
+else if [age_24.5_to_29.5]: (income > 50K) = False
+else if [workclass_private__AND__education_bachelors]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7619482923429812,0.007392224881253269,0.2406517076570188,0.23845718432681604,0.7614766183285628,0.005974869382913671,287427.4,2.6,

@@ -1,0 +1,26 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.5476529160739687,0.004097010234308557,0.4553470839260313,0.27371273712737126,0.5611374407582939,0.005017067748636403,1330095,680473,3,"RULELIST:
+ if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [juvenile-misdemeanors_=0__AND__age_26-45]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+1,0.5488383119962067,0.0024116855102770587,0.4541616880037933,0.23972911963882618,0.5649289099526066,0.006872852233676976,1333799,671168,3,"RULELIST:
+ if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [age_26-45__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+2,0.5474158368895211,0.0024133549758866696,0.4555841631104789,0.3451208594449418,0.5440758293838862,0.00317509687285357,1391046,692478,3,"RULELIST:
+ if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [not_priors_2-3]: (recidivism:yes) = False
+else if [age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+3,0.5468120407679545,0.002572501449867,0.45518795923204547,0.3146319569120287,0.5569259962049335,0.018867924528301886,24868,14973,2,"RULELIST:
+ if [gender_Male__AND__charge_degree_Misdemeanor]: (recidivism:yes) = False
+else if [priors_>3__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+4,0.5548708224697796,0.0019996284843253162,0.4481291775302204,0.38166593212869104,0.50853889943074,0.010842645726366656,1240504,630031,3,"RULELIST:
+ if [juvenile-misdemeanors_>0__AND__juvenile-crimes_>0]: (recidivism:yes) = True
+else if [gender_Male__AND__juvenile-felonies_=0]: (recidivism:yes) = False
+else if [gender_Male__AND__age_18-20]: (recidivism:yes) = True
+else (recidivism:yes) = False"
+Average,0.5491179856394861,0.0026988361309329204,0.4536820143605139,0.3109721210503718,0.5471214151460921,0.008955117421967099,537824.6,2.8,

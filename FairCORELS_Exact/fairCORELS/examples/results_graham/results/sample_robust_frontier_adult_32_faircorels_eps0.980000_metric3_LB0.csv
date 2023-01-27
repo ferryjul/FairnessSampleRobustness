@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.784395385692699,1.7645431561747247e-05,0.21860461430730105,0.3781706003329742,0.7813974056603774,0.0002013456132790144,612800,304487,3,"RULELIST:
+ if [occupation_blueCollar__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else if [education_hs_grad__AND__workclass_private]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7833265764935687,6.959500512290908e-05,0.21967342350643126,0.37352408015285876,0.7822818396226415,0.0009630818619582664,1300317,491665,3,"RULELIST:
+ if [occupation_other__AND__hoursPerWeek_-inf_to_34.5]: (income > 50K) = False
+else if [workclass_private__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else if [not_capitalGain_7073.5_to_inf]: (income > 50K) = False
+else (income > 50K) = True"
+2,0.7512714675315103,0.0,0.2487285324684897,1.0,0.754828247088309,0.0,0,0,0,"RULELIST:
+(income > 50K) = False"
+3,0.7718729269551117,0.0001590836780146357,0.23112707304488833,0.6123821681068342,0.7801857585139319,0.00031416902293433867,806998,409762,3,"RULELIST:
+ if [not_hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [workclass_otherGov]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7895260558708631,0.00024978939802519726,0.2134739441291369,0.3752079866888519,0.7844611528822055,0.000393625960472048,598810,278533,3,"RULELIST:
+ if [occupation_professional__AND__hoursPerWeek_34.5_to_40.5]: (income > 50K) = False
+else if [occupation_other__AND__hoursPerWeek_-inf_to_34.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7760784825087506,9.922270254489785e-05,0.22632151749124946,0.5478569670563038,0.7766308807534931,0.0003744444917287335,296889.4,2.4,

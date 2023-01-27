@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(1),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7598127741127041,0.009645335810700038,0.2431872258872959,0.3171414882246711,0.7547169811320755,0.007147253647499028,1863981,702843,3,"RULELIST:
+ if [not_hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [not_age_35.5_to_61.5]: (income > 50K) = False
+else if [capitalLoss_1881.5_to_1978.5]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7560166586813106,0.005991752237760793,0.24698334131868938,0.32160100246931783,0.7529481132075472,0.0030708488703663083,834205,439755,3,"RULELIST:
+ if [age_35.5_to_61.5__AND__education_dropout]: (income > 50K) = False
+else if [capitalGain_-inf_to_5095.5__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [occupation_blueCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.758605439669787,0.00967968685318701,0.244394560330213,0.31414461561141005,0.7641161727849034,0.012200373429325976,1164887,561268,3,"RULELIST:
+ if [not_hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [occupation_blueCollar__AND__capitalGain_-inf_to_5095.5]: (income > 50K) = False
+else if [not_capitalLoss_1881.5_to_1978.5]: (income > 50K) = False
+else (income > 50K) = True"
+3,0.7587160020638314,0.008599853868429605,0.24428399793616862,0.2924375322473649,0.7660327288810261,0.00767403960587119,1757792,672213,3,"RULELIST:
+ if [not_workclass_selfEmployed]: (income > 50K) = False
+else if [occupation_blueCollar__AND__hoursPerWeek_40.5_to_inf]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7530773199675683,0.0,0.24692268003243167,1.0,0.7476043048798466,0.0,0,0,0,"RULELIST:
+(income > 50K) = False"
+Average,0.7572456388990403,0.0067833257540154904,0.24515436110095973,0.44906492771055273,0.7570836601770797,0.006018503110612501,475215.8,2.4,

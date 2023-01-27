@@ -1,0 +1,24 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.7899605646261011,0.00012342669897475172,0.2130394353738989,0.373518754284595,0.7883254716981132,0.0002013456132790144,1266445,474899,3,"RULELIST:
+ if [education_hs_grad__AND__occupation_other]: (income > 50K) = False
+else if [hoursPerWeek_34.5_to_40.5__AND__age_29.5_to_35.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+1,0.7894814432609737,4.0050724130123564e-05,0.2135185567390263,0.3711724070354221,0.7878832547169812,0.0009630818619582664,1333570,467987,3,"RULELIST:
+ if [hoursPerWeek_34.5_to_40.5__AND__age_29.5_to_35.5]: (income > 50K) = False
+else if [workclass_private__AND__occupation_other]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+2,0.7512714675315103,0.0,0.2487285324684897,1.0,0.754828247088309,0.0,0,0,0,"RULELIST:
+(income > 50K) = False"
+3,0.787683349303457,0.0003002510567351654,0.21531665069654304,0.37799489395129615,0.7950759251068849,0.00039520340756018656,611681,295158,3,"RULELIST:
+ if [hoursPerWeek_34.5_to_40.5__AND__age_29.5_to_35.5]: (income > 50K) = False
+else if [workclass_private__AND__occupation_other]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+4,0.7930271983489349,0.00012178120550087571,0.20997280165106513,0.3728589605559362,0.7875571281144037,0.000393625960472048,1004652,428577,3,"RULELIST:
+ if [education_hs_grad__AND__age_29.5_to_35.5]: (income > 50K) = False
+else if [occupation_other__AND__hoursPerWeek_-inf_to_34.5]: (income > 50K) = False
+else if [capitalGain_7073.5_to_inf]: (income > 50K) = True
+else (income > 50K) = False"
+Average,0.7822848046141955,0.00011710193706818328,0.22011519538580462,0.4991090031654498,0.7827340053449384,0.0003906513686539031,333324.2,2.4,

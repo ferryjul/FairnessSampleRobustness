@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(5),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.8965391621129326,0.010738412072102077,0.1064608378870674,0.00749063670411985,0.900789313904068,0.025106756138477904,1467488,393500,3,"RULELIST:
+ if [duration_low]: (subscribe:yes) = False
+else if [job_retired]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8969338190649666,0.012281130262265086,0.1060661809350334,0.0067787418655097615,0.8939890710382513,0.05212234706616736,527558,221008,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [not_nr_employed_very_low]: (subscribe:yes) = False
+else if [duration_very_high]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+2,0.8937765634486946,0.011876716521674463,0.1092234365513054,0.009340805978115827,0.8970248937462052,0.021574818216609337,984379,392838,3,"RULELIST:
+ if [job_student]: (subscribe:yes) = False
+else if [loan_no__AND__poutcome_failure]: (subscribe:yes) = False
+else if [loan_no__AND__contact_cellular]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+3,0.8992714025500911,0.010364455262349963,0.10372859744990892,0.008169934640522876,0.8898603521554341,0.01601079469931932,969162,292028,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+4,0.8975409836065574,0.010351969158800343,0.10545901639344257,0.008353543519267044,0.896782027929569,0.011148801447308898,662394,231527,3,"RULELIST:
+ if [job_retired]: (subscribe:yes) = False
+else if [duration_low]: (subscribe:yes) = False
+else if [poutcome_success]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.8968123861566486,0.011122536655438386,0.10618761384335154,0.008026732541507072,0.8956891317547055,0.025192703513576564,306180.2,3.0,

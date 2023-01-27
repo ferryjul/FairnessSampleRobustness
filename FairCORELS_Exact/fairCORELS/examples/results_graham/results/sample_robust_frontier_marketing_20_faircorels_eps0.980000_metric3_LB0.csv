@@ -1,0 +1,27 @@
+Fold#,Training accuracy,Training Unfairness(3),Training objective function,Training Sample-Robustness,Test accuracy,Test unfairness,#Nodes explored for best solution,Cache size for best solution,Average length,RL
+0,0.892046144505161,0.0023632730641483736,0.11095385549483905,0.11803986028354223,0.8948391013964785,0.002123230919568844,1477780,451854,3,"RULELIST:
+ if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [not_duration_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+1,0.8934122647237401,0.0028832453726589727,0.10958773527625987,0.11421441268973062,0.8893746205221615,6.029950299294286e-06,594328,241128,3,"RULELIST:
+ if [not_duration_high]: (subscribe:yes) = False
+else if [cons_conf_idx_very_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+2,0.8901032179720705,0.0007039243750573381,0.11289678202792952,0.13099030589524885,0.895203400121433,0.0057854707034780605,1607924,524419,3,"RULELIST:
+ if [marital_single]: (subscribe:yes) = False
+else if [not_cons_price_idx_high]: (subscribe:yes) = False
+else if [poutcome_failure]: (subscribe:yes) = False
+else (subscribe:yes) = True"
+3,0.8938372799028537,0.002424150255022944,0.10916272009714634,0.12006286729533962,0.8871888281724347,0.005862549587219899,392790,174721,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+4,0.892835458409229,0.0034477417287395156,0.11016454159077105,0.11362003489684902,0.8911961141469338,0.0017647042591139592,917183,330268,3,"RULELIST:
+ if [not_duration_very_high]: (subscribe:yes) = False
+else if [poutcome_failure__AND__default_no]: (subscribe:yes) = False
+else if [nr_employed_very_low]: (subscribe:yes) = True
+else (subscribe:yes) = False"
+Average,0.8924468731026108,0.0023644669591254288,0.11055312689738916,0.11938549621214208,0.8915604128718883,0.003108397083936011,344478.0,3.0,
